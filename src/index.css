@@ -1,0 +1,109 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    font-size: 20px;
+    color: #FFFFFF;
+    background-color: #009eff;
+    border: none;
+    padding: 7px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #098ee0
+}
+
+form {
+    padding: 10px;
+    background: #ebebeb;
+    margin: 10px;
+}
+
+input[type="text"] {
+    height: 40px;
+    border-radius: 4px;
+}
+
+video {
+    width: 400px;
+    height: 400px;
+    margin: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+code {
+    margin: 20px auto auto 20px;
+    color: #ec1c76;
+    background-color: #ebebeb;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+header{
+    padding: 5px;
+    background-color: #000000;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .prodName{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: rgb(0, 235, 255);
+}
+
+header .links LI {
+    display: inline;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+}
+
+.demos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.ic-demo-btns {
+    margin: 5px;
+}
+
+.senderReciever {
+    padding: 10px;
+    margin: 13px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+#network-info-main LI {
+    padding: 5px;
+    font-size: 25px;
+}

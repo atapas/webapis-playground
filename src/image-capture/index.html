@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../index.css" />
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <title>Image Capture using the Webcam</title>
+</head>
+<body>
+    <header>
+        <a href="/">
+            <span class="prodName">Web API Playground</span>
+        </a>
+        <ul class="links">
+            <li class="documentation" title="Read Documentation">
+                <i color="white" data-feather="book"></i>
+            </li>
+            <li class="blog" title="Go to Blog">
+                <i color="white" data-feather="pen-tool"></i>
+            </li>
+            <li class="github" title="Source Code">
+                <i color="white" data-feather="github"></i>
+            </li>
+            <li class="tweet" title="Tweet About it">
+                <i color="white" data-feather="twitter"></i>
+            </li>
+        </ul>
+    </header>
+    <div class="info">
+        <h1>Image Capture using the Webcam</h1>
+        <details>
+            <summary>Show Code</summary>
+            <code>
+                const imageCapture = new ImageCapture(track);
+            </code>
+        </details>
+    </div>
+    <div class="demos">
+        <div class="ic-demo-btns">
+            <button onclick="getUserMedia()">Get User Media</button>
+            <button onclick="videoOff()">Switch Off</button>
+            <button onclick="grabFrame()">Grab a Frame</button>
+            <button onclick="takePhoto()">Take Photo</button>
+        </div>
+        
+        <div>
+            <video autoPlay></video>
+        </div>
+
+        <div>
+            <canvas id='grabFrameCanvas'></canvas>
+            <canvas id='takePhotoCanvas'></canvas>    
+        </div>
+    </div>
+    <script>feather.replace()</script>
+    <script src="../image-capture/index.js"></script>
+</body>
+</html>

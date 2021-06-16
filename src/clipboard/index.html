@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../index.css" />
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <title>Clipboard Async API</title>
+</head>
+<body>
+    <header>
+        <a href="/">
+            <span class="prodName">Web API Playground</span>
+        </a>
+        <ul class="links">
+            <li class="documentation" title="Read Documentation">
+                <i color="white" data-feather="book"></i>
+            </li>
+            <li class="blog" title="Go to Blog">
+                <i color="white" data-feather="pen-tool"></i>
+            </li>
+            <li class="github" title="Source Code">
+                <i color="white" data-feather="github"></i>
+            </li>
+            <li class="tweet" title="Tweet About it">
+                <i color="white" data-feather="twitter"></i>
+            </li>
+        </ul>
+    </header>
+    <div class="info">
+        <h1>Clipboard Async API</h1>
+        <details>
+            <summary>Show Code</summary>
+            <code>
+                // Copy Text to Clipboard <br />
+                await navigator.clipboard.writeText(copyText); <br />
+                // Paste Text from the Clipboard <br />
+                await navigator.clipboard.readText(); <br />
+            </code>
+        </details>
+    </div>
+    <div class="demos">
+        <form>
+            <label for="copy-input">Copy</label>
+            <input 
+                id="copy-input" 
+                type="text" 
+                name="copy" 
+                placeholder="Write Something..."/>
+            <button onclick="performCopy(event)">Copy</button>
+        </form>
+
+        <form>
+            <label for="paste">Paste</label>
+            <input
+                id="paste-input"  
+                type="text" 
+                name="paste"
+                readonly />
+            <button onclick="performPaste(event);">Paste</button>
+        </form>
+    </div>
+    <script>feather.replace()</script>
+    <script src="../clipboard/index.js"></script>
+</body>
+</html>
