@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="../index.css" />
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-    <title>Web APIs Playground</title>
+    <title>Resize Observer API</title>
 </head>
 
 <body>
@@ -30,39 +30,29 @@
             </li>
         </ul>
     </header>
+    <div class="info">
+        <h1>Resize Observer Web API</h1>
+        <details>
+            <summary>Show Code</summary>
+            <code>
+                let resizeObserver = new ResizeObserver(callback);
+            </code>
+        </details>
+    </div>
     <div class="demos">
+        <h3>Drag me to resize the button</h3>
         <div>
-            <a href='./fullscreen/index.html'> FullScreen</a>
+            <span id='min-range-text-id'></span>
+            <input onchange="resize(event)"" type="range" min=60 max=500 />
+            <span id='max-range-text-id'></span>
         </div>
-        <div>
-            <a href='./clipboard/index.html'> Clipboard Async</a>
-        </div>
-        <div>
-            <a href='./image-capture/index.html'> Image Capture </a>
-        </div>
-        <div>
-            <a href='./broadcast-channel/index.html'> Boardcast Channel </a>
-        </div>
-        <div>
-            <a href='./resize-observer/index.html'> Resize Observer </a>
-        </div>
-        <div>
-            <a href='./network-information/index.html'> Network Information </a>
-        </div>
-        <div>
-            <a href='./battery-status/index.html'> Battery Status </a>
-        </div>
-        <div>
-            <a href='./fullscreen/index.html'> Web Payment </a>
-        </div>
-        <div>
-            <a href='./vibration/index.html'> Vibration </a>
-        </div>
-        <div>
-            <a href='./fullscreen/index.html'> Drag and Drop </a>
-        </div>
+        <span id='range-value-id'></span>
+        <br />
+        <button id="dumbBtnId">I am a Dumb Button</button> <br />
+        <textarea id="dumbAreaId">I am a dumb text area</textarea>
     </div>
     <script>feather.replace()</script>
+    <script src="../resize-observer/index.js"></script>
 </body>
 
 </html>
