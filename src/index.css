@@ -103,6 +103,14 @@ header .links LI {
     border-radius: 5px;
 }
 
+.battery-status-info {
+    font-size: 30px;
+}
+
+.battery-status-info LI {
+    padding: 5px;
+}
+
 #network-info-main LI {
     padding: 5px;
     font-size: 25px;
