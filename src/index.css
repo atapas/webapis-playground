@@ -72,6 +72,7 @@ header .prodName {
 
 header .links LI {
   display: inline;
+  margin: 0 2px auto 5px;
 }
 
 h2 {

@@ -9,33 +9,9 @@
     <title>Vibration API</title>
 </head>
 <body>
-    <header>
-        <a href="/">
-            <span class="prodName">Web API Playground</span>
-        </a>
-        <ul class="links">
-            <li class="documentation" title="Read Documentation">
-                <i color="white" data-feather="book"></i>
-            </li>
-            <li class="blog" title="Go to Blog">
-                <i color="white" data-feather="pen-tool"></i>
-            </li>
-            <li class="github" title="Source Code">
-                <i color="white" data-feather="github"></i>
-            </li>
-            <li class="tweet" title="Tweet About it">
-                <i color="white" data-feather="twitter"></i>
-            </li>
-        </ul>
-    </header>
+    <header id='header-id'></header>
     <div class="info">
         <h1>Vibration API</h1>
-        <details>
-            <summary>Show Code</summary>
-            <code>
-                navigator.vibrate(2000);
-            </code>
-        </details>
     </div>
     <div class="demos">
         <div className="column">
@@ -47,6 +23,7 @@
             <button onclick="manageVibration('stop')"">Stop Vibration</button>
         </div>
     </div>
+    <script src='../utils/header.js'></script>
     <script>feather.replace()</script>
     <script src="../vibration/index.js"></script>
 </body>
