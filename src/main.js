@@ -78,7 +78,7 @@ function createDemoPanel() {
                             data-feather='zap' 
                             style='width: 22px; height: 22px;'></i>`;
     tryLinkElem.appendChild(tryItElem);
-    tryLinkElem.setAttribute("href", `../${demos[count].path}/index.html`);
+    tryLinkElem.setAttribute("href", `../demos/${demos[count].path}/index.html`);
 
     let gitHubLinkElem = document.createElement("a");
     gitHubLinkElem.style.float = 'right';
@@ -93,7 +93,7 @@ function createDemoPanel() {
                             data-feather='github' 
                             style='width: 22px; height: 22px;'></i>`;
     gitHubLinkElem.appendChild(gitHubElem);
-    gitHubLinkElem.setAttribute("href", `https://github.com/atapas/webapis-playground/tree/master/src/${demos[count].path}/index.js`);
+    gitHubLinkElem.setAttribute("href", `https://github.com/atapas/webapis-playground/tree/master/src/demos/${demos[count].path}/index.js`);
     gitHubLinkElem.setAttribute("target", '_blank');
 
     let buttonsElement = document.createElement("div");
