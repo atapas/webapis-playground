@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="../index.css" />
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-    <title>Web APIs Playground</title>
+    <title>Payments API</title>
 </head>
-
 <body>
     <header>
         <a href="/">
@@ -30,39 +28,34 @@
             </li>
         </ul>
     </header>
+    <div class="info">
+        <h1>Payments Web API</h1>
+        <details>
+            <summary>Show Code</summary>
+            <code>
+                window.PaymentRequest(...);
+            </code>
+        </details>
+    </div>
     <div class="demos">
-        <div>
-            <a href='./fullscreen/index.html'> FullScreen</a>
+        <button onclick="buy()">Click Here to Buy</button>
+        <div class="fake-card-info">
+            <p>
+                Feel free to try out this information for 
+                purchase(Don't worry, it's all FAKE!!! 🙊)
+            </p>
+            <ul>
+                <li>Credit Card Number: <b>42424242</b></li>
+                <li>Name on the Card: <b>Whatever you want</b></li>
+                <li>Card Expiry: <b>Any Future Date</b></li>
+                <li>CVV: <b>Any 3-digits number</b></li>
+            </ul>
         </div>
-        <div>
-            <a href='./clipboard/index.html'> Clipboard Async</a>
-        </div>
-        <div>
-            <a href='./image-capture/index.html'> Image Capture </a>
-        </div>
-        <div>
-            <a href='./broadcast-channel/index.html'> Boardcast Channel </a>
-        </div>
-        <div>
-            <a href='./resize-observer/index.html'> Resize Observer </a>
-        </div>
-        <div>
-            <a href='./network-information/index.html'> Network Information </a>
-        </div>
-        <div>
-            <a href='./battery-status/index.html'> Battery Status </a>
-        </div>
-        <div>
-            <a href='./web-payments/index.html'> Web Payment </a>
-        </div>
-        <div>
-            <a href='./vibration/index.html'> Vibration </a>
-        </div>
-        <div>
-            <a href='./fullscreen/index.html'> Drag and Drop </a>
+        <div class='payment-msg' id='payment-msg-id'>
+
         </div>
     </div>
     <script>feather.replace()</script>
+    <script src="../web-payments/index.js"></script>
 </body>
-
 </html>

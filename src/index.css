@@ -111,6 +111,29 @@ header .links LI {
     padding: 5px;
 }
 
+.payment-msg {
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 25px;
+}
+
+.payment-msg .success-msg {
+    border: 1px solid green;
+    border-radius: 5px;
+    background-color: greenyellow;
+    font-size: 25px;
+    padding: 10px;
+}
+
+.fake-card-info {
+    border: 1px solid #ebebeb;
+    padding: 10px;
+    background: #ebebeb;
+    margin: 10px;
+    border-radius: 4px;
+}
+
 #network-info-main LI {
     padding: 5px;
     font-size: 25px;
