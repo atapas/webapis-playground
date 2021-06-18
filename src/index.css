@@ -60,6 +60,7 @@ header {
   background-color: #000000;
   color: #ffffff;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
@@ -70,13 +71,34 @@ header .prodName {
   color: rgb(0, 235, 255);
 }
 
-header .links LI {
-  display: inline;
-  margin: 0 2px auto 5px;
+header .links {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+}
+.search-box {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.searchbox {
+  font-size: 18px;
+  padding: 10px;
+  margin: 5px;
+  background: rgb(234, 239, 241);
+  border: 1px solid rgb(47, 47, 47);
+  border-radius: 3px;
+  height: 20px!important;
+}
+
+header .links a {
+    margin-left: 4px;
 }
 
 h2 {
-    margin: 3px;
+  margin: 3px;
 }
 
 .info {
@@ -97,6 +119,17 @@ h2 {
   padding: 10px;
 }
 
+.no-demo {
+  display: block;
+  font-size: 30px;
+  word-break: break-word;
+  border: 1px solid #ebebeb;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #ebebeb;
+  margin-top: 10%;
+}
+
 .demos {
   display: flex;
   flex-direction: column;
@@ -105,13 +138,13 @@ h2 {
 }
 
 .demo {
-    border: 1px solid rgb(151, 151, 151);
-    border-radius: 4px;
-    padding: 0.5rem;
-    width: 300px;
-    min-height: 300px;
-    margin: 1rem;
-    background-color: #f4f4f4;
+  border: 1px solid rgb(151, 151, 151);
+  border-radius: 4px;
+  padding: 0.5rem;
+  width: 300px;
+  min-height: 300px;
+  margin: 1rem;
+  background-color: #f4f4f4;
 }
 
 .ic-demo-btns {
@@ -167,12 +200,10 @@ h2 {
   gap: 5px;
 }
 
-@media only screen 
-  and (max-width: 500px) 
-  and (-webkit-min-device-pixel-ratio: 1) {
-    .dnd-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
+@media only screen and (max-width: 500px) and (-webkit-min-device-pixel-ratio: 1) {
+  .dnd-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .box {

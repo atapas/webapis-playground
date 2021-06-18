@@ -51,20 +51,48 @@ const demos = [
   },
 ];
 
-function createDemoPanel() {
+function createDemoPanel(searchTerm) {
   const demoMainElem = document.getElementById("demo-main-id");
+  demoMainElem.innerHTML = '';
+  
+  let noDemoElem = document.createElement('div');
+  noDemoElem.style.display = 'none';
+  demoMainElem.appendChild(noDemoElem);
 
-  for (let count = 0; count <= demos.length - 1; count++) {
+  let filteredList = demos;
+
+  if (searchTerm && searchTerm.trim().length > 0) {
+    filteredList = demos.filter(element => {
+      return element.title.toLowerCase().indexOf(searchTerm.toLowerCase()) > -1
+    })
+  }
+
+  if (filteredList.length === 0) {
+    noDemoElem.style.display = 'block';
+    noDemoElem.setAttribute('class', 'no-demo');
+    noDemoElem.innerHTML = `<h1>OOPS!!! No Results found.</h1> 
+                            <p>But, not to worry. 
+                              You can 
+                              <a 
+                                href="https://github.com/atapas/webapis-playground/issues" 
+                                target="_blank">request a demo</a> or feel free to 
+                              <a 
+                                href="https://github.com/atapas/webapis-playground" 
+                                target="_blank">contribute</a>.
+                            </h1>`
+  }
+
+  for (let count = 0; count <= filteredList.length - 1; count++) {
     let div = document.createElement("div");
     div.setAttribute("class", "demo");
 
     let titleElem = document.createElement("H2");
-    titleElem.textContent = demos[count].title;
+    titleElem.textContent = filteredList[count].title;
     div.appendChild(titleElem);
 
     let descElem = document.createElement("p");
     descElem.style.height = '175px';
-    descElem.textContent = demos[count].desc;
+    descElem.textContent = filteredList[count].desc;
     div.appendChild(descElem);
 
     let tryLinkElem = document.createElement("a");
@@ -78,7 +106,7 @@ function createDemoPanel() {
                             data-feather='zap' 
                             style='width: 22px; height: 22px;'></i>`;
     tryLinkElem.appendChild(tryItElem);
-    tryLinkElem.setAttribute("href", `../demos/${demos[count].path}/index.html`);
+    tryLinkElem.setAttribute("href", `../demos/${filteredList[count].path}/index.html`);
 
     let gitHubLinkElem = document.createElement("a");
     gitHubLinkElem.style.float = 'right';
@@ -93,7 +121,7 @@ function createDemoPanel() {
                             data-feather='github' 
                             style='width: 22px; height: 22px;'></i>`;
     gitHubLinkElem.appendChild(gitHubElem);
-    gitHubLinkElem.setAttribute("href", `https://github.com/atapas/webapis-playground/tree/master/src/demos/${demos[count].path}/index.js`);
+    gitHubLinkElem.setAttribute("href", `https://github.com/atapas/webapis-playground/tree/master/src/demos/${filteredList[count].path}/index.js`);
     gitHubLinkElem.setAttribute("target", '_blank');
 
     let buttonsElement = document.createElement("div");
@@ -108,3 +136,8 @@ function createDemoPanel() {
 }
 
 createDemoPanel();
+
+function handleSearch(event) {
+  const searchTerm = event.target.value;
+    createDemoPanel(searchTerm);  
+}
