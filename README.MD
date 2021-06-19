@@ -14,7 +14,7 @@ Please [follow this link](https://developer.mozilla.org/en-US/docs/Web/API) to k
 The primary mission is to provide working examples of the JavaScript web APIs with simple demonstration that can be accessed using browsers on different devices. It may help many beginners to this topic in understanding how to code and use the Web APIs.
 
 ## 🤝 Open Source
-This project is opensource and open for contributions. If you are looking for any examples and demonstrations that are missing, please open a issue from here. You can also contrinute to the source code by adding an exaple, improving code, and providing suggestions.
+This project is opensource and open for contributions. If you are looking for any examples and demonstrations that are missing, please [open a issue from here](https://github.com/atapas/webapis-playground/issues). You can also contrinute to the source code by adding an exaple, improving code, and providing suggestions.
 
 ## ⚒️ It's developed using Plain(aka Vanilla) JavaScript
 This project is developed using the plain JavaScript. If you have implemented a similar project using JavaScript or any other frameworks like React, Angular, Vue, please create an issue to include them in the README.
