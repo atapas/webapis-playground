@@ -2,6 +2,7 @@
 let charging, level, chargingTime, dischargingTime;
 
 if (navigator.getBattery) {
+    document.getElementById('not-supported-id').style.display = 'none';
     navigator.getBattery().then(function (battery) {
       function updateAllBatteryInfo() {
         updateLevelInfo()
@@ -42,6 +43,7 @@ if (navigator.getBattery) {
     })
   } else {
     console.log(`This API is Not Supported`);
+    document.getElementById('not-supported-id').style.display = 'block';
     document.getElementById('not-supported-id').innerHTML
       =`<p>
           This feature is not supported on this browser. Please read about the
