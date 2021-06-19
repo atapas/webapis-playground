@@ -10,7 +10,7 @@ const demos = [
     path: "clipboard",
   },
   {
-    title: "📡 Broardcast",
+    title: "📡 Broadcast",
     desc: "The BroadcastChannel is a named channel that allows communication between different documents (in different windows, tabs, frames or iframes) of the same origin.",
     path: "broadcast-channel",
   },
@@ -106,7 +106,10 @@ function createDemoPanel(searchTerm) {
                             data-feather='zap' 
                             style='width: 22px; height: 22px;'></i>`;
     tryLinkElem.appendChild(tryItElem);
-    tryLinkElem.setAttribute("href", `../demos/${filteredList[count].path}/index.html`);
+    tryLinkElem.setAttribute(
+      "href",
+      `./demos/${filteredList[count].path}/index.html`
+    );
 
     let gitHubLinkElem = document.createElement("a");
     gitHubLinkElem.style.float = 'right';
