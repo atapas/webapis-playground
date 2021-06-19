@@ -42,6 +42,15 @@ if (navigator.getBattery) {
     })
   } else {
     console.log(`This API is Not Supported`);
+    document.getElementById('not-supported-id').innerHTML
+      =`<p>
+          This feature is not supported on this browser. Please read about the
+          browser support from here: 
+          <a href="https://caniuse.com/#feat=battery-status" target="_blank">
+            Can I Use Battery API?
+          </a>
+          <p>Alternatively, you can use a polyfil to achieve this functionality on a non-supported browser.</p>
+        </p>`
   }
 
   function getColor() {

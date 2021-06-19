@@ -119,6 +119,14 @@ h2 {
   padding: 10px;
 }
 
+.not-supported {
+  background-color: #df6161;
+  padding: 10px;
+  border-radius: 5px;
+  color: #FFF;
+  font-size: 25px;
+}
+
 .no-demo {
   display: block;
   font-size: 30px;
