@@ -1,5 +1,5 @@
 # 🔌 WEB APIS PLAYGROUND
-The `Web APIs Playground` is a project to showcase the JavaScript Web APIs with examples and demonstrations. Client-side JavaScript APIs are here to help with providing wrapper functions for many low-level tasks like,
+The `Web APIs Playground` is a project to showcase the JavaScript Web APIs with examples and demonstrations. Client-side JavaScript APIs provides wrapper functions for many low-level tasks like,
 
 - Device Hardware Interactions
 - Client-side storage interactions
