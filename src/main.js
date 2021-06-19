@@ -1,5 +1,10 @@
 const demos = [
   {
+    title: "📂 File System API",
+    desc: "Only for Chromium-based web browsers. The File System Access API makes it easy and simple to read and write the user's files and access the file system.",
+    path: "filesystem-api",
+  },
+  {
     title: "📺 FullScreen API",
     desc: "The Fullscreen API adds methods to present a specific Element (and its descendants) in full-screen mode, and to exit full-screen mode once it is no longer needed.",
     path: "fullscreen",

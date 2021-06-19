@@ -90,11 +90,11 @@ header .links {
   background: rgb(234, 239, 241);
   border: 1px solid rgb(47, 47, 47);
   border-radius: 3px;
-  height: 20px!important;
+  height: 20px !important;
 }
 
 header .links a {
-    margin-left: 4px;
+  margin-left: 4px;
 }
 
 h2 {
@@ -105,6 +105,7 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 .row {
@@ -232,4 +233,15 @@ h2 {
 
 .box.over {
   border: dashed 3px rgb(255, 0, 191);
+}
+
+.demos .btns {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+#textFileContents,
+#imagePreview {
+  width: 90%;
+  margin: auto;
 }
