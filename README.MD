@@ -33,7 +33,7 @@ Build Staus: [![Netlify Status](https://api.netlify.com/api/v1/badges/2c518303-b
 So far, it includes the following examples:
 1. 📂 File System API
 1. 📺 FullScreen API
-1. 📋 Broadcast API
+1. 📋 Clipboard API
 1. 📡 Broadcast
 1. 📷 Image Capture
 1. 📶 Network Info
