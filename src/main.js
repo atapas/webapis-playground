@@ -1,80 +1,29 @@
-const demos = [
-  {
-    title: "📂 File System API",
-    desc: "Only for Chromium-based web browsers. The File System Access API makes it easy and simple to read and write the user's files and access the file system.",
-    path: "filesystem-api",
-  },
-  {
-    title: "📺 FullScreen API",
-    desc: "The Fullscreen API adds methods to present a specific Element (and its descendants) in full-screen mode, and to exit full-screen mode once it is no longer needed.",
-    path: "fullscreen",
-  },
-  {
-    title: "📋 Clipboard API",
-    desc: "The Clipboard API provides the ability to respond to clipboard commands (cut, copy, and paste) as well as to asynchronously read from and write to the system clipboard.",
-    path: "clipboard",
-  },
-  {
-    title: "📡 Broadcast",
-    desc: "The BroadcastChannel is a named channel that allows communication between different documents (in different windows, tabs, frames or iframes) of the same origin.",
-    path: "broadcast-channel",
-  },
-  {
-    title: "📷 Image Capture",
-    desc: "The ImageCapture interface provides methods to enable the capture of images or photos from a camera or other photographic device.",
-    path: "image-capture",
-  },
-  {
-    title: "📶 Network Info",
-    desc: "The Network Information API provides information about the system's connection in terms of general connection type (e.g., 'wifi', 'cellular', etc.).",
-    path: "network-information",
-  },
-  {
-    title: "🧐 Resize Observer",
-    desc: "The Resize Observer API provides a performant mechanism by which code can monitor an element for changes to its size, with notifications.",
-    path: "resize-observer",
-  },
-  {
-    title: "💳 Payment Request",
-    desc: "The Payment Request API provides a consistent user experience for both merchants and users. Select a preferred way to pay for things.",
-    path: "web-payments",
-  },
-  {
-    title: "📳 Vibration API",
-    desc: "Most modern mobile devices include vibration hardware, which lets software code provide physical feedback to the user by causing the device to shake.",
-    path: "vibration",
-  },
-  {
-    title: "🔋 Battery API",
-    desc: "The Battery Status API, more often referred to as the Battery API, provides information about the system's battery charge level",
-    path: "battery-status",
-  },
-  {
-    title: "🐢 Drag and Drop",
-    desc: "HTML Drag and Drop interfaces enable applications to use drag-and-drop features in browsers.",
-    path: "drag-and-drop",
-  },
-];
 
 function createDemoPanel(searchTerm) {
   const demoMainElem = document.getElementById("demo-main-id");
-  demoMainElem.innerHTML = '';
-  
-  let noDemoElem = document.createElement('div');
-  noDemoElem.style.display = 'none';
+  demoMainElem.innerHTML = "";
+
+  let noDemoElem = document.createElement("div");
+  noDemoElem.style.display = "none";
   demoMainElem.appendChild(noDemoElem);
 
+  fetch("./data/demo-meta.json")
+    .then((res) => res.json())
+    .then((data) => buildUI(data, searchTerm, demoMainElem));
+}
+
+function buildUI(demos, searchTerm, demoMainElem) {
   let filteredList = demos;
 
   if (searchTerm && searchTerm.trim().length > 0) {
-    filteredList = demos.filter(element => {
-      return element.title.toLowerCase().indexOf(searchTerm.toLowerCase()) > -1
-    })
+    filteredList = demos.filter((element) => {
+      return element.title.toLowerCase().indexOf(searchTerm.toLowerCase()) > -1;
+    });
   }
 
   if (filteredList.length === 0) {
-    noDemoElem.style.display = 'block';
-    noDemoElem.setAttribute('class', 'no-demo');
+    noDemoElem.style.display = "block";
+    noDemoElem.setAttribute("class", "no-demo");
     noDemoElem.innerHTML = `<h1>OOPS!!! No Results found.</h1> 
                             <p>But, not to worry. 
                               You can 
@@ -84,7 +33,7 @@ function createDemoPanel(searchTerm) {
                               <a 
                                 href="https://github.com/atapas/webapis-playground" 
                                 target="_blank">contribute</a>.
-                            </h1>`
+                            </h1>`;
   }
 
   for (let count = 0; count <= filteredList.length - 1; count++) {
@@ -95,8 +44,13 @@ function createDemoPanel(searchTerm) {
     titleElem.textContent = filteredList[count].title;
     div.appendChild(titleElem);
 
+    let creatorElem = document.createElement("span");
+    creatorElem.setAttribute("class", "creator");
+    creatorElem.innerHTML = `By <b>${filteredList[count].creator.name}(<a href="https://twitter.com/${filteredList[count].creator.twitter}" target="_blank">${filteredList[count].creator.twitter}</a>)</b>`;
+    div.appendChild(creatorElem);
+
     let descElem = document.createElement("p");
-    descElem.style.height = '175px';
+    descElem.style.height = "175px";
     descElem.textContent = filteredList[count].desc;
     div.appendChild(descElem);
 
@@ -117,9 +71,9 @@ function createDemoPanel(searchTerm) {
     );
 
     let gitHubLinkElem = document.createElement("a");
-    gitHubLinkElem.style.float = 'right';
+    gitHubLinkElem.style.float = "right";
     let gitHubElem = document.createElement("button");
-    gitHubElem.style.backgroundColor = '#000000';
+    gitHubElem.style.backgroundColor = "#000000";
     gitHubElem.innerHTML = `<span 
                             style='font-size: 24px'>
                                 See Code
@@ -129,8 +83,11 @@ function createDemoPanel(searchTerm) {
                             data-feather='github' 
                             style='width: 22px; height: 22px;'></i>`;
     gitHubLinkElem.appendChild(gitHubElem);
-    gitHubLinkElem.setAttribute("href", `https://github.com/atapas/webapis-playground/tree/master/src/demos/${filteredList[count].path}/index.js`);
-    gitHubLinkElem.setAttribute("target", '_blank');
+    gitHubLinkElem.setAttribute(
+      "href",
+      `https://github.com/atapas/webapis-playground/tree/master/src/demos/${filteredList[count].path}/index.js`
+    );
+    gitHubLinkElem.setAttribute("target", "_blank");
 
     let buttonsElement = document.createElement("div");
     buttonsElement.appendChild(tryLinkElem);
@@ -147,5 +104,5 @@ createDemoPanel();
 
 function handleSearch(event) {
   const searchTerm = event.target.value;
-    createDemoPanel(searchTerm);  
+  createDemoPanel(searchTerm);
 }

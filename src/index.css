@@ -101,6 +101,10 @@ h2 {
   margin: 3px;
 }
 
+.creator {
+  font-size: 15px;
+}
+
 .info {
   display: flex;
   flex-direction: column;
