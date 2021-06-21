@@ -25,6 +25,15 @@ Who doesn't need motivation? Please give the project a star(⭐) and/or share it
 
 [![Stargazers repo roster for @atapas/webapis-playground](https://reporoster.com/stars/atapas/webapis-playground)](https://github.com/atapas/webapis-playground/stargazers)
 
+# 🏃‍♀️ How to Run the project locally
+To run the project locally,
+
+- Please clone it.
+- Browse to the project directory.
+- Open a command prompt and type, `npx serve src/`
+  >Please note, you must have `node.js` installed. Preferred the version >= 10.0
+- Open the browser and use the URL `http://localhost:5000` to access the application.
+
 # 🚀 What's Included?
 The Demo is accessible from here: [http://js-webapis.netlify.app/](http://js-webapis.netlify.app/)
 
