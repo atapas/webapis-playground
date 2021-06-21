@@ -31,9 +31,10 @@ The Demo is accessible from here: [http://js-webapis.netlify.app/](http://js-web
 Build Staus: [![Netlify Status](https://api.netlify.com/api/v1/badges/2c518303-b5c8-4be8-b1a3-2b73affb7e9b/deploy-status)](https://app.netlify.com/sites/js-webapis/deploys)
 
 So far, it includes the following examples:
+1. 📂 File System API
 1. 📺 FullScreen API
 1. 📋 Clipboard API
-1. 📡 Broardcast
+1. 📡 Broadcast
 1. 📷 Image Capture
 1. 📶 Network Info
 1. 🧐 Resize Observer

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../index.css" />
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <title>File System API</title>
+  </head>
+
+  <body>
+    <header id="header-id"></header>
+    <div class="info">
+      <h1>File System Access API</h1>
+      <q
+        >Note: This API is only available in browsers like Chrome, Edge, Brave,
+        and other Chromium-based ones.</q
+      >
+    </div>
+    <div class="demos">
+      <div class="btns">
+        <button id="textFileBtn">
+          <i data-feather="file-text" style="width: 1rem; height: 1rem"></i>
+          Select text file
+        </button>
+        <button id="imageFileBtn" style="margin-left: 15px">
+          <i data-feather="image" style="width: 1rem; height: 1rem"></i>
+          Select image file
+        </button>
+      </div>
+      <h2 id="fileName"></h2>
+      <div class="content">
+        <p id="textFileContents"></p>
+        <img src="" id="imagePreview" />
+      </div>
+    </div>
+    <script src="../../utils/header.js"></script>
+    <script>
+      feather.replace();
+    </script>
+    <script src="../filesystem-api/index.js"></script>
+  </body>
+</html>
