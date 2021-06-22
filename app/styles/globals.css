@@ -1,0 +1,272 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  font-size: 20px;
+  color: #ffffff;
+  background-color: #009eff;
+  border: none;
+  padding: 7px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #098ee0;
+}
+
+form {
+  padding: 10px;
+  background: #ebebeb;
+  margin: 10px;
+}
+
+input[type="text"] {
+  height: 40px;
+  border-radius: 4px;
+}
+
+video {
+  width: 400px;
+  height: 400px;
+  margin: 10px;
+}
+
+label {
+  font-weight: bold;
+}
+
+code {
+  margin: 20px auto auto 20px;
+  color: #ec1c76;
+  background-color: #ebebeb;
+  padding: 2px;
+  border-radius: 5px;
+}
+
+header {
+  padding: 5px;
+  background-color: #000000;
+  color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .prodName {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: rgb(0, 235, 255);
+}
+
+header .links {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+}
+.search-box {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.searchbox {
+  font-size: 18px;
+  padding: 10px;
+  margin: 5px;
+  background: rgb(234, 239, 241);
+  border: 1px solid rgb(47, 47, 47);
+  border-radius: 3px;
+  height: 20px !important;
+}
+
+header .links a {
+  margin-left: 4px;
+}
+
+h2 {
+  margin: 3px;
+}
+
+.creator {
+  display: flex;
+  margin-left: 11px;
+  margin-top: 5px;
+}
+
+.creator img {
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  margin-right: 5px;
+}
+
+.creator span {
+  font-size: 18px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.row {
+  display: flex;
+}
+
+.demo-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.no-demo {
+  display: block;
+  font-size: 30px;
+  word-break: break-word;
+  border: 1px solid #ebebeb;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #ebebeb;
+  margin-top: 10%;
+}
+
+.demos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.demo {
+  border: 1px solid rgb(151, 151, 151);
+  border-radius: 4px;
+  padding: 0.5rem;
+  width: 300px;
+  min-height: 300px;
+  margin: 1rem;
+  background-color: #f4f4f4;
+}
+
+.ic-demo-btns {
+  margin: 5px;
+}
+
+.senderReciever {
+  padding: 10px;
+  margin: 13px;
+  border: 1px solid;
+  border-radius: 5px;
+}
+
+.battery-status-info {
+  font-size: 30px;
+}
+
+.battery-status-info LI {
+  padding: 5px;
+}
+
+.payment-msg {
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+  font-size: 25px;
+}
+
+.payment-msg .success-msg {
+  border: 1px solid green;
+  border-radius: 5px;
+  background-color: greenyellow;
+  font-size: 25px;
+  padding: 10px;
+}
+
+.fake-card-info {
+  border: 1px solid #ebebeb;
+  padding: 10px;
+  background: #ebebeb;
+  margin: 10px;
+  border-radius: 4px;
+}
+
+#network-info-main LI {
+  padding: 5px;
+  font-size: 25px;
+}
+
+.dnd-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 5px;
+}
+
+@media only screen and (max-width: 500px) and (-webkit-min-device-pixel-ratio: 1) {
+  .dnd-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.box {
+  border: 3px solid #666;
+  background-color: #f4f4f4;
+  border-radius: 0.5em;
+  padding: 10px;
+  cursor: move;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box .item {
+  width: 75px;
+  height: 75px;
+  border-radius: 4px;
+  background-color: #ec1c76;
+}
+
+.hide {
+  display: none;
+}
+
+.box.over {
+  border: dashed 3px rgb(255, 0, 191);
+}
+
+.demos .btns {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+#textFileContents,
+#imagePreview {
+  width: 90%;
+  margin: auto;
+}
+
