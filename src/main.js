@@ -7,18 +7,17 @@ function createDemoPanel(searchTerm) {
   demoMainElem.appendChild(noDemoElem);
 
   fetch("./data/demo-meta.json")
-    .then((res) => res.json())
-    .then((data) => buildUI(data, searchTerm, demoMainElem));
+    .then(res => res.json())
+    .then(data => buildUI(data, searchTerm, demoMainElem));
 
-  //buildUI(data, searchTerm, demoMainElem);  
+  //buildUI(data, searchTerm, demoMainElem);
 }
 
 function buildUI(demos, searchTerm, demoMainElem) {
-  
   let filteredList = demos;
 
   if (searchTerm && searchTerm.trim().length > 0) {
-    filteredList = demos.filter((element) => {
+    filteredList = demos.filter(element => {
       return element.title.toLowerCase().indexOf(searchTerm.toLowerCase()) > -1;
     });
   }
@@ -48,7 +47,9 @@ function buildUI(demos, searchTerm, demoMainElem) {
 
     let creatorElem = document.createElement("div");
     creatorElem.setAttribute("class", "creator");
-    let avatarKey = filteredList[count].creator.email ? filteredList[count].creator.email : filteredList[count].creator.twitter;
+    let avatarKey = filteredList[count].creator.email
+      ? filteredList[count].creator.email
+      : filteredList[count].creator.twitter;
     creatorElem.innerHTML = `<img src="https://unavatar.vercel.app/${avatarKey}" /> 
                              <span><b><a href="https://twitter.com/${filteredList[count].creator.twitter}" target="_blank">${filteredList[count].creator.name}</a></b></span>`;
     div.appendChild(creatorElem);
@@ -110,4 +111,9 @@ createDemoPanel();
 function handleSearch(event) {
   const searchTerm = event.target.value;
   createDemoPanel(searchTerm);
+}
+
+function clearSearch() {
+  document.querySelector(".searchbox").value = "";
+  createDemoPanel("");
 }
