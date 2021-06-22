@@ -16,7 +16,8 @@
         "path": "fullscreen",
         "creator": {
             "name": "Tapas Adhikary",
-            "twitter": "tapasadhikary"
+            "twitter": "tapasadhikary",
+            "email": "tapas.adhikary@gmail.com"
         }
     },
     {
@@ -26,7 +27,8 @@
         "path": "clipboard",
         "creator": {
             "name": "Tapas Adhikary",
-            "twitter": "tapasadhikary"
+            "twitter": "tapasadhikary",
+            "email": "tapas.adhikary@gmail.com"
         }
     },
     {
@@ -36,7 +38,8 @@
         "path": "broadcast-channel",
         "creator": {
             "name": "Tapas Adhikary",
-            "twitter": "tapasadhikary"
+            "twitter": "tapasadhikary",
+            "email": "tapas.adhikary@gmail.com"
         }
     },
     {
@@ -46,7 +49,8 @@
         "path": "image-capture",
         "creator": {
             "name": "Tapas Adhikary",
-            "twitter": "tapasadhikary"
+            "twitter": "tapasadhikary",
+            "email": "tapas.adhikary@gmail.com"
         }
     },
     {
@@ -56,7 +60,8 @@
         "path": "network-information",
         "creator": {
             "name": "Tapas Adhikary",
-            "twitter": "tapasadhikary"
+            "twitter": "tapasadhikary",
+            "email": "tapas.adhikary@gmail.com"
         }
     },
     {
@@ -66,7 +71,8 @@
         "path": "resize-observer",
         "creator": {
             "name": "Tapas Adhikary",
-            "twitter": "tapasadhikary"
+            "twitter": "tapasadhikary",
+            "email": "tapas.adhikary@gmail.com"
         }
     },
     {
@@ -76,7 +82,8 @@
         "path": "web-payments",
         "creator": {
             "name": "Tapas Adhikary",
-            "twitter": "tapasadhikary"
+            "twitter": "tapasadhikary",
+            "email": "tapas.adhikary@gmail.com"
         }
     },
     {
@@ -86,7 +93,8 @@
         "path": "vibration",
         "creator": {
             "name": "Tapas Adhikary",
-            "twitter": "tapasadhikary"
+            "twitter": "tapasadhikary",
+            "email": "tapas.adhikary@gmail.com"
         }
     },
     {
@@ -96,7 +104,8 @@
         "path": "battery-status",
         "creator": {
             "name": "Tapas Adhikary",
-            "twitter": "tapasadhikary"
+            "twitter": "tapasadhikary",
+            "email": "tapas.adhikary@gmail.com"
         }
     },
     {
@@ -106,7 +115,8 @@
         "path": "drag-and-drop",
         "creator": {
             "name": "Tapas Adhikary",
-            "twitter": "tapasadhikary"
+            "twitter": "tapasadhikary",
+            "email": "tapas.adhikary@gmail.com"
       }
     }
   ]

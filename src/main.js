@@ -1,4 +1,3 @@
-
 function createDemoPanel(searchTerm) {
   const demoMainElem = document.getElementById("demo-main-id");
   demoMainElem.innerHTML = "";
@@ -10,9 +9,12 @@ function createDemoPanel(searchTerm) {
   fetch("./data/demo-meta.json")
     .then((res) => res.json())
     .then((data) => buildUI(data, searchTerm, demoMainElem));
+
+  //buildUI(data, searchTerm, demoMainElem);  
 }
 
 function buildUI(demos, searchTerm, demoMainElem) {
+  
   let filteredList = demos;
 
   if (searchTerm && searchTerm.trim().length > 0) {
@@ -44,9 +46,11 @@ function buildUI(demos, searchTerm, demoMainElem) {
     titleElem.textContent = filteredList[count].title;
     div.appendChild(titleElem);
 
-    let creatorElem = document.createElement("span");
+    let creatorElem = document.createElement("div");
     creatorElem.setAttribute("class", "creator");
-    creatorElem.innerHTML = `By <b>${filteredList[count].creator.name}(<a href="https://twitter.com/${filteredList[count].creator.twitter}" target="_blank">${filteredList[count].creator.twitter}</a>)</b>`;
+    let avatarKey = filteredList[count].creator.email ? filteredList[count].creator.email : filteredList[count].creator.twitter;
+    creatorElem.innerHTML = `<img src="https://unavatar.vercel.app/${avatarKey}" /> 
+                             <span><b><a href="https://twitter.com/${filteredList[count].creator.twitter}" target="_blank">${filteredList[count].creator.name}</a></b></span>`;
     div.appendChild(creatorElem);
 
     let descElem = document.createElement("p");
@@ -98,6 +102,7 @@ function buildUI(demos, searchTerm, demoMainElem) {
     demoMainElem.appendChild(div);
   }
   console.log(demoMainElem);
+  feather.replace();
 }
 
 createDemoPanel();
