@@ -27,7 +27,7 @@ const Demo = ({demo}) => {
                 <button>Try It</button>
             </Link>
 
-            <a target='_blank' href={`https://github.com/atapas/webapis-playground/tree/master/src/demos/${demo.path}/index.js`}>
+            <a target='_blank' href={`https://github.com/atapas/webapis-playground/tree/master/src/demos/${demo.path}/api.js`}>
                 <button style={{backgroundColor:'#000000', color:'#FFFFFF', float: 'right'}}>See Code</button>
             </a>
         </div>
