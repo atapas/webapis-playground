@@ -101,6 +101,23 @@ h2 {
   margin: 3px;
 }
 
+.creator {
+  display: flex;
+  margin-left: 11px;
+  margin-top: 5px;
+}
+
+.creator img {
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  margin-right: 5px;
+}
+
+.creator span {
+  font-size: 18px;
+}
+
 .info {
   display: flex;
   flex-direction: column;
