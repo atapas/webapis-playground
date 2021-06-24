@@ -16,7 +16,6 @@ import { DemoInfo, NotSupported } from '../../../components';
 import { isSupported, textFileUpload, imageUpload } from "./api";
 
 // Component that Renders the Demo UI
-
 const ToRender = () => {
   return (
     <div className="flex-colums">

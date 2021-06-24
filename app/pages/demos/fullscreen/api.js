@@ -1,3 +1,7 @@
+const isSupported = () => {
+  return document.fullscreenEnabled ? true : false;
+}
+
 const makeFullScreen = () => {
   console.log("makeFullScreen function called");
   const elem = document.getElementById("fs-img-id");
@@ -31,4 +35,4 @@ const makeFullScreen = () => {
   });
 };
 
-export { makeFullScreen };
+export { isSupported, makeFullScreen };
