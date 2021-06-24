@@ -1,4 +1,8 @@
 
+const isSupported = () => {
+    return (navigator.clipboard && navigator.clipboard.writeText && navigator.clipboard.readText) ? true : false;
+}
+
 const performCopy = async(event) => {
     event.preventDefault();
     console.log(`Performing Copy to the Clipboard`);
@@ -32,4 +36,4 @@ const performPaste = async(event) => {
     }
 }
 
-export { performCopy, performPaste};
+export { isSupported, performCopy, performPaste};
