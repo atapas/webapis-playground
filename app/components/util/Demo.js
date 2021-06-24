@@ -1,5 +1,3 @@
-import React from 'react';
-
 // link
 import Link from "next/link";
 

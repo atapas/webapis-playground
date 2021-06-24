@@ -1,5 +1,5 @@
 
-import React, {useEffect} from 'react';
+import {useEffect} from 'react';
 
 // localstorage hook
 import useLocalStorage from '../../hooks/use-local-storage';
