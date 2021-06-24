@@ -7,7 +7,7 @@ const Clipboard = () => {
 
     return(
 
-    <div className="demos">
+    <div className="flex-colums">
         <form>
             <label htmlFor="copy-input">Copy</label>
             <input 

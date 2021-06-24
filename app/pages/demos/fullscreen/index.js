@@ -7,7 +7,7 @@ import { makeFullScreen } from './api';
 const FullScreen = () => {
 
     return(
-        <div className="demos">
+        <div className="flex-colums">
             <div id="fs-img-id" className="fs-img">
                 <img 
                     src="https://res.cloudinary.com/atapas/image/upload/v1602226996/artists/Rock_oz3kq1.png" 

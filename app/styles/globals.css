@@ -10,6 +10,13 @@ body {
   box-sizing: border-box;
 }
 
+h1 {
+  margin: 0.5rem;
+}
+
+h2 {
+  margin: 3px;
+}
 
 a {
   text-decoration: none;
@@ -72,6 +79,7 @@ header {
   align-items: center;
 }
 
+/* Header */
 header .prodName {
   font-size: 2.5rem;
   font-weight: bold;
@@ -85,6 +93,8 @@ header .links {
   -webkit-box-align: center;
   align-items: center;
 }
+
+
 .search-box {
   display: flex;
   justify-content: flex-end;
@@ -104,25 +114,36 @@ header .links a {
   margin-left: 4px;
 }
 
-h2 {
-  margin: 3px;
-}
+
 
 .creator {
   display: flex;
   margin-left: 11px;
   margin-top: 5px;
+  justify-content: center;
+  align-items: center;
 }
 
-.creator img {
+.creator.sm img {
   border-radius: 50%;
   height: 20px;
   width: 20px;
   margin-right: 5px;
 }
 
-.creator span {
+.creator.md img {
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  margin-right: 5px;
+}
+
+.creator.sm span {
   font-size: 18px;
+}
+
+.creator.md span {
+  font-size: 30px;
 }
 
 .info {
@@ -155,7 +176,7 @@ h2 {
   margin-top: 10%;
 }
 
-.demos {
+.flex-colums {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -170,6 +191,10 @@ h2 {
   min-height: 300px;
   margin: 1rem;
   background-color: #f4f4f4;
+}
+
+.demo h2 {
+  text-align: center;
 }
 
 .ic-demo-btns {
@@ -269,4 +294,11 @@ h2 {
   width: 90%;
   margin: auto;
 }
+
+.not-supported {
+  background-color: #ebebeb;
+  padding: 5px;
+  border-radius: 10px;
+}
+
 

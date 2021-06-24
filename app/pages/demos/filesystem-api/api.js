@@ -1,5 +1,8 @@
 
 
+const isSupported = () => {
+  return (typeof window !== 'undefined' && window.showOpenFilePicker ? true : false);
+}
 
 const textFileUpload = async () => {
   // Get file
@@ -54,4 +57,4 @@ const imageUpload = async () => {
   textFileContents.innerText = "";
 };
 
-export { textFileUpload, imageUpload };
+export { isSupported, textFileUpload, imageUpload };
