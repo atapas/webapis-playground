@@ -1,16 +1,14 @@
-import React from "react";
-
 // router
 import { useRouter } from "next/router";
 
 // localstorage
-import useLocalStorage from "../../../hooks/use-local-storage";
+import useLocalStorage from "hooks/use-local-storage";
 
 // icons
 import { FiFileText, FiImage } from "react-icons/fi";
 
 // demo information
-import { DemoInfo, NotSupported } from "../../../components";
+import { DemoInfo, NotSupported } from "components";
 
 // apis
 import { isSupported, performCopy, performPaste } from "./api";

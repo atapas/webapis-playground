@@ -1,5 +1,3 @@
-import React from "react";
-
 const Creator = ({ info, size }) => {
   let avatarKey = info.email ? info.email : info.twitter;
   const creatorImage = `https://unavatar.vercel.app/${avatarKey}`;

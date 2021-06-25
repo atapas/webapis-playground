@@ -10,27 +10,17 @@ import { FiFileText, FiImage } from "react-icons/fi";
 // demo information
 import { DemoInfo, NotSupported } from "components";
 
-// api
-import { isSupported, makeFullScreen } from "./api";
+// apis
+import { isSupported, performCopy, performPaste } from "./api";
 
 // Component that Renders the Demo UI
 const ToRender = () => {
   return (
-    <div className="flex-colums">
-      <div id="fs-img-id" className="fs-img">
-        <img
-          src="https://res.cloudinary.com/atapas/image/upload/v1602226996/artists/Rock_oz3kq1.png"
-          alt="Rock"
-          width="200px"
-          height="200px"
-        />
-      </div>
-      <button onClick={makeFullScreen}>Make FullScreen</button>
-    </div>
+    <div></div>
   );
 };
 
-const FullScreen = () => {
+const {{pascalCase name}} = () => {
   // Get the query param from router
   const { query } = useRouter();
   // Get demos from localstorage
@@ -55,4 +45,4 @@ const FullScreen = () => {
   );
 };
 
-export default FullScreen;
+export default {{pascalCase name}};

@@ -1,5 +1,3 @@
-import React from "react";
-
 // icons
 import { FiActivity, FiTwitter, FiGithub } from "react-icons/fi";
 
@@ -19,7 +17,7 @@ const Header = ({ showSearch }) => {
           href="https://github.com/atapas/webapis-playground"
           target="_blank"
         >
-          <FiGithub size={32} color='#FFFFFF' />
+          <FiGithub size={32} color="#FFFFFF" />
         </a>
 
         <a
@@ -28,7 +26,7 @@ const Header = ({ showSearch }) => {
           href="https://twitter.com/intent/tweet?text=Check%20this%20amazing%20Web%20APIs%20demo%20http://js-webapis.netlify.app/,%20created%20by%20@tapasadhikary%0A%0A%23DEVCommunity%20%23100DaysOfCode"
           target="_blank"
         >
-          <FiTwitter size={32} color='#FFFFFF' />
+          <FiTwitter size={32} color="#FFFFFF" />
         </a>
       </ul>
     </header>
