@@ -1,4 +1,4 @@
-export default function (plop) {
+module.exports = plop => {
   // demo generator
   plop.setGenerator("demo", {
     description: "add new demo",
@@ -12,12 +12,12 @@ export default function (plop) {
     actions: [
       {
         type: "add",
-        path: "pages/{{name}}/index.js",
+        path: "pages/demos/{{name}}/index.js",
         templateFile: "plop-templates/page.hbs",
       },
       {
         type: "add",
-        path: "pages/{{name}}/api.js",
+        path: "pages/demos/{{name}}/api.js",
         templateFile: "plop-templates/api.hbs",
       },
     ],
