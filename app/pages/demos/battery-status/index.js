@@ -5,18 +5,38 @@ import { useRouter } from "next/router";
 import useLocalStorage from "../../../hooks/use-local-storage";
 
 // icons
-import { FiFileText, FiImage } from "react-icons/fi";
+import { FiBattery, FiBatteryCharging } from "react-icons/fi";
 
 // demo information
 import { DemoInfo, NotSupported } from "../../../components";
 
 // apis
-import { isSupported, performCopy, performPaste } from "./api";
+import { isSupported, getBatteryStatus } from "./api";
 
 // Component that Renders the Demo UI
 const ToRender = () => {
   return (
-    <div></div>
+    <div className="flex-colums">
+      <button onClick={getBatteryStatus}>Get Battery Status</button>
+      <div id="battery-charging-status-id" style={{display: 'none'}}>
+        <FiBatteryCharging size={100}/>
+      </div>
+
+      <div id="battery-status-id" style={{display: 'none'}}>
+        <FiBattery size={100}/>
+      </div>
+
+      <ul className="battery-status-info">
+        <li>
+          <span>Battery Charging?</span>{" "}
+          <span id="battery-status-charging"></span>
+        </li>
+        <li>
+          <span>Battery Charge level:</span>{" "}
+          <span id="battery-status-level"></span>
+        </li>
+      </ul>
+    </div>
   );
 };
 
