@@ -124,17 +124,8 @@ header .links a {
   align-items: center;
 }
 
-.creator.sm img {
+.creator img {
   border-radius: 50%;
-  height: 20px;
-  width: 20px;
-  margin-right: 5px;
-}
-
-.creator.md img {
-  border-radius: 50%;
-  height: 60px;
-  width: 60px;
   margin-right: 5px;
 }
 

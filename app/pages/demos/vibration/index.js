@@ -8,7 +8,7 @@ import { useRouter } from "next/router";
 import { DemoInfo, NotSupported } from "components";
 
 // api
-import { isSupported } from "web-apis/{{name}}";
+import { isSupported, manageVibration } from "web-apis/vibration";
 
 // demo info by id
 import { getDemoById } from 'utils/data/data-access';
@@ -16,11 +16,20 @@ import { getDemoById } from 'utils/data/data-access';
 // Component that Renders the Demo UI
 const ToRender = () => {
   return (
-    <div></div>
+    <div className="flex-colums">
+      <p>
+          The Vibration API works best on mobiles, tablets etc. It may not do 
+          anything on desktops even when the browser supports.
+      </p>
+      <div className="row">
+        <button style={{marginRight: '10px'}} onClick={() => manageVibration('start')}>Start Vibration</button> {' '}
+        <button onClick={() => manageVibration('stop')}>Stop Vibration</button>
+      </div>
+    </div>
   );
 };
 
-const {{pascalCase name}} = () => {
+const Vibration = () => {
   const [loaded, setLoaded] = useState(false);
   const [demoInfo, setDemoInfo] = useState();
 
@@ -55,4 +64,4 @@ const {{pascalCase name}} = () => {
   );
 };
 
-export default {{pascalCase name}};
+export default Vibration;

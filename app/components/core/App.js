@@ -1,27 +1,32 @@
 
-import {useEffect} from 'react';
+import {useEffect, useState} from 'react';
 
 // localstorage hook
 import useLocalStorage from '../../hooks/use-local-storage';
 
 // import data from json
-import * as data from '../../data/demo-meta.json';
+import { getAllDemos } from 'utils/data/data-access';
 
 // Demo component
 import { Demo } from '..';
 
 const App = () => {
     
-    const [demos, setDemos] = useLocalStorage('demos', []);
+    const [demos, setDemos] = useState([]);
+    const [loading, setLoading] = useState(true);
 
-    useEffect(() =>{
-        setDemos(data.demos);
+    useEffect(() => {
+        const allDemos = getAllDemos();
+        console.log({allDemos});
+        setDemos(allDemos);
+        setLoading(false);
     }, []);
+
     return (
         <>
             <div className="demo-list">
             {
-                data.demos.map((demo, index) => (
+                (!loading && demos.length) > 0 && demos.map((demo, index) => (
                     <Demo demo={ demo } key={ index } />
                 ))
             }

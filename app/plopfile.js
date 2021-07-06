@@ -6,7 +6,7 @@ module.exports = plop => {
       {
         type: "input",
         name: "name",
-        message: "demo name please",
+        message: "Please provide a demo name:",
       },
     ],
     actions: [
@@ -17,7 +17,7 @@ module.exports = plop => {
       },
       {
         type: "add",
-        path: "pages/demos/{{name}}/api.js",
+        path: "web-apis/{{name}}/index.js",
         templateFile: "plop-templates/api.hbs",
       },
     ],
