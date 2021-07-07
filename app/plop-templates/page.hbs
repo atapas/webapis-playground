@@ -8,7 +8,7 @@ import { useRouter } from "next/router";
 import { DemoInfo, NotSupported } from "components";
 
 // api
-import { isSupported } from "web-apis/{{name}}";
+import { isSupported } from "web-apis/{{path}}";
 
 // demo info by id
 import { getDemoById } from 'utils/data/data-access';
@@ -20,7 +20,7 @@ const ToRender = () => {
   );
 };
 
-const {{pascalCase name}} = () => {
+const {{pascalCase path}} = () => {
   const [loaded, setLoaded] = useState(false);
   const [demoInfo, setDemoInfo] = useState();
 
