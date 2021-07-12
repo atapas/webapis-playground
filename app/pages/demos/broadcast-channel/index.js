@@ -5,7 +5,7 @@ import {useState, useEffect} from 'react';
 import { DemoInfo, NotSupported } from "components";
 
 // api
-import { isSupported, buy } from "web-apis/web-payments";
+import { isSupported, sendMessage } from "web-apis/broadcast-channel";
 
 // demo info by id
 import { getDemoById } from 'utils/data/data-access';
@@ -14,32 +14,31 @@ import { getDemoById } from 'utils/data/data-access';
 const ToRender = () => {
   return (
     <div className="flex-colums">
-      <button onClick={buy}>Click Here to Buy</button>
-        <div className="fake-card-info">
-            <p>
-                Feel free to try out this information for 
-                purchase(Dont worry, it is all FAKE!!! 🙊)
-            </p>
-            <ul>
-                <li>Credit Card Number: <b>42424242</b></li>
-                <li>Name on the Card: <b>Whatever you want</b></li>
-                <li>Card Expiry: <b>Any Future Date</b></li>
-                <li>CVV: <b>Any 3-digits number</b></li>
-            </ul>
-        </div>
-        <div className='payment-msg' id='payment-msg-id'>
-
-        </div>
+      <p>
+        Open this page in a new tab. Then hit the <b>Send Message</b> button from one tab to recieve 
+        the message in another tab. Try it out, gonna be fun!
+      </p>
+      <div className="row">
+          <div className="senderReciever">
+              <h4>Sender</h4>
+              <button onClick={sendMessage}>Send Message</button>
+          </div>
+          <i color="black" data-feather="arrow-right"></i>
+          <div className="senderReciever">
+              <h4>Reciever</h4>
+              <span id="msg"></span>
+          </div>
+      </div>
     </div>
   );
 };
 
-const WebPayments = () => {
+const BroadcastChannel = () => {
   const [loaded, setLoaded] = useState(false);
   const [demoInfo, setDemoInfo] = useState();
 
   // Get the demo id
-  const id = "_payment_request_api_";
+  const id = "_broadcast_api_";
 
   useEffect( () => {
     // find the demo details
@@ -66,4 +65,4 @@ const WebPayments = () => {
   );
 };
 
-export default WebPayments;
+export default BroadcastChannel;
