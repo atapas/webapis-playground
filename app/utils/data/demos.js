@@ -84,7 +84,7 @@ const DEMOS = [
   },
   {
     id: "_payment_request_api_",
-    title: "💳 Payment Request",
+    title: "💳 Web payment API",
     desc: "The Payment Request API provides a consistent user experience for both merchants and users. Select a preferred way to pay for things.",
     path: "web-payments",
     canIUseURL: "https://caniuse.com/payment-request",

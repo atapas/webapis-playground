@@ -1,9 +1,6 @@
 
 import {useEffect, useState} from 'react';
 
-// localstorage hook
-import useLocalStorage from '../../hooks/use-local-storage';
-
 // import data from json
 import { getAllDemos } from 'utils/data/data-access';
 

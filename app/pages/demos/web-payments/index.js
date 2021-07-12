@@ -5,7 +5,7 @@ import {useState, useEffect} from 'react';
 import { DemoInfo, NotSupported } from "components";
 
 // api
-import { isSupported } from "web-apis/{{path}}";
+import { isSupported, buy } from "web-apis/web-payments";
 
 // demo info by id
 import { getDemoById } from 'utils/data/data-access';
@@ -13,16 +13,33 @@ import { getDemoById } from 'utils/data/data-access';
 // Component that Renders the Demo UI
 const ToRender = () => {
   return (
-    <div></div>
+    <div class="flex-colums">
+      <button onClick={buy}>Click Here to Buy</button>
+        <div class="fake-card-info">
+            <p>
+                Feel free to try out this information for 
+                purchase(Don't worry, it's all FAKE!!! 🙊)
+            </p>
+            <ul>
+                <li>Credit Card Number: <b>42424242</b></li>
+                <li>Name on the Card: <b>Whatever you want</b></li>
+                <li>Card Expiry: <b>Any Future Date</b></li>
+                <li>CVV: <b>Any 3-digits number</b></li>
+            </ul>
+        </div>
+        <div class='payment-msg' id='payment-msg-id'>
+
+        </div>
+    </div>
   );
 };
 
-const {{pascalCase path}} = () => {
+const WebPayments = () => {
   const [loaded, setLoaded] = useState(false);
   const [demoInfo, setDemoInfo] = useState();
 
   // Get the demo id
-  const id = "{{id}}";
+  const id = "_payment_request_api_";
 
   useEffect( () => {
     // find the demo details
@@ -49,4 +66,4 @@ const {{pascalCase path}} = () => {
   );
 };
 
-export default {{pascalCase path}};
+export default WebPayments;
