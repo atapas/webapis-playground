@@ -53,7 +53,7 @@ const FileSystem = () => {
   const { query } = useRouter();
 
   // Get the demo id
-  const id = query.id;
+  const id = '_file_system_api_';
 
   useEffect( () => {
     // find the demo details

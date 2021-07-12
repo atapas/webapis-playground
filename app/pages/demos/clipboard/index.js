@@ -47,7 +47,7 @@ const Clipboard = () => {
   const { query } = useRouter();
 
   // Get the demo id
-  const id = query.id;
+  const id = '_clipboard_api_';
 
   useEffect( () => {
     // find the demo details

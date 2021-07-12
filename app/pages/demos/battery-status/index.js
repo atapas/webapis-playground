@@ -50,7 +50,7 @@ const BatteryStatus = () => {
   const { query } = useRouter();
 
   // Get the demo id
-  const id = query.id;
+  const id = '_battery_api_';
 
   useEffect( () => {
     // find the demo details

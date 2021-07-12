@@ -17,7 +17,7 @@ const Demo = ({demo}) => {
             <p style={{height:'175px'}}>
                 {demo.desc}
             </p>
-            <Link href={`/demos/${demo.path}?id=${demo.id}`}>
+            <Link href={`/demos/${demo.path}`}>
                 <button>Try It <FiZap /></button>
             </Link>
 
