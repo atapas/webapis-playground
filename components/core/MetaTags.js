@@ -27,7 +27,6 @@ const MetaTags = () => {
         name="title"
         content="Web APIs Playground - Create, Share, Learn JavaScript Web APIs"
       />
-      />
 
       {/* Open Graph / Facebook */}
       <meta property="og:type" content="website" />
