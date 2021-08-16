@@ -42,7 +42,7 @@ const MetaTags = () => {
       />
       <meta
         property="og:image"
-        content="https://webapis-playground.vercel.app/static/og-image.png"
+        content="https://webapis-playground.vercel.app/readme/og.png"
       />
 
       {/* Twitter */}
@@ -58,7 +58,7 @@ const MetaTags = () => {
       />
       <meta
         property="twitter:image"
-        content="https://webapis-playground.vercel.app/static/og-image.png"
+        content="https://webapis-playground.vercel.app/readme/og.png"
       />
     </Head>
   );
