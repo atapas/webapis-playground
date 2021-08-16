@@ -19,8 +19,11 @@ The primary mission is to provide working examples of the JavaScript web APIs wi
 ## 🤝 Open Source
 This project is opensource and open for contributions. If you are looking for any examples and demonstrations that are missing, please [open a issue from here](https://github.com/atapas/webapis-playground/issues). You can also contrinute to the source code by adding an exaple, improving code, and providing suggestions.
 
-## ⚒️ It's developed using Plain(aka Vanilla) JavaScript
-This project is developed using the plain JavaScript. If you have implemented a similar project using JavaScript or any other frameworks like React, Angular, Vue, please create an issue to include them in the README.
+### How to contribute
+TBA
+
+## ⚒️ It's developed using Next.js
+This project is developed using the plain Next.js. If you have implemented a similar project using JavaScript or any other frameworks like React, Angular, Vue, please create an issue to include them in the README.
 
 # 🤲 Want to Motivate?
 Who doesn't need motivation? Please give the project a star(⭐) and/or share it in your dev circle.
@@ -33,14 +36,17 @@ To run the project locally,
 
 - Please clone it.
 - Browse to the project directory.
-- Open a command prompt and type, `npx serve src/`
-  >Please note, you must have `node.js` installed. Preferred the version >= 10.0
-- Open the browser and use the URL `http://localhost:5000` to access the application.
+- Install dependencies
+```bash
+npm install # Or yan install
+```
+- Run the application locally
+```bash
+npm run dev # Or yan dev
+```
+- Open the browser and navigate to `http://localhost:3000`
 
 # 🚀 What's Included?
-The Demo is accessible from here: [http://js-webapis.netlify.app/](http://js-webapis.netlify.app/)
-
-Build Staus: [![Netlify Status](https://api.netlify.com/api/v1/badges/2c518303-b5c8-4be8-b1a3-2b73affb7e9b/deploy-status)](https://app.netlify.com/sites/js-webapis/deploys)
 
 So far, it includes the following examples:
 1. 📂 File System API
