@@ -292,4 +292,16 @@ header .links a {
   border-radius: 10px;
 }
 
+.error {
+  background-color: #f00;
+  color: #FFFFFF;
+  padding: 10px;
+  border-radius: 4px;
+  margin: 10px;
+}
+
+.hide {
+  display: none;
+}
+
 

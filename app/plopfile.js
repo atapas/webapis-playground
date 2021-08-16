@@ -55,12 +55,12 @@ module.exports = plop => {
         path: "web-apis/{{path}}/index.js",
         templateFile: "plop-templates/api.hbs",
       },
-      /*{
+      {
 				type: 'modify',
 				path: 'utils/data/demos.js',
         pattern: /\/\/replace item here/gi,
 				templateFile: "plop-templates/demo.hbs"
-			}*/
+			}
     ],
   });
 }

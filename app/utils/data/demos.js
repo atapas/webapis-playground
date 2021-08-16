@@ -47,18 +47,6 @@ const DEMOS = [
     },
   },
   {
-    id: "_image_capture_api_",
-    title: "📷 Image Capture",
-    desc: "The ImageCapture interface provides methods to enable the capture of images or photos from a camera or other photographic device.",
-    path: "image-capture",
-    canIUseURL: "https://caniuse.com/mdn-api_imagecapture",
-    creator: {
-      name: "Tapas Adhikary",
-      twitter: "tapasadhikary",
-      email: "tapas.adhikary@gmail.com",
-    },
-  },
-  {
     id: "_network_info_api_",
     title: "📶 Network Info",
     desc: "The Network Information API provides information about the system's connection in terms of general connection type (e.g., 'wifi', 'cellular', etc.).",
@@ -130,7 +118,19 @@ const DEMOS = [
       email: "tapas.adhikary@gmail.com",
     },
   },
-  //replace item here
+  {
+    id: "_image_capture_api_",
+    title: "📸 Image Capture",
+    desc: "The ImageCapture interface provides methods to enable the capture of images or photos from a camera or other photographic device.",
+    path: "image-capture",
+    canIUseURL: "https://caniuse.com/mdn-api_imagecapture",
+    creator: {
+      name: "Tapas Adhikary",
+      twitter: "tapasadhikary",
+      email: "tapas.adhikary@gmail.com",
+    },    
+},
+//replace item here
 ];
 
 export default DEMOS;
