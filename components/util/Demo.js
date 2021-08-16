@@ -21,7 +21,7 @@ const Demo = ({demo}) => {
                 <button>Try It <FiZap /></button>
             </Link>
 
-            <a target='_blank' rel="noreferrer" href={`https://github.com/atapas/webapis-playground/tree/master/src/demos/${demo.path}/api.js`}>
+            <a target='_blank' rel="noreferrer" href={`https://github.com/atapas/webapis-playground/blob/master/web-apis/${demo.path}/index.js`}>
                 <button style={{backgroundColor:'#000000', color:'#FFFFFF', float: 'right'}}>See Code <FiGithub /></button>
             </a>
         </div>

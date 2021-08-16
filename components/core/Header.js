@@ -29,7 +29,7 @@ const Header = ({ showSearch }) => {
         <a
           className="tweet"
           title="Tweet About it"
-          href="https://twitter.com/intent/tweet?text=Check%20this%20amazing%20Web%20APIs%20demo%20http://js-webapis.netlify.app/,%20created%20by%20@tapasadhikary%0A%0A%23DEVCommunity%20%23100DaysOfCode"
+          href="https://twitter.com/intent/tweet?text=Check%20this%20amazing%20Web%20APIs%20demo%20https://webapis-playground.vercel.app/,%20created%20by%20@tapasadhikary%20@MaxProgramming1%0A%0A%23DEVCommunity%20%23100DaysOfCode"
           target="_blank"
           rel="noreferrer"
         >
