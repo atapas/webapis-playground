@@ -16,9 +16,11 @@ const Demo = ({ demo }) => {
       <Creator info={demo.creator} size="sm" />
       <p style={{ height: '175px' }}>{demo.desc}</p>
       <Link href={`/demos/${demo.path}`}>
-        <button>
-          Try It <FiZap />
-        </button>
+        <a>
+          <button>
+            Try It <FiZap />
+          </button>
+        </a>
       </Link>
 
       <a
