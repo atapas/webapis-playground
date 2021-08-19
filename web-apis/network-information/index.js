@@ -1,9 +1,11 @@
 const isSupported = () => {
   // Write supported or not condition here. Eg,
-  return (navigator.connection ||
+  return navigator.connection ||
     navigator.mozConnection ||
-    navigator.webkitConnection) ? true : false;
-}
+    navigator.webkitConnection
+    ? true
+    : false;
+};
 
 const getNetworkInfo = () => {
   let connection =
@@ -27,6 +29,6 @@ const getNetworkInfo = () => {
   */
 
   return connection;
-}
+};
 
 export { isSupported, getNetworkInfo };

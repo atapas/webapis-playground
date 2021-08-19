@@ -3,4 +3,4 @@ module.exports = {
   images: {
     domains: ['unavatar.vercel.app', 'res.cloudinary.com'],
   },
-}
+};

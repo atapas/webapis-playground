@@ -1,17 +1,17 @@
 // state management
-import {useState, useEffect} from 'react';
+import { useState, useEffect } from 'react';
 
 // router
-import { useRouter } from "next/router";
+import { useRouter } from 'next/router';
 
 // icons
-import { FiFileText, FiImage } from "react-icons/fi";
+import { FiFileText, FiImage } from 'react-icons/fi';
 
 // demo information
-import { DemoInfo, NotSupported } from "components";
+import { DemoInfo, NotSupported } from 'components';
 
 // api
-import { isSupported, makeFullScreen } from "web-apis/fullscreen";
+import { isSupported, makeFullScreen } from 'web-apis/fullscreen';
 
 // demo info by id
 import { getDemoById } from 'utils/data/data-access';
@@ -43,27 +43,25 @@ const FullScreen = () => {
   // Get the demo id
   const id = '_fullscreen_api_';
 
-  useEffect( () => {
+  useEffect(() => {
     // find the demo details
     const thisDemo = getDemoById(id);
     setDemoInfo(thisDemo);
     setLoaded(true);
-  },[id]);
-  
+  }, [id]);
 
   return (
     <>
-    {
-      loaded && (
-      <div className="flex-colums">
-        <DemoInfo info={demoInfo} />
-        {isSupported() ? (
-          <ToRender />
-        ) : (
-          <NotSupported canIUseURL={demoInfo.canIUseURL} />
-        )}
-      </div>)
-    }
+      {loaded && (
+        <div className="flex-colums">
+          <DemoInfo info={demoInfo} />
+          {isSupported() ? (
+            <ToRender />
+          ) : (
+            <NotSupported canIUseURL={demoInfo.canIUseURL} />
+          )}
+        </div>
+      )}
     </>
   );
 };

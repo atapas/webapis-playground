@@ -1,16 +1,20 @@
-import {useState, useEffect} from 'react';
+import { useState, useEffect } from 'react';
 
 // router
-import { useRouter } from "next/router";
+import { useRouter } from 'next/router';
 
 // icons
-import { FiFileText, FiImage } from "react-icons/fi";
+import { FiFileText, FiImage } from 'react-icons/fi';
 
 // demo information
-import { DemoInfo, NotSupported } from "components";
+import { DemoInfo, NotSupported } from 'components';
 
 // apis
-import { isSupported, textFileUpload, imageUpload } from "web-apis/filesystem-api";
+import {
+  isSupported,
+  textFileUpload,
+  imageUpload,
+} from 'web-apis/filesystem-api';
 
 // demo info by id
 import { getDemoById } from 'utils/data/data-access';
@@ -21,17 +25,17 @@ const ToRender = () => {
     <div className="flex-colums">
       <div className="btns">
         <button id="textFileBtn" onClick={textFileUpload}>
-          <FiFileText style={{ width: "1rem", height: "1rem" }} />
+          <FiFileText style={{ width: '1rem', height: '1rem' }} />
           Select a text file
         </button>
         <button
           id="imageFileBtn"
-          style={{ marginLeft: "15px" }}
+          style={{ marginLeft: '15px' }}
           onClick={imageUpload}
         >
           <FiImage
             data-feather="image"
-            style={{ width: "1rem", height: "1rem" }}
+            style={{ width: '1rem', height: '1rem' }}
           />
           Select an image file
         </button>
@@ -39,7 +43,7 @@ const ToRender = () => {
       <h2 id="fileName"></h2>
       <div className="content">
         <p id="textFileContents"></p>
-        <img src="" id="imagePreview" alt="text image" layout='fill' />
+        <img src="" id="imagePreview" alt="text image" layout="fill" />
       </div>
     </div>
   );
@@ -55,27 +59,25 @@ const FileSystem = () => {
   // Get the demo id
   const id = '_file_system_api_';
 
-  useEffect( () => {
+  useEffect(() => {
     // find the demo details
     const thisDemo = getDemoById(id);
     setDemoInfo(thisDemo);
     setLoaded(true);
-  },[id]);
-  
+  }, [id]);
 
   return (
     <>
-    {
-      loaded && (
-      <div className="flex-colums">
-        <DemoInfo info={demoInfo} />
-        {isSupported() ? (
-          <ToRender />
-        ) : (
-          <NotSupported canIUseURL={demoInfo.canIUseURL} />
-        )}
-      </div>)
-    }
+      {loaded && (
+        <div className="flex-colums">
+          <DemoInfo info={demoInfo} />
+          {isSupported() ? (
+            <ToRender />
+          ) : (
+            <NotSupported canIUseURL={demoInfo.canIUseURL} />
+          )}
+        </div>
+      )}
     </>
   );
 };

@@ -1,7 +1,11 @@
 # 🔌 WEB APIS PLAYGROUND
+
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+
 [![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
+
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
+
 The `Web APIs Playground` is a project to showcase the JavaScript Web APIs with examples and demonstrations. Client-side JavaScript APIs provides wrapper functions for many low-level tasks like,
 
 - Device Hardware Interactions
@@ -14,41 +18,53 @@ The `Web APIs Playground` is a project to showcase the JavaScript Web APIs with 
 Please [follow this link](https://developer.mozilla.org/en-US/docs/Web/API) to know about different Web APIs and their usages.
 
 # 🎯 Vision and Mission of this Playground
+
 The primary mission is to provide working examples of the JavaScript web APIs with simple demonstration that can be accessed using browsers on different devices. It may help many beginners to this topic in understanding how to code and use the Web APIs.
 
 ## 🤝 Open Source
+
 This project is opensource and open for contributions. If you are looking for any examples and demonstrations that are missing, please [open a issue from here](https://github.com/atapas/webapis-playground/issues). You can also contrinute to the source code by adding an exaple, improving code, and providing suggestions.
 
 ### How to contribute
+
 TBA
 
 ## ⚒️ It's developed using Next.js
+
 This project is developed using the plain Next.js. If you have implemented a similar project using JavaScript or any other frameworks like React, Angular, Vue, please create an issue to include them in the README.
 
 # 🤲 Want to Motivate?
+
 Who doesn't need motivation? Please give the project a star(⭐) and/or share it in your dev circle.
+
 ## Many Thanks to all the `Stargazers` who has supported this project with stars(⭐)
 
 [![Stargazers repo roster for @atapas/webapis-playground](https://reporoster.com/stars/atapas/webapis-playground)](https://github.com/atapas/webapis-playground/stargazers)
 
 # 🏃‍♀️ How to Run the project locally
+
 To run the project locally,
 
 - Please clone it.
 - Browse to the project directory.
 - Install dependencies
+
 ```bash
 npm install # Or yan install
 ```
+
 - Run the application locally
+
 ```bash
 npm run dev # Or yan dev
 ```
+
 - Open the browser and navigate to `http://localhost:3000`
 
 # 🚀 What's Included?
 
 So far, it includes the following examples:
+
 1. 📂 File System API
 1. 📺 FullScreen API
 1. 📋 Clipboard API

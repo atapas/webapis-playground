@@ -1,22 +1,18 @@
 // state management
-import {useState, useEffect} from 'react';
+import { useState, useEffect } from 'react';
 
 // demo information
-import { DemoInfo, NotSupported } from "components";
+import { DemoInfo, NotSupported } from 'components';
 
 // api
-import { isSupported } from "web-apis/{{path}}";
+import { isSupported } from 'web-apis/{{path}}';
 
 // demo info by id
 import { getDemoById } from 'utils/data/data-access';
 
 // Component that Renders the Demo UI
 const ToRender = () => {
-  return (
-    <div className="flex-colums">
-      
-    </div>
-  );
+  return <div className='flex-colums'></div>;
 };
 
 const {{pascalCase path}} = () => {
@@ -24,29 +20,27 @@ const {{pascalCase path}} = () => {
   const [demoInfo, setDemoInfo] = useState();
 
   // Get the demo id
-  const id = "{{id}}";
+  const id = '{{id}}';
 
-  useEffect( () => {
+  useEffect(() => {
     // find the demo details
     const thisDemo = getDemoById(id);
     setDemoInfo(thisDemo);
     setLoaded(true);
-  },[id]);
-  
+  }, [id]);
 
   return (
     <>
-    {
-      loaded && (
-      <div className="flex-colums">
-        <DemoInfo info={demoInfo} />
-        {isSupported() ? (
-          <ToRender />
-        ) : (
-          <NotSupported canIUseURL={demoInfo.canIUseURL} />
-        )}
-      </div>)
-    }
+      {loaded && (
+        <div className='flex-colums'>
+          <DemoInfo info={demoInfo} />
+          {isSupported() ? (
+            <ToRender />
+          ) : (
+            <NotSupported canIUseURL={demoInfo.canIUseURL} />
+          )}
+        </div>
+      )}
     </>
   );
 };
