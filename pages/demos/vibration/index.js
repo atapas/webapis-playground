@@ -1,14 +1,14 @@
 // state management
-import {useState, useEffect} from 'react';
+import { useState, useEffect } from 'react';
 
 // router
-import { useRouter } from "next/router";
+import { useRouter } from 'next/router';
 
 // demo information
-import { DemoInfo, NotSupported } from "components";
+import { DemoInfo, NotSupported } from 'components';
 
 // api
-import { isSupported, manageVibration } from "web-apis/vibration";
+import { isSupported, manageVibration } from 'web-apis/vibration';
 
 // demo info by id
 import { getDemoById } from 'utils/data/data-access';
@@ -18,11 +18,16 @@ const ToRender = () => {
   return (
     <div className="flex-colums">
       <p>
-          The Vibration API works best on mobiles, tablets etc. It may not do 
-          anything on desktops even when the browser supports.
+        The Vibration API works best on mobiles, tablets etc. It may not do
+        anything on desktops even when the browser supports.
       </p>
       <div className="row">
-        <button style={{marginRight: '10px'}} onClick={() => manageVibration('start')}>Start Vibration</button> {' '}
+        <button
+          style={{ marginRight: '10px' }}
+          onClick={() => manageVibration('start')}
+        >
+          Start Vibration
+        </button>{' '}
         <button onClick={() => manageVibration('stop')}>Stop Vibration</button>
       </div>
     </div>
@@ -39,27 +44,25 @@ const Vibration = () => {
   // Get the demo id
   const id = '_vibration_api_';
 
-  useEffect( () => {
+  useEffect(() => {
     // find the demo details
     const thisDemo = getDemoById(id);
     setDemoInfo(thisDemo);
     setLoaded(true);
-  },[id]);
-  
+  }, [id]);
 
   return (
     <>
-    {
-      loaded && (
-      <div className="flex-colums">
-        <DemoInfo info={demoInfo} />
-        {isSupported() ? (
-          <ToRender />
-        ) : (
-          <NotSupported canIUseURL={demoInfo.canIUseURL} />
-        )}
-      </div>)
-    }
+      {loaded && (
+        <div className="flex-colums">
+          <DemoInfo info={demoInfo} />
+          {isSupported() ? (
+            <ToRender />
+          ) : (
+            <NotSupported canIUseURL={demoInfo.canIUseURL} />
+          )}
+        </div>
+      )}
     </>
   );
 };

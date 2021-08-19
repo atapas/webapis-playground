@@ -1,5 +1,3 @@
-
-
 import { App } from '../components';
 
 export default function Home() {
@@ -7,5 +5,5 @@ export default function Home() {
     <div>
       <App />
     </div>
-  )
+  );
 }

@@ -1,5 +1,5 @@
 // head
-import Head from "next/head";
+import Head from 'next/head';
 
 const MetaTags = () => {
   return (
@@ -10,7 +10,9 @@ const MetaTags = () => {
       />
       <meta name="theme-color" content="#ebebeb" />
 
-      <title>Web APIs Playground - Create, Share, Learn JavaScript Web APIs</title>
+      <title>
+        Web APIs Playground - Create, Share, Learn JavaScript Web APIs
+      </title>
       <meta
         name="description"
         content="The Web APIs Playground is a project to showcase the JavaScript Web APIs with examples and demonstrations. Client-side JavaScript APIs provides wrapper functions for many low-level tasks."
@@ -30,7 +32,10 @@ const MetaTags = () => {
 
       {/* Open Graph / Facebook */}
       <meta property="og:type" content="website" />
-      <meta property="og:url" content="https://webapis-playground.vercel.app/" />
+      <meta
+        property="og:url"
+        content="https://webapis-playground.vercel.app/"
+      />
       <meta
         property="og:title"
         content="Web APIs Playground - Create, Share, Learn JavaScript Web APIs."
@@ -46,7 +51,10 @@ const MetaTags = () => {
 
       {/* Twitter */}
       <meta property="twitter:card" content="summary_large_image" />
-      <meta property="twitter:url" content="https://webapis-playground.vercel.app/" />
+      <meta
+        property="twitter:url"
+        content="https://webapis-playground.vercel.app/"
+      />
       <meta
         property="twitter:title"
         content="Web APIs Playground - Create, Share, Learn JavaScript Web APIs."

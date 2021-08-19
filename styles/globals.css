@@ -46,7 +46,7 @@ form {
   margin: 10px;
 }
 
-input[type="text"] {
+input[type='text'] {
   height: 40px;
   border-radius: 4px;
 }
@@ -94,7 +94,6 @@ header .links {
   align-items: center;
 }
 
-
 .search-box {
   display: flex;
   justify-content: flex-end;
@@ -121,8 +120,6 @@ header .links {
 header .links a {
   margin-left: 4px;
 }
-
-
 
 .creator {
   display: flex;
@@ -302,7 +299,7 @@ header .links a {
 
 .error {
   background-color: #f00;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 10px;
   border-radius: 4px;
   margin: 10px;
@@ -311,5 +308,3 @@ header .links a {
 .hide {
   display: none;
 }
-
-

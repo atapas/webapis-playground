@@ -1,11 +1,11 @@
 const isSupported = () => {
   // Write supported or not condition here. Eg,
-  return (window.PaymentRequest) ? true : false;
-}
+  return window.PaymentRequest ? true : false;
+};
 
 const buy = () => {
-  console.log("initiate purchase");
-  document.getElementById('payment-msg-id').innerHTML = '<span/>'
+  console.log('initiate purchase');
+  document.getElementById('payment-msg-id').innerHTML = '<span/>';
   let request = initPaymentRequest();
   request
     .show()
@@ -16,54 +16,54 @@ const buy = () => {
     .catch(function (err) {
       console.error(err);
     });
-}
+};
 
 const initPaymentRequest = () => {
   let networks = [
-    "amex",
-    "diners",
-    "discover",
-    "jcb",
-    "mastercard",
-    "unionpay",
-    "visa",
-    "mir",
+    'amex',
+    'diners',
+    'discover',
+    'jcb',
+    'mastercard',
+    'unionpay',
+    'visa',
+    'mir',
   ];
-  let types = ["debit", "credit", "prepaid"];
+  let types = ['debit', 'credit', 'prepaid'];
   let supportedInstruments = [
     {
-      supportedMethods: "basic-card",
+      supportedMethods: 'basic-card',
       data: { supportedNetworks: networks, supportedTypes: types },
     },
   ];
 
   let details = {
     total: {
-      label: "Donation",
-      amount: { currency: "USD", value: "55.00" },
+      label: 'Donation',
+      amount: { currency: 'USD', value: '55.00' },
     },
     displayItems: [
       {
-        label: "Original donation amount",
-        amount: { currency: "USD", value: "65.00" },
+        label: 'Original donation amount',
+        amount: { currency: 'USD', value: '65.00' },
       },
       {
-        label: "Friends and family discount",
-        amount: { currency: "USD", value: "-10.00" },
+        label: 'Friends and family discount',
+        amount: { currency: 'USD', value: '-10.00' },
       },
     ],
 
     shippingOptions: [
       {
-        id: "standard",
-        label: "Standard shipping",
-        amount: { currency: "USD", value: "0.00" },
+        id: 'standard',
+        label: 'Standard shipping',
+        amount: { currency: 'USD', value: '0.00' },
         selected: true,
       },
       {
-        id: "express",
-        label: "Express shipping",
-        amount: { currency: "USD", value: "12.00" },
+        id: 'express',
+        label: 'Express shipping',
+        amount: { currency: 'USD', value: '12.00' },
       },
     ],
   };
@@ -77,11 +77,11 @@ const initPaymentRequest = () => {
 
   let request = new PaymentRequest(supportedInstruments, details, options);
 
-  request.addEventListener("shippingaddresschange", function (evt) {
+  request.addEventListener('shippingaddresschange', function (evt) {
     evt.updateWith(Promise.resolve(details));
   });
 
-  request.addEventListener("shippingoptionchange", function (evt) {
+  request.addEventListener('shippingoptionchange', function (evt) {
     evt.updateWith(
       new Promise(function (resolve, reject) {
         updateDetails(details, request.shippingOption, resolve, reject);
@@ -90,19 +90,19 @@ const initPaymentRequest = () => {
   });
 
   return request;
-}
+};
 
 const updateDetails = (details, shippingOption, resolve, reject) => {
   let selectedShippingOption;
   let otherShippingOption;
-  if (shippingOption === "standard") {
+  if (shippingOption === 'standard') {
     selectedShippingOption = details.shippingOptions[0];
     otherShippingOption = details.shippingOptions[1];
-    details.total.amount.value = "55.00";
-  } else if (shippingOption === "express") {
+    details.total.amount.value = '55.00';
+  } else if (shippingOption === 'express') {
     selectedShippingOption = details.shippingOptions[1];
     otherShippingOption = details.shippingOptions[0];
-    details.total.amount.value = "67.00";
+    details.total.amount.value = '67.00';
   } else {
     reject("Unknown shipping option '" + shippingOption + "'");
     return;
@@ -111,26 +111,24 @@ const updateDetails = (details, shippingOption, resolve, reject) => {
   otherShippingOption.selected = false;
   details.displayItems.splice(2, 1, selectedShippingOption);
   resolve(details);
-}
+};
 
-const sendPaymentToServer = (instrumentResponse) => {
+const sendPaymentToServer = instrumentResponse => {
   // There's no server-side component of these samples. No transactions are
   // processed and no money exchanged hands. Instantaneous transactions are not
   // realistic. Add a 2 second delay to make it seem more real.
   setTimeout(function () {
     instrumentResponse
-      .complete("success")
+      .complete('success')
       .then(function () {
-        console.log("Done");
-        document.getElementById('payment-msg-id').innerHTML = 
-            '<span class="success-msg"> The payment is successful. We are shipping your order. </span>'
+        console.log('Done');
+        document.getElementById('payment-msg-id').innerHTML =
+          '<span class="success-msg"> The payment is successful. We are shipping your order. </span>';
       })
       .catch(function (err) {
         console.error(err);
       });
   }, 2000);
 };
-
-
 
 export { isSupported, buy };

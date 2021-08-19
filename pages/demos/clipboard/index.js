@@ -1,16 +1,16 @@
-import {useState, useEffect} from 'react';
+import { useState, useEffect } from 'react';
 
 // router
-import { useRouter } from "next/router";
+import { useRouter } from 'next/router';
 
 // icons
-import { FiFileText, FiImage } from "react-icons/fi";
+import { FiFileText, FiImage } from 'react-icons/fi';
 
 // demo information
-import { DemoInfo, NotSupported } from "components";
+import { DemoInfo, NotSupported } from 'components';
 
 // apis
-import { isSupported, performCopy, performPaste } from "web-apis/clipboard";
+import { isSupported, performCopy, performPaste } from 'web-apis/clipboard';
 
 // demo info by id
 import { getDemoById } from 'utils/data/data-access';
@@ -49,27 +49,25 @@ const Clipboard = () => {
   // Get the demo id
   const id = '_clipboard_api_';
 
-  useEffect( () => {
+  useEffect(() => {
     // find the demo details
     const thisDemo = getDemoById(id);
     setDemoInfo(thisDemo);
     setLoaded(true);
-  },[id]);
-  
+  }, [id]);
 
   return (
     <>
-    {
-      loaded && (
-      <div className="flex-colums">
-        <DemoInfo info={demoInfo} />
-        {isSupported() ? (
-          <ToRender />
-        ) : (
-          <NotSupported canIUseURL={demoInfo.canIUseURL} />
-        )}
-      </div>)
-    }
+      {loaded && (
+        <div className="flex-colums">
+          <DemoInfo info={demoInfo} />
+          {isSupported() ? (
+            <ToRender />
+          ) : (
+            <NotSupported canIUseURL={demoInfo.canIUseURL} />
+          )}
+        </div>
+      )}
     </>
   );
 };

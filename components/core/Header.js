@@ -1,10 +1,8 @@
-
-
 // link
-import Link from "next/link";
+import Link from 'next/link';
 
 // icons
-import { FiActivity, FiTwitter, FiGithub } from "react-icons/fi";
+import { FiActivity, FiTwitter, FiGithub } from 'react-icons/fi';
 
 const Header = ({ showSearch }) => {
   return (
