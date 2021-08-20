@@ -7,7 +7,7 @@ import { useRouter } from 'next/router';
 import { FiFileText, FiImage } from 'react-icons/fi';
 
 // demo information
-import { DemoInfo, NotSupported } from 'components';
+import { DemoInfo, DemoSEO, NotSupported } from 'components';
 
 // apis
 import {
@@ -70,6 +70,7 @@ const FileSystem = () => {
     <>
       {loaded && (
         <div className="flex-colums">
+          <DemoSEO title={demoInfo.title} description={demoInfo.desc} />
           <DemoInfo info={demoInfo} />
           {isSupported() ? (
             <ToRender />

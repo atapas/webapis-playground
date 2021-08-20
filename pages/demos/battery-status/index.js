@@ -7,7 +7,7 @@ import { useRouter } from 'next/router';
 import { FiBattery, FiBatteryCharging } from 'react-icons/fi';
 
 // demo information
-import { DemoInfo, NotSupported } from 'components';
+import { DemoInfo, DemoSEO, NotSupported } from 'components';
 
 // apis
 import { isSupported, getBatteryStatus } from 'web-apis/battery-status';
@@ -63,6 +63,7 @@ const BatteryStatus = () => {
     <>
       {loaded && (
         <div className="flex-colums">
+          <DemoSEO title={demoInfo.title} description={demoInfo.desc} />
           <DemoInfo info={demoInfo} />
           {isSupported() ? (
             <ToRender />

@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 
 // demo information
-import { DemoInfo, NotSupported } from 'components';
+import { DemoInfo, DemoSEO, NotSupported } from 'components';
 
 // api
 import { isSupported, manageVibration } from 'web-apis/vibration';
@@ -55,6 +55,7 @@ const Vibration = () => {
     <>
       {loaded && (
         <div className="flex-colums">
+          <DemoSEO title={demoInfo.title} description={demoInfo.desc} />
           <DemoInfo info={demoInfo} />
           {isSupported() ? (
             <ToRender />

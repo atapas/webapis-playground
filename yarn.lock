@@ -70,6 +70,11 @@
     "@babel/helper-validator-identifier" "^7.14.9"
     to-fast-properties "^2.0.0"
 
+"@bradgarropy/next-seo@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@bradgarropy/next-seo/-/next-seo-1.0.0.tgz#ccabfee1117b31daac8158c7c04cae905c84eddd"
+  integrity sha512-N0fEAzZj7ww2YqcBvcoD/PHq7YtwAuxkmqEkc7Thvba6JVcdss3xilT44j4xVfGfooLJvpZ3VOpBrvpoKag8eg==
+
 "@eslint/eslintrc@^0.4.2":
   version "0.4.2"
   resolved "https://registry.yarnpkg.com/@eslint/eslintrc/-/eslintrc-0.4.2.tgz#f63d0ef06f5c0c57d76c4ab5f63d3835c51b0179"
