@@ -19,7 +19,7 @@ function MyApp({ Component, pageProps }) {
         ]}
         twitter={{
           site: '@tapasadhikary',
-          image: '/readme/og.png',
+          image: 'https://webapis-playground.vercel.app/readme/og.png',
           card: 'summary_large_image',
         }}
       />
