@@ -14,7 +14,10 @@ const Demo = ({ demo }) => {
     <div className="demo">
       <h2>{demo.title}</h2>
       <Creator info={demo.creator} size="sm" />
-      <p style={{ height: '175px' }}>{demo.desc}</p>
+      <p
+        style={{ height: '175px' }}
+        dangerouslySetInnerHTML={{ __html: demo.desc }}
+      />
       <Link href={`/demos/${demo.path}`}>
         <a>
           <button>

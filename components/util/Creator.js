@@ -22,7 +22,6 @@ const Creator = ({ info, size }) => {
           </a>
         </b>
       </span>
-      `;
     </div>
   );
 };
