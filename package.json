@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "plop": "plop",
+    "gen-demo": "plop",
     "format": "prettier --write ."
   },
   "dependencies": {

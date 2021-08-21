@@ -39,7 +39,7 @@ module.exports = plop => {
       {
         type: 'input',
         name: 'twitter',
-        message: 'Your Twitter handle:',
+        message: 'Your Twitter handle (Without the @):',
       },
       {
         type: 'input',
