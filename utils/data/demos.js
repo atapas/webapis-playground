@@ -130,7 +130,18 @@ const DEMOS = [
       email: 'tapas.adhikary@gmail.com',
     },
   },
-  //replace item here
+  {
+    id: '_web_share_api_',
+    title: '🔗 Web Share API',
+    desc: 'The Web Share API helps in invoking the native sharing mechanism of the user&#x27;s device',
+    path: 'web-share-api',
+    canIUseURL: 'https://caniuse.com/web-share',
+    creator: {
+      name: 'Usman Sabuwala',
+      twitter: 'MaxProgramming1',
+      email: 'maxprogramming05@gmail.com',
+    },
+  }, //replace item here
 ];
 
 export default DEMOS;

@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react';
 
 // demo information
-import { DemoInfo, NotSupported } from 'components';
+import { DemoInfo, DemoSEO, NotSupported } from 'components';
 
 // api
 import { isSupported, sendMessage } from 'web-apis/broadcast-channel';
@@ -52,6 +52,7 @@ const BroadcastChannel = () => {
     <>
       {loaded && (
         <div className="flex-colums">
+          <DemoSEO title={demoInfo.title} description={demoInfo.desc} />
           <DemoInfo info={demoInfo} />
           {isSupported() ? (
             <ToRender />

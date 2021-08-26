@@ -7,10 +7,11 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "plop": "plop",
+    "gen-demo": "plop",
     "format": "prettier --write ."
   },
   "dependencies": {
+    "@bradgarropy/next-seo": "^1.0.0",
     "next": "11.1.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",

@@ -1,6 +1,8 @@
 const Creator = ({ info, size }) => {
-  let avatarKey = info.email ? info.email : info.twitter;
-  const creatorImage = `https://unavatar.vercel.app/${avatarKey}`;
+  let avatarKey = info.twitter || info.email;
+  const creatorImage = info.twitter
+    ? `https://unavatar.io/twitter/${avatarKey}`
+    : `https://unavatar.io/${avatarKey}`;
   return (
     <div className={`creator ${size}`}>
       <img
@@ -20,7 +22,6 @@ const Creator = ({ info, size }) => {
           </a>
         </b>
       </span>
-      `;
     </div>
   );
 };
