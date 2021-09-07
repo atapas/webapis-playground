@@ -1,4 +1,5 @@
 import '../styles/globals.css';
+
 import { Header } from '../components';
 import SEO from '@bradgarropy/next-seo';
 import { motion } from 'framer-motion';
