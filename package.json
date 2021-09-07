@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@bradgarropy/next-seo": "^1.0.0",
+    "framer-motion": "^4.1.17",
     "next": "11.1.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
