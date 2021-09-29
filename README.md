@@ -1,9 +1,7 @@
 # 🔌 WEB APIS PLAYGROUND
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-
 [![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
-
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 The `Web APIs Playground` is a project to showcase the JavaScript Web APIs with examples and demonstrations. Client-side JavaScript APIs provides wrapper functions for many low-level tasks like,
@@ -110,7 +108,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tr>
     <td align="center"><a href="https://usman-s.me"><img src="https://avatars.githubusercontent.com/u/51731966?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Max Programming</b></sub></a><br /><a href="https://github.com/atapas/webapis-playground/commits?author=max-programming" title="Code">💻</a></td>
     <td align="center"><a href="https://tapasadhikary.com"><img src="https://avatars.githubusercontent.com/u/3633137?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Tapas Adhikary</b></sub></a><br /><a href="https://github.com/atapas/webapis-playground/commits?author=atapas" title="Code">💻</a></td>
-    <td align="center"><a href="http://niteshseram.in"><img src="https://avatars.githubusercontent.com/u/51370246?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Nitesh Seram</b></sub></a><br /><a href="https://github.com/atapas/webapis-playground/commits?author=niteshseram" title="Code">💻</a> <a href="#a11y-niteshseram" title="Accessibility">️️️️♿️</a></td>
+    <td align="center"><a href="http://niteshseram.in"><img src="https://avatars.githubusercontent.com/u/51370246?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Nitesh Seram</b></sub></a><br /><a href="https://github.com/atapas/webapis-playground/commits?author=niteshseram" title="Code">💻</a> <a href="#a11y-niteshseram" title="Accessibility">️️️️♿️</a> <a href="https://github.com/atapas/webapis-playground/issues?q=author%3Aniteshseram" title="Bug reports">🐛</a></td>
   </tr>
 </table>
 
