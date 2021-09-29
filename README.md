@@ -21,15 +21,11 @@ Please [follow this link](https://developer.mozilla.org/en-US/docs/Web/API) to k
 
 The primary mission is to provide working examples of the JavaScript web APIs with simple demonstration that can be accessed using browsers on different devices. It may help many beginners to this topic in understanding how to code and use the Web APIs.
 
-## 🤝 Open Source
-
-This project is opensource and open for contributions. If you are looking for any examples and demonstrations that are missing, please [open a issue from here](https://github.com/atapas/webapis-playground/issues). You can also contrinute to the source code by adding an exaple, improving code, and providing suggestions.
-
-### How to ADD a new DEMO?
+# 🏗️ How to ADD a new DEMO?
 
 [Here is a step-by-step guide](./HOW-TO-ADD-DEMO.md) to help you add a new demo.
 
-## ⚒️ It's developed using Next.js
+# ⚒️ It's developed using Next.js
 
 This project is developed using the `Next.js`. If you have implemented a similar project using JavaScript or any other frameworks like React, Angular, Vue, please create an issue to include them in the README.
 
@@ -76,6 +72,10 @@ So far, it includes the following examples:
 1. 📳 Vibration API
 1. 🔋 Battery API
 1. 🐢 Drag and Drop
+
+# 🤝 Open Source
+
+This project is opensource and open for contributions. If you are looking for any examples and demonstrations that are missing, please [open a issue from here](https://github.com/atapas/webapis-playground/issues). You can also contrinute to the source code by adding an exaple, improving code, and providing suggestions.
 
 # 🤝 Contributing to `playground`
 
