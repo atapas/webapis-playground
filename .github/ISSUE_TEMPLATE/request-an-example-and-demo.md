@@ -24,3 +24,7 @@ Please include the request by answering these questions.
 ## Do you want to contribute to the source code for this example?
 
 <ADD Here>
+  
+## If you are picking up this request to implement, PLEASE READ THIS
+
+- [HOW TO ADD A DEMO](https://github.com/atapas/webapis-playground/blob/master/HOW-TO-ADD-DEMO.md)
