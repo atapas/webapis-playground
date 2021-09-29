@@ -31,7 +31,7 @@ This project is opensource and open for contributions. If you are looking for an
 
 ## ⚒️ It's developed using Next.js
 
-This project is developed using the plain Next.js. If you have implemented a similar project using JavaScript or any other frameworks like React, Angular, Vue, please create an issue to include them in the README.
+This project is developed using the `Next.js`. If you have implemented a similar project using JavaScript or any other frameworks like React, Angular, Vue, please create an issue to include them in the README.
 
 # 🤲 Want to Motivate?
 
