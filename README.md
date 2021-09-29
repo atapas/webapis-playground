@@ -25,9 +25,9 @@ The primary mission is to provide working examples of the JavaScript web APIs wi
 
 This project is opensource and open for contributions. If you are looking for any examples and demonstrations that are missing, please [open a issue from here](https://github.com/atapas/webapis-playground/issues). You can also contrinute to the source code by adding an exaple, improving code, and providing suggestions.
 
-### How to contribute
+### How ADD a new DEMO?
 
-TBA
+[Here is a step-by-step guide](./HOW-TO-ADD-DEMO.md) to help you add a new demo.
 
 ## ⚒️ It's developed using Next.js
 
@@ -76,6 +76,24 @@ So far, it includes the following examples:
 1. 📳 Vibration API
 1. 🔋 Battery API
 1. 🐢 Drag and Drop
+
+# 🤝 Contributing to `playground`
+
+Any kind of positive contribution is welcome! Please help us to grow by contributing to the project.
+
+If you wish to contribute, you can work on any issues [listed here](https://github.com/atapas/webapis-playground/issues) or create one on your own. After adding your code, please send us a Pull Request.
+
+> Please read [`CONTRIBUTING`](CONTRIBUTING.md) for details on our [`CODE OF CONDUCT`](CODE_OF_CONDUCT.md), and the process for submitting pull requests to us.
+
+# 🙏 Support
+
+We all need support and motivation. `WebAPIs Playground` is not an exception. Please give this project a ⭐️ to encourage and show that you liked it.
+
+If you found the app helpful, consider supporting us with a coffee.
+
+<a href="https://www.buymeacoffee.com/greenroots">
+    <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50px">
+</a>
 
 ## Contributors ✨
 
