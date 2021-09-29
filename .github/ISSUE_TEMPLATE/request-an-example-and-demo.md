@@ -1,9 +1,10 @@
 ---
 name: Request an Example and Demo
 about: The purpose of the template is to request an example and demo.
-title: '✨ [New Demo Request]: '
+title: "✨ [New Demo Request]: "
 labels: enhancement
 assignees: ''
+
 ---
 
 Please include the request by answering these questions.
