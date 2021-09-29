@@ -25,9 +25,9 @@ The primary mission is to provide working examples of the JavaScript web APIs wi
 
 This project is opensource and open for contributions. If you are looking for any examples and demonstrations that are missing, please [open a issue from here](https://github.com/atapas/webapis-playground/issues). You can also contrinute to the source code by adding an exaple, improving code, and providing suggestions.
 
-### How to contribute
+### How ADD a new DEMO?
 
-TBA
+[Here is a step-by-step guide](./HOW-TO-ADD-DEMO.md) to help you add a new demo.
 
 ## ⚒️ It's developed using Next.js
 
