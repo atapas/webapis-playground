@@ -1,7 +1,9 @@
 # 🔌 WEB APIS PLAYGROUND
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+
 [![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
+
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 The `Web APIs Playground` is a project to showcase the JavaScript Web APIs with examples and demonstrations. Client-side JavaScript APIs provides wrapper functions for many low-level tasks like,
@@ -44,13 +46,17 @@ To run the project locally,
 - Install dependencies
 
 ```bash
-npm install # Or yan install
+npm install
+# Or
+yarn install
 ```
 
 - Run the application locally
 
 ```bash
-npm run dev # Or yan dev
+npm run dev
+# Or
+yarn dev
 ```
 
 - Open the browser and navigate to `http://localhost:3000`
