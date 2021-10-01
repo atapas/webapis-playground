@@ -1,6 +1,7 @@
 // core
 export { default as App } from './core/App';
 export { default as Header } from './core/Header';
+export { default as GithubCodeLink } from './core/GithubCodeLink';
 
 // util
 export { default as Demo } from './util/Demo';
