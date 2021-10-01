@@ -34,7 +34,7 @@ const PTPDemo = () => {
       </div>
 
       <div className="flex-colums" style={{ padding: '1rem' }}>
-        <h1>Let's know about our planets</h1>
+        <h1>Let us know about our planets</h1>
         <h2>Earth</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
