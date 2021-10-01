@@ -33,6 +33,15 @@
         "a11y",
         "bug"
       ]
+    },
+    {
+      "login": "wsameer",
+      "name": "Sameer Waskar",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8468992?v=4",
+      "profile": "https://wsameer.github.io/v1/",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
