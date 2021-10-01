@@ -4,7 +4,7 @@ import { Creator } from '..';
 const DemoInfo = ({ info }) => {
   console.log(info);
   return (
-    <div className="flex-colums">
+    <div className="tw-flex tw-flex-col tw-items-center tw-justify-center">
       <h1>{info.title}</h1>
       <Creator info={info.creator} size="md" />
       <p

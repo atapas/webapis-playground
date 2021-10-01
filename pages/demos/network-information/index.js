@@ -14,7 +14,7 @@ import { getDemoById } from 'utils/data/data-access';
 const ToRender = () => {
   const [networkInfo, setNetworkInfo] = useState(getNetworkInfo());
   return (
-    <div className="flex-colums">
+    <div className="tw-flex tw-flex-col tw-items-center tw-justify-center">
       <ul id="network-info-main">
         <li>
           <span>Network Type: </span>
@@ -74,7 +74,7 @@ const NetworkInformation = () => {
   return (
     <>
       {loaded && (
-        <div className="flex-colums">
+        <div className="tw-flex tw-flex-col tw-items-center tw-justify-center">
           <DemoSEO title={demoInfo.title} description={demoInfo.desc} />
           <DemoInfo info={demoInfo} />
           {isSupported() ? (

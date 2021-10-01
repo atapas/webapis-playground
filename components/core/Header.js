@@ -6,17 +6,21 @@ import { FiActivity, FiTwitter, FiGithub } from 'react-icons/fi';
 
 const Header = ({ showSearch }) => {
   return (
-    <header>
-      <Link href="/">
-        <a className="prodName">
+    <header className="tw-flex tw-flex-wrap tw-p-5px tw-bg-black tw-text-white tw-items-center tw-justify-between">
+      <Link className="tw-m-0 tw-p-0" href="/">
+      <ul className="tw-m-0 tw-p-0 tw-flex tw-items-center tw-content-center tw-cursor-pointer">
+      <li className="tw-text-prod tw-ml-4px tw-text-4.5xl tw-font-bold">
           <FiActivity size={36} />
+        </li>
+        <li className="tw-text-prod tw-ml-4px tw-text-4.5xl tw-font-bold">
           Web APIs
-        </a>
+        </li>
+        </ul>
       </Link>
-      <ul className="links">
+      <ul className="tw-m-0 tw-p-0 tw-flex tw-items-center tw-content-center">
         <li>
           <a
-            className="github"
+            className="tw-ml-4px github"
             title="Source Code"
             href="https://github.com/atapas/webapis-playground"
             target="_blank"
@@ -27,7 +31,7 @@ const Header = ({ showSearch }) => {
         </li>
         <li>
           <a
-            className="tweet"
+            className="tw-ml-4px tweet"
             title="Tweet About it"
             href="https://twitter.com/intent/tweet?text=Check%20this%20amazing%20Web%20APIs%20demo%20https://webapis-playground.vercel.app/,%20created%20by%20@tapasadhikary%20@MaxProgramming1%0A%0A%23DEVCommunity%20%23100DaysOfCode"
             target="_blank"

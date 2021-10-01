@@ -19,7 +19,7 @@ const App = () => {
 
   return (
     <>
-      <div className="demo-list">
+      <div className="tw-flex tw-flex-wrap tw-items-center tw-justify-center tw-p-10">
         {(!loading && demos.length) > 0 &&
           demos.map((demo, index) => <Demo demo={demo} key={index} />)}
       </div>
