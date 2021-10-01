@@ -23,6 +23,8 @@ const ToRender = React.memo(() => {
   );
 });
 
+ToRender.displayName = 'ToRender';
+
 const Geolocation = () => {
   const [loaded, setLoaded] = useState(false);
   const [demoInfo, setDemoInfo] = useState();
