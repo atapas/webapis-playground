@@ -5,7 +5,7 @@ import { getAllDemos } from 'utils/data/data-access';
 
 // Demo component
 import { Demo } from '..';
-import { SearchBox } from './search-box/SearchBox';
+import { SearchBox } from './SearchBox';
 
 const App = () => {
   const [demos, setDemos] = useState([]);
