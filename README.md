@@ -2,7 +2,7 @@
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 
-[![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors-)
 
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
@@ -114,6 +114,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://tapasadhikary.com"><img src="https://avatars.githubusercontent.com/u/3633137?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Tapas Adhikary</b></sub></a><br /><a href="https://github.com/atapas/webapis-playground/commits?author=atapas" title="Code">💻</a></td>
     <td align="center"><a href="http://niteshseram.in"><img src="https://avatars.githubusercontent.com/u/51370246?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Nitesh Seram</b></sub></a><br /><a href="https://github.com/atapas/webapis-playground/commits?author=niteshseram" title="Code">💻</a> <a href="#a11y-niteshseram" title="Accessibility">️️️️♿️</a> <a href="https://github.com/atapas/webapis-playground/issues?q=author%3Aniteshseram" title="Bug reports">🐛</a></td>
     <td align="center"><a href="https://wsameer.github.io/v1/"><img src="https://avatars.githubusercontent.com/u/8468992?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Sameer Waskar</b></sub></a><br /><a href="https://github.com/atapas/webapis-playground/commits?author=wsameer" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/omriattiya"><img src="https://avatars.githubusercontent.com/u/26112374?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Omri Attiya</b></sub></a><br /><a href="https://github.com/atapas/webapis-playground/commits?author=omriattiya" title="Code">💻</a></td>
   </tr>
 </table>
 
