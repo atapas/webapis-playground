@@ -123,8 +123,8 @@ header .links {
   background: rgb(234, 239, 241);
   border: 1px solid rgb(47, 47, 47);
   border-radius: 3px;
-  width: 30vw !important;
-  height: 20px !important;
+  width: 30vw;
+  height: 20px;
 }
 
 header .links a {
