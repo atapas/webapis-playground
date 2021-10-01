@@ -141,6 +141,18 @@ const DEMOS = [
       twitter: 'MaxProgramming1',
       email: 'maxprogramming05@gmail.com',
     },
+  },
+  {
+    id: '_geolocation_',
+    title: 'Geolocation API Demo',
+    desc: 'The Geolocation API allows the user to provide their location to web applications if they so desire. This demo shows how it works using an example.',
+    path: 'geolocation',
+    canIUseURL: 'https://caniuse.com/mdn-api_geolocation',
+    creator: {
+      name: 'Sameer Waskar',
+      twitter: 'SameerWaskar',
+      email: 'dev.wsameer@gmail.com',
+    },
   }, //replace item here
 ];
 
