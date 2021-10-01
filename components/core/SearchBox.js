@@ -16,7 +16,9 @@ export const SearchBox = ({ onSearch }) => {
 
   return (
     <div className="search-box">
-      <span className="clear-icon" onClick={clearSearch}>X</span>
+      {searchText && (
+        <span className="clear-icon" onClick={clearSearch}>X</span>
+      )}
       <input
         type="text"
         className="searchbox"
