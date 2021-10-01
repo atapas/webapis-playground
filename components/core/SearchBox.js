@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-const PLACEHOLDER = 'API Search';
+const PLACEHOLDER = 'Search by API names';
 
 export const SearchBox = ({ onSearch }) => {
 
