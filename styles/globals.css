@@ -103,19 +103,23 @@ header .links {
   display: flex;
   justify-content: flex-end;
   position: relative;
+  width: fit-content;
+  margin: 0 auto;
 }
 
 .clear-icon {
   position: absolute;
-  right: 0.8rem;
-  top: 0.3rem;
+  top: 25px;
+  font-size: 20px;
+  right: 10px;
   cursor: pointer;
 }
 
 .searchbox {
   font-size: 18px;
-  padding: 10px;
-  margin: 5px;
+  padding: 20px;
+  text-align: center;
+  margin: 20px auto;
   background: rgb(234, 239, 241);
   border: 1px solid rgb(47, 47, 47);
   border-radius: 3px;
