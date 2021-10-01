@@ -12,9 +12,10 @@ const Creator = ({ info, size }) => {
         height={size === 'sm' ? '30' : '80'}
         width={size === 'sm' ? '30' : '80'}
       />
-      <span className={(size==='sm' ? "tw-text-18px":"tw-text-30px")}>
+      <span className={(size === 'sm' ? "tw-text-18px" : "tw-text-30px")}>
         <b>
           <a
+            className="tw-text-link"
             href={`https://twitter.com/${info.twitter}`}
             target="_blank"
             rel="noreferrer"
