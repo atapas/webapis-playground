@@ -7,6 +7,8 @@ import { getAllDemos } from 'utils/data/data-access';
 import { Demo } from '..';
 import { SearchBox } from './SearchBox';
 
+const NOT_FOUND_TEXT = 'No matched demo found';
+
 const App = () => {
   const [demos, setDemos] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -28,8 +30,11 @@ const App = () => {
     <>
       <SearchBox onSearch={searchAPI} />
       <div className="demo-list">
-        {(!loading && demos.length) > 0 &&
-        demos.map((demo, index) => <Demo demo={demo} key={index} />)}
+        {(!loading && demos.length > 0) ? (
+          demos.map((demo, index) => <Demo demo={demo} key={index} />)
+        ) : (
+          <div className="not-found">{NOT_FOUND_TEXT}</div>
+        )}
       </div>
     </>
   );
