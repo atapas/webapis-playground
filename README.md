@@ -1,7 +1,9 @@
 # 🔌 WEB APIS PLAYGROUND
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+
 [![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors-)
+
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 The `Web APIs Playground` is a project to showcase the JavaScript Web APIs with examples and demonstrations. Client-side JavaScript APIs provides wrapper functions for many low-level tasks like,
@@ -74,6 +76,8 @@ So far, it includes the following examples:
 1. 📳 Vibration API
 1. 🔋 Battery API
 1. 🐢 Drag and Drop
+1. ⚓ Geolocation API
+1. 🖼️ Picture in Picture
 
 # 🤝 Open Source
 
