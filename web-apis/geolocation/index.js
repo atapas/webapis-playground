@@ -15,6 +15,9 @@ const GEOLOCATION_OPTIONS = {
   maximumAge: 0,
 };
 
+const roundToTwo = length => Math.round((length + Number.EPSILON) * 100) / 100;
+const convertMetersToKilometers = meter => meter / 1000;
+
 /**
  * A function that get's the coordinates of your current geo location
  * and prints on the UI. If Geolocation API is not supported/allowed
@@ -38,7 +41,9 @@ const geoFindMe = () => {
       mapLink.href = `https://www.openstreetmap.org/#map=18/${latitude}/${longitude}`;
       mapLink.textContent = `Latitude: ${latitude} °, Longitude: ${longitude} °`;
       mapLink.textContent = `Latitude: ${latitude} °, Longitude: ${longitude} °`;
-      mapAccuracy.textContent = `Your location is accurate upto ${accuracy} meters`;
+      mapAccuracy.textContent = `Your location is accurate upto ${roundToTwo(
+        convertMetersToKilometers(accuracy)
+      )} kms`;
     },
     error = () => (status.textContent = 'Unable to retrieve your location');
 
