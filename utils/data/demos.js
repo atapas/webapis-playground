@@ -144,7 +144,7 @@ const DEMOS = [
   },
   {
     id: '_geolocation_',
-    title: '⚓ Geolocation API Demo',
+    title: '⚓ Geolocation API',
     desc: 'The Geolocation API allows the user to provide their location to web applications if they so desire. This demo shows how it works using an example.',
     path: 'geolocation',
     canIUseURL: 'https://caniuse.com/mdn-api_geolocation',
@@ -152,6 +152,18 @@ const DEMOS = [
       name: 'Sameer Waskar',
       twitter: 'SameerWaskar',
       email: 'dev.wsameer@gmail.com',
+    },
+  },
+  {
+    id: '_picture_in_picture_',
+    title: '🖼️ Picture in Picture',
+    desc: 'Picture-in-picture is a feature supported by some smart TVs, devices to show the content on a floating window. It allows users to continue to see the content while interacting with the background page, other sites.',
+    path: 'picture-in-picture',
+    canIUseURL: 'https://caniuse.com/picture-in-picture',
+    creator: {
+      name: 'Tapas Adhikary',
+      twitter: 'tapasadhikary',
+      email: 'tapas.adhikary@gmail.com',
     },
   }, //replace item here
 ];
