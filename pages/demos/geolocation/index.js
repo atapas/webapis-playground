@@ -19,6 +19,7 @@ const ToRender = React.memo(() => {
       </button>
       <p className="text-red-600" id="error-text" />
       <a target="_blank" id="map-link" />
+      <p id="map-accuracy" />
     </div>
   );
 });
