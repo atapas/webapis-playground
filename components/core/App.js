@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 
 // import data from json
 import { getAllDemos } from 'utils/data/data-access';
@@ -10,13 +10,6 @@ import { SearchBox } from './SearchBox';
 const App = () => {
   const [demos, setDemos] = useState([]);
   const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    const allDemos = getAllDemos();
-    console.log({ allDemos });
-    setDemos(allDemos);
-    setLoading(false);
-  }, []);
 
   const searchAPI = (searchText) => {
     const lowerSearchText = searchText.toLowerCase();
