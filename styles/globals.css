@@ -124,7 +124,7 @@ header .links {
   border: 1px solid rgb(47, 47, 47);
   border-radius: 3px;
   width: 30vw;
-  height: 20px;
+  min-width: 240px;
 }
 
 header .links a {
