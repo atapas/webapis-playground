@@ -1,3 +1,5 @@
+// Image from Next
+import Image from 'next/image';
 // state management
 import { useState, useEffect } from 'react';
 
@@ -21,7 +23,7 @@ const ToRender = () => {
   return (
     <div className="tw-flex tw-flex-col tw-items-center tw-justify-center">
       <div id="fs-img-id" className="fs-img">
-        <img
+        <Image
           src="https://res.cloudinary.com/atapas/image/upload/v1602226996/artists/Rock_oz3kq1.png"
           alt="Rock"
           width="200px"
