@@ -22,7 +22,7 @@ import { getDemoById } from 'utils/data/data-access';
 // Component that Renders the Demo UI
 const ToRender = () => {
   return (
-    <div className="flex-colums">
+    <div className="tw-flex tw-flex-col tw-items-center tw-justify-center">
       <div className="btns">
         <button id="textFileBtn" onClick={textFileUpload}>
           <FiFileText style={{ width: '1rem', height: '1rem' }} />
@@ -69,7 +69,7 @@ const FileSystem = () => {
   return (
     <>
       {loaded && (
-        <div className="flex-colums">
+        <div className="tw-flex tw-flex-col tw-items-center tw-justify-center">
           <DemoSEO title={demoInfo.title} description={demoInfo.desc} />
           <DemoInfo info={demoInfo} />
           {isSupported() ? (

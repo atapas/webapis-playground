@@ -13,9 +13,9 @@ import { getDemoById } from 'utils/data/data-access';
 // Component that Renders the Demo UI
 const ToRender = () => {
   return (
-    <div className="flex-colums">
+    <div className="tw-flex tw-flex-col tw-items-center tw-justify-center">
       <button onClick={buy}>Click Here to Buy</button>
-      <div className="fake-card-info">
+      <div className="tw-border tw-border-solid tw-bg-payments tw-border-payments tw-p-10px tw-m-10px tw-rounded-4px">
         <p>
           Feel free to try out this information for purchase(Dont worry, it is
           all FAKE!!! 🙊)
@@ -35,7 +35,7 @@ const ToRender = () => {
           </li>
         </ul>
       </div>
-      <div className="payment-msg" id="payment-msg-id"></div>
+      <div className="tw-p-5px tw-m-5px tw-rounded-5px tw-text-25px" id="payment-msg-id"></div>
     </div>
   );
 };
@@ -57,7 +57,7 @@ const WebPayments = () => {
   return (
     <>
       {loaded && (
-        <div className="flex-colums">
+        <div className="tw-flex tw-flex-col tw-items-center tw-justify-center">
           <DemoSEO title={demoInfo.title} description={demoInfo.desc} />
           <DemoInfo info={demoInfo} />
           {isSupported() ? (

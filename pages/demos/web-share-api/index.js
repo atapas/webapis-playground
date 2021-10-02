@@ -30,7 +30,7 @@ const ToRender = () => {
     }
   }
   return (
-    <div className="flex-colums">
+    <div className="tw-flex tw-flex-col tw-items-center tw-justify-center">
       <button
         style={{
           display: 'flex',
@@ -64,7 +64,7 @@ const WebShareApi = () => {
   return (
     <>
       {loaded && (
-        <div className="flex-colums">
+        <div className="tw-flex tw-flex-col tw-items-center tw-justify-center">
           <DemoSEO title={demoInfo.title} description={demoInfo.desc} />
           <DemoInfo info={demoInfo} />
           {isSupported() ? (

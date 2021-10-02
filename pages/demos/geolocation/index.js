@@ -13,7 +13,7 @@ import { getDemoById } from 'utils/data/data-access';
 // Component that Renders the Demo UI
 const ToRender = React.memo(() => {
   return (
-    <div className="flex-colums">
+    <div className="tw-flex tw-flex-col tw-items-center tw-justify-center">
       <button onClick={geoFindMe} style={{ padding: '0.6rem 1rem' }}>
         <span>Show my current location</span>
       </button>
@@ -43,7 +43,7 @@ const Geolocation = () => {
   return (
     <>
       {loaded && (
-        <div className="flex-colums">
+        <div className="tw-flex tw-flex-col tw-items-center tw-justify-center">
           <DemoSEO title={demoInfo.title} description={demoInfo.desc} />
           <DemoInfo info={demoInfo} />
           {isSupported() ? (
