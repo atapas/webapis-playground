@@ -4,6 +4,7 @@ module.exports = {
   theme: {
     fontSize: {
       '1.5em': '1.5em',
+      '2em': '2em',
       '4.5xl': '2.5rem',
       '18px': '18px',
       '25px': '25px',
@@ -12,6 +13,9 @@ module.exports = {
     borderWidth: {
       '1': '1px',
       '3': '3px',
+    },
+    maxWidth: {
+      '500px': '500px',
     },
     borderRadius: {
       '0.5em': '0.5em',

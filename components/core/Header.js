@@ -6,7 +6,7 @@ import { FiActivity, FiTwitter, FiGithub } from 'react-icons/fi';
 
 const Header = ({ showSearch }) => {
   return (
-    <header className="tw-flex tw-flex-wrap tw-p-5px tw-bg-black tw-text-white tw-items-center tw-justify-between">
+    <header className="tw-flex tw-p-4px tw-flex-wrap tw-bg-black tw-text-white tw-items-center tw-justify-between">
       <Link className="tw-m-0 tw-p-0" href="/">
         <ul className="tw-m-0 tw-p-0 tw-flex tw-items-center tw-content-center tw-cursor-pointer">
           <li className="tw-text-prod tw-ml-4px tw-text-4.5xl tw-font-bold">
@@ -29,7 +29,7 @@ const Header = ({ showSearch }) => {
             <FiGithub size={32} color="#FFFFFF" />
           </a>
         </li>
-        <li className="tw-ml-4px">
+        <li className="tw-ml-4px tw-mr-4px">
           <a
             className="tweet"
             title="Tweet About it"
