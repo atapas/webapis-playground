@@ -16,12 +16,12 @@ import { getDemoById } from 'utils/data/data-access';
 // Component that Renders the Demo UI
 const ToRender = () => {
   return (
-    <div className="flex-colums">
+    <div className="tw-flex tw-flex-col tw-items-center tw-justify-center">
       <p>
         The Vibration API works best on mobiles, tablets etc. It may not do
         anything on desktops even when the browser supports.
       </p>
-      <div className="row">
+      <div className="tw-flex">
         <button
           style={{ marginRight: '10px' }}
           onClick={() => manageVibration('start')}
@@ -54,7 +54,7 @@ const Vibration = () => {
   return (
     <>
       {loaded && (
-        <div className="flex-colums">
+        <div className="tw-flex tw-flex-col tw-items-center tw-justify-center">
           <DemoSEO title={demoInfo.title} description={demoInfo.desc} />
           <DemoInfo info={demoInfo} />
           {isSupported() ? (

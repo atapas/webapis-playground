@@ -19,7 +19,7 @@ import { getDemoById } from 'utils/data/data-access';
 // Component that Renders the Demo UI
 const ToRender = () => {
   return (
-    <div className="flex-colums">
+    <div className="tw-flex tw-flex-col tw-items-center tw-justify-center">
       <div style={{ padding: '5px' }}>
         <button id="getUserMediaButton" onClick={() => getUserMedia()}>
           Start the Stream
@@ -46,7 +46,7 @@ const ToRender = () => {
           autoPlay
         ></video>
       </div>
-      <div id="error-msg-id" className="error hide"></div>
+      <div id="error-msg-id" className="tw-bg-red tw-text-white tw-p-10px tw-rounded-4px tw-m-10px hide"></div>
       <div>
         <canvas id="grabFrameCanvas"></canvas>
         <canvas id="takePhotoCanvas"></canvas>
@@ -72,7 +72,7 @@ const ImageCapture = () => {
   return (
     <>
       {loaded && (
-        <div className="flex-colums">
+        <div className="tw-flex tw-flex-col tw-items-center tw-justify-center">
           <DemoSEO title={demoInfo.title} description={demoInfo.desc} />
           <DemoInfo info={demoInfo} />
           {isSupported() ? (

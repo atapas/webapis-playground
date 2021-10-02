@@ -17,7 +17,7 @@ const ToRender = () => {
   }, []);
 
   return (
-    <div className="flex-colums">
+    <div className="tw-flex tw-flex-col tw-items-center tw-justify-center">
       <h3>Drag me to resize the button</h3>
       <div>
         <span>60</span>
@@ -53,7 +53,7 @@ const ResizeObserver = () => {
   return (
     <>
       {loaded && (
-        <div className="flex-colums">
+        <div className="tw-flex tw-flex-col tw-items-center tw-justify-center">
           <DemoSEO title={demoInfo.title} description={demoInfo.desc} />
           <DemoInfo info={demoInfo} />
           {isSupported() ? (
