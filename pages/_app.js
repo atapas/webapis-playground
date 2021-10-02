@@ -22,7 +22,7 @@ function MyApp({ Component, pageProps, router }) {
       <SEO
         title="Web APIs Playground - Create, Share, Learn JavaScript Web APIs"
         description="The Web APIs Playground is a project to showcase the JavaScript Web APIs with examples and demonstrations. Client-side JavaScript APIs provides wrapper functions for many low-level tasks."
-        icon="../public/favicon2.ico"
+        icon="/favicon2.ico"
         keywords={[
           'javascript',
           'web apis',
