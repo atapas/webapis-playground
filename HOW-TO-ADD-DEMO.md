@@ -60,7 +60,7 @@ The above process will automatically generate the code for the demo to start wit
 - **The `isSupported()` method**: It is important to define the browser support for an API in the `isSupported()` method of your API file. Please check the [MDN documentation](https://developer.mozilla.org/en-US/docs/Web/API) for the support logic for the API you are adding.
 
 ## 6. Update the main Readme file
-Please update [this section of the demo](https://github.com/atapas/webapis-playground#-whats-included) with your new demo inclusion.
+Please update [this section of the page](https://github.com/atapas/webapis-playground#-whats-included) with your new demo inclusion.
 
 ## 7. Complete Demo Coding and Create Pull Request(PR)
 
