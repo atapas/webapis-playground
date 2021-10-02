@@ -167,19 +167,3 @@ code {
 .text-red-600 {
   color: #dc2626;
 }
-
-.git-link {
-  display: inline;
-  position: fixed;
-  bottom: 20px;
-  right: 10px;
-  z-index: 99;
-  font-size: 18px;
-  border: none;
-  outline: none;
-  background-color: black;
-  color: white;
-  cursor: pointer;
-  padding: 15px;
-  border-radius: 4px;
-}
