@@ -8,7 +8,16 @@
     "start": "next start",
     "lint": "next lint",
     "gen-demo": "plop",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "eslint --fix"
+    ],
+    "*.{html,js,jsx}": [
+      "prettier --write"
+    ]
   },
   "dependencies": {
     "@bradgarropy/next-seo": "^1.0.0",
@@ -25,6 +34,8 @@
     "eslint": "7.29.0",
     "eslint-config-next": "11.0.0",
     "eslint-config-prettier": "^8.3.0",
+    "husky": "^7.0.2",
+    "lint-staged": "^11.1.2",
     "plop": "^2.7.4",
     "prettier": "2.3.2"
   }
