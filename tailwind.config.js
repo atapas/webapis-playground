@@ -42,6 +42,7 @@ module.exports = {
         '10px': '10px',
         '13px': '13px',
         '75px': '75px',
+        '175px': '175px',
       }
     }
   },

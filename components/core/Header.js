@@ -12,7 +12,7 @@ const Header = ({ showSearch }) => {
           <li className="tw-text-prod tw-ml-4px tw-text-4.5xl tw-font-bold">
             <FiActivity size={36} />
           </li>
-          <li className="tw-text-prod tw-ml-4px tw-text-4.5xl tw-font-bold">
+          <li className="tw-text-prod tw-text-4.5xl tw-font-bold">
             Web APIs
           </li>
         </ul>

@@ -15,14 +15,13 @@ const Demo = ({ demo }) => {
       <h2 className="tw-text-center tw-text-1.5em tw-font-bold">{demo.title}</h2>
       <Creator info={demo.creator} size="sm" />
       <p
-        className="tw-py-10px tw-leading-tight"
-        style={{ height: '175px' }}
+        className="tw-h-175px"
         dangerouslySetInnerHTML={{ __html: demo.desc }}
       />
-      <div className="tw-flex tw-justify-between tw-pt-10px">
+      <div className="tw-flex tw-justify-between">
         <Link className="tw-cursor-pointer" href={`/demos/${demo.path}`}>
-          <button className="tw-flex tw-items-center">
-            Try It <FiZap className="tw-pl-4px" />
+          <button>
+            Try It <FiZap />
           </button>
         </Link>
 
@@ -32,14 +31,14 @@ const Demo = ({ demo }) => {
           href={`https://github.com/atapas/webapis-playground/blob/master/web-apis/${demo.path}/index.js`}
         >
           <button
-            className="tw-flex tw-items-center"
+
             style={{
               backgroundColor: '#000000',
               color: '#FFFFFF',
               float: 'right',
             }}
           >
-            See Code <FiGithub className="tw-pl-4px" />
+            See Code <FiGithub />
           </button>
         </a>
       </div>
