@@ -17,7 +17,7 @@ import { getDemoById } from 'utils/data/data-access';
 const ToRender = () => {
   return (
     <div className="tw-flex tw-flex-col tw-items-center tw-justify-center">
-      <p>
+      <p className="tw-max-w-500px tw-mx-4 tw-p-5px">
         The Vibration API works best on mobiles, tablets etc. It may not do
         anything on desktops even when the browser supports.
       </p>

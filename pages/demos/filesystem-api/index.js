@@ -23,16 +23,12 @@ import { getDemoById } from 'utils/data/data-access';
 const ToRender = () => {
   return (
     <div className="tw-flex tw-flex-col tw-items-center tw-justify-center">
-      <div className="btns">
+      <div className="btns tw-flex tw-gap-4 tw-flex-col tw-items-center tw-justify-center sm:tw-flex-row">
         <button id="textFileBtn" onClick={textFileUpload}>
           <FiFileText style={{ width: '1rem', height: '1rem' }} />
           Select a text file
         </button>
-        <button
-          id="imageFileBtn"
-          style={{ marginLeft: '15px' }}
-          onClick={imageUpload}
-        >
+        <button id="imageFileBtn" onClick={imageUpload}>
           <FiImage
             data-feather="image"
             style={{ width: '1rem', height: '1rem' }}
@@ -41,7 +37,7 @@ const ToRender = () => {
         </button>
       </div>
       <h2 id="fileName"></h2>
-      <div className="content">
+      <div className="content tw-mt-4">
         <p id="textFileContents"></p>
         <img src="" id="imagePreview" alt="text image" layout="fill" />
       </div>

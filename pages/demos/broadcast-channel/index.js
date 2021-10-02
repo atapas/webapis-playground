@@ -14,7 +14,7 @@ import { getDemoById } from 'utils/data/data-access';
 const ToRender = () => {
   return (
     <div className="tw-flex tw-flex-col tw-items-center tw-justify-center">
-      <p>
+      <p className="tw-max-w-500px tw-mx-4 tw-p-5px">
         Open this page in a new tab. Then hit the <b>Send Message</b> button
         from one tab to recieve the message in another tab. Try it out, gonna be
         fun!
