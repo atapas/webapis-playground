@@ -60,6 +60,16 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "rehan-sattar",
+      "name": "Rehan  Sattar",
+      "avatar_url": "https://avatars.githubusercontent.com/u/26999472?v=4",
+      "profile": "https://rehansattar.now.sh/",
+      "contributions": [
+        "code",
+        "bug"
+      ]
     }
   ],
   "contributorsPerLine": 7,
