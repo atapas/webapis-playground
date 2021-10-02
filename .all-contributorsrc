@@ -51,6 +51,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "tiger-yash",
+      "name": "Yash Raj",
+      "avatar_url": "https://avatars.githubusercontent.com/u/74406801?v=4",
+      "profile": "https://tiger-yash.github.io/",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
