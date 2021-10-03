@@ -16,6 +16,7 @@ module.exports = {
     },
     maxWidth: {
       '500px': '500px',
+      '400px': '400px' 
     },
     borderRadius: {
       '0.5em': '0.5em',
@@ -37,6 +38,7 @@ module.exports = {
       spacing: {
         '300px': '300px',
         '100px': '100px',
+        '400px': '400px',
         '4px': '4px',
         '5px': '5px',
         '10px': '10px',
