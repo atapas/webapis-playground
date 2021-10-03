@@ -1,11 +1,16 @@
 import { ReactNode } from 'react';
-import { Flex } from '@chakra-ui/react';
+import { Flex, useBreakpointValue } from '@chakra-ui/react';
 
 export interface LayoutProps {
   children: ReactNode;
 }
 
 function Layout({ children }: LayoutProps) {
+  const paddingY = useBreakpointValue({
+    sm: '96px',
+    lg: '128px',
+  });
+
   return (
     <Flex
       align="center"
@@ -15,7 +20,8 @@ function Layout({ children }: LayoutProps) {
       maxWidth="1600px"
       minHeight="100%"
       px="4"
-      py="128px"
+      paddingTop="28"
+      paddingBottom="16"
       margin="auto"
     >
       {children}
