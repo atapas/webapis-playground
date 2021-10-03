@@ -171,7 +171,7 @@ const DEMOS = [
     title: '💻 Screen Capture',
     desc: 'The Screen Capture demo introduces additions to the existing Media Capture and Streams API to let the user select a screen to capture as a media stream',
     path: 'screen-capture',
-    canIUseURL: 'https://caniuse.com/',
+    canIUseURL: 'https://caniuse.com/DisplayMedia',
     creator: {
       name: 'Koustov',
       twitter: 'koustov',
