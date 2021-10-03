@@ -9,7 +9,7 @@ class MyDocument extends Document {
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
           <meta
             name="viewport"
-            content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=5"
+            content="idth=device-width, initial-scale=1, minimum-scale=1"
           />
           <link rel="manifest" href="/manifest.json" />
           <link rel="apple-touch-icon" href="/apple-icon.png"></link>

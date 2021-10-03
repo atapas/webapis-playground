@@ -1,27 +1,19 @@
 import '../styles/globals.css';
 
-import { Header, GithubCodeLink } from '../components';
-import SEO from '@bradgarropy/next-seo';
-import { motion } from 'framer-motion';
+import { AppProps } from 'next/app';
+import { ChakraProvider } from '@chakra-ui/react';
 
-function MyApp({ Component, pageProps, router }) {
+import SEO from '@bradgarropy/next-seo';
+
+import { GithubCodeLink } from '../components';
+import { Header, Layout } from 'components';
+
+function MyApp({ Component, pageProps, router }: AppProps) {
   const isDemoRoute = router.pathname && router.pathname.match(/demos/);
   const webApiPathname = isDemoRoute && router.pathname.split('/demos/')[1];
 
   return (
-    <motion.div
-      key={router.route}
-      initial="initial"
-      animate="animate"
-      variants={{
-        initial: {
-          opacity: 0,
-        },
-        animate: {
-          opacity: 1,
-        },
-      }}
-    >
+    <ChakraProvider>
       <SEO
         title="Web APIs Playground - Create, Share, Learn JavaScript Web APIs"
         description="The Web APIs Playground is a project to showcase the JavaScript Web APIs with examples and demonstrations. Client-side JavaScript APIs provides wrapper functions for many low-level tasks."
@@ -41,13 +33,17 @@ function MyApp({ Component, pageProps, router }) {
         }}
       />
       <Header />
-      <Component {...pageProps} />
+
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+
       {isDemoRoute && (
         <GithubCodeLink
           url={`https://github.com/atapas/webapis-playground/blob/master/web-apis/${webApiPathname}/index.js`}
         />
       )}
-    </motion.div>
+    </ChakraProvider>
   );
 }
 

@@ -21,6 +21,9 @@
   },
   "dependencies": {
     "@bradgarropy/next-seo": "^1.0.0",
+    "@chakra-ui/react": "^1.6.8",
+    "@emotion/react": "^11",
+    "@emotion/styled": "^11",
     "autoprefixer": "^10.3.4",
     "framer-motion": "^4.1.17",
     "next": "11.1.2",
@@ -32,12 +35,14 @@
     "tailwindcss": "^2.2.10"
   },
   "devDependencies": {
+    "@types/react": "^17.0.27",
     "eslint": "7.29.0",
     "eslint-config-next": "11.0.0",
     "eslint-config-prettier": "^8.3.0",
     "husky": "^7.0.2",
     "lint-staged": "^11.1.2",
     "plop": "^2.7.4",
-    "prettier": "2.3.2"
+    "prettier": "2.3.2",
+    "typescript": "^4.4.3"
   }
 }
