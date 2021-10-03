@@ -76,6 +76,7 @@ So far, it includes the following examples:
 1. 🐢 Drag and Drop
 1. ⚓ Geolocation API
 1. 🖼️ Picture in Picture
+1. 💻 Screen Capture
 
 # 🤝 Open Source
 
