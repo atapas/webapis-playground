@@ -12,6 +12,7 @@ function Search({ onSearch }: SearchProps) {
     <InputGroup>
       <InputLeftElement
         pointerEvents="none"
+        // eslint-disable-next-line react/no-children-prop
         children={<Icon as={FaSearch} color="gray.300" />}
       />
       <Input
