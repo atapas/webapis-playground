@@ -1,7 +1,7 @@
 # 🔌 WEB APIS PLAYGROUND
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-7-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-8-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 The `Web APIs Playground` is a project to showcase the JavaScript Web APIs with examples and demonstrations. Client-side JavaScript APIs provides wrapper functions for many low-level tasks like,
@@ -115,6 +115,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/omriattiya"><img src="https://avatars.githubusercontent.com/u/26112374?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Omri Attiya</b></sub></a><br /><a href="https://github.com/atapas/webapis-playground/commits?author=omriattiya" title="Code">💻</a></td>
     <td align="center"><a href="https://tiger-yash.github.io/"><img src="https://avatars.githubusercontent.com/u/74406801?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Yash Raj</b></sub></a><br /><a href="https://github.com/atapas/webapis-playground/commits?author=tiger-yash" title="Code">💻</a></td>
     <td align="center"><a href="https://rehansattar.now.sh/"><img src="https://avatars.githubusercontent.com/u/26999472?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Rehan  Sattar</b></sub></a><br /><a href="https://github.com/atapas/webapis-playground/commits?author=rehan-sattar" title="Code">💻</a> <a href="https://github.com/atapas/webapis-playground/issues?q=author%3Arehan-sattar" title="Bug reports">🐛</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://ahsanayaz.com"><img src="https://avatars.githubusercontent.com/u/9844254?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Muhammad Ahsan Ayaz</b></sub></a><br /><a href="https://github.com/atapas/webapis-playground/commits?author=AhsanAyaz" title="Code">💻</a></td>
   </tr>
 </table>
 
