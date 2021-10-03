@@ -1,7 +1,5 @@
 const isSupported = () => {
-  return navigator.clipboard &&
-    navigator.clipboard.writeText &&
-    navigator.clipboard.readText
+  return navigator.mediaDevices && navigator.mediaDevices.getDisplayMedia
     ? true
     : false;
 };
@@ -9,14 +7,6 @@ const isSupported = () => {
 const startCapture = async withAudio => {
   const videoElem = document.getElementById('video');
   console.log('takeScreenCapture function called');
-
-  // const elem = document.getElementById('fs-img-id');
-  // Check if the API is supported
-  // if (document.fullscreenEnabled) {
-  //   elem.requestFullscreen();
-  // } else {
-  //   console.log('The FullScreen API is Not Supported');
-  // }
 
   const displayMediaOptions = {
     video: {
