@@ -6,15 +6,13 @@ import { FiActivity, FiTwitter, FiGithub } from 'react-icons/fi';
 
 const Header = ({ showSearch }) => {
   return (
-    <header className="tw-flex tw-p-4px tw-flex-wrap tw-bg-black tw-text-white tw-items-center tw-justify-between">
+    <header className="tw-flex tw-p-4px tw-flex-wrap tw-bg-black tw-text-white tw-items-center tw-justify-between sticky-header">
       <Link className="tw-m-0 tw-p-0" href="/">
         <ul className="tw-m-0 tw-p-0 tw-flex tw-items-center tw-content-center tw-cursor-pointer">
           <li className="tw-text-prod tw-ml-4px tw-text-4.5xl tw-font-bold">
             <FiActivity size={36} />
           </li>
-          <li className="tw-text-prod tw-text-4.5xl tw-font-bold">
-            Web APIs
-          </li>
+          <li className="tw-text-prod tw-text-4.5xl tw-font-bold">Web APIs</li>
         </ul>
       </Link>
       <ul className="tw-m-0 tw-p-0 tw-flex tw-items-center tw-content-center">
