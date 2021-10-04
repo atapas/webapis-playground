@@ -3,6 +3,7 @@ import '../styles/globals.css';
 import { Header, GithubCodeLink } from '../components';
 import SEO from '@bradgarropy/next-seo';
 import { motion } from 'framer-motion';
+import NextNProgress from 'nextjs-progressbar';
 
 function MyApp({ Component, pageProps, router }) {
   const isDemoRoute = router.pathname && router.pathname.match(/demos/);
@@ -22,6 +23,8 @@ function MyApp({ Component, pageProps, router }) {
         },
       }}
     >
+      <NextNProgress height={3} color="#fff" />
+
       <SEO
         title="Web APIs Playground - Create, Share, Learn JavaScript Web APIs"
         description="The Web APIs Playground is a project to showcase the JavaScript Web APIs with examples and demonstrations. Client-side JavaScript APIs provides wrapper functions for many low-level tasks."
