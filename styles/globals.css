@@ -167,9 +167,3 @@ code {
 .text-red-600 {
   color: #dc2626;
 }
-
-.sticky-header {
-  position: sticky;
-  top: 0;
-  z-index: 2;
-}
