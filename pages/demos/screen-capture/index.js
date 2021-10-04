@@ -16,7 +16,7 @@ import { getDemoById } from 'utils/data/data-access';
 
 // Component that Renders the Demo UI
 const ToRender = () => {
-  const onStartCapture = withAudio => {
+  const onStartCapture = () => {
     startCapture();
   };
 

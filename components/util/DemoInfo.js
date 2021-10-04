@@ -1,3 +1,5 @@
+/* global console */
+
 // Creator
 import { Creator } from '..';
 

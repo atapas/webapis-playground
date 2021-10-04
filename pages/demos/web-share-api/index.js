@@ -1,3 +1,5 @@
+/* global navigator */
+
 // state management
 import { useState, useEffect } from 'react';
 

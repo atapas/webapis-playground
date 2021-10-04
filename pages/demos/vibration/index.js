@@ -1,9 +1,6 @@
 // state management
 import { useState, useEffect } from 'react';
 
-// router
-import { useRouter } from 'next/router';
-
 // demo information
 import { DemoInfo, DemoSEO, NotSupported } from 'components';
 
@@ -37,9 +34,6 @@ const ToRender = () => {
 const Vibration = () => {
   const [loaded, setLoaded] = useState(false);
   const [demoInfo, setDemoInfo] = useState();
-
-  // Get the query param from router
-  const { query } = useRouter();
 
   // Get the demo id
   const id = '_vibration_api_';

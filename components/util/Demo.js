@@ -19,7 +19,11 @@ const Demo = ({ demo }) => {
         dangerouslySetInnerHTML={{ __html: demo.desc }}
       />
       <div className="tw-flex tw-justify-between">
-        <Link className="tw-cursor-pointer" href={`/demos/${demo.path}`}>
+        <Link
+          className="tw-cursor-pointer"
+          href={`/demos/${demo.path}`}
+          passHref
+        >
           <button className="tw-flex tw-justify-between tw-items-center tw-px-10px">
             <span className="tw-mr-5px">Try It</span> <FiZap />
           </button>

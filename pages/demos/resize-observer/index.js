@@ -21,7 +21,12 @@ const ToRender = () => {
       <h3>Drag me to resize the button</h3>
       <div>
         <span>60</span>
-        <input type="range" onChange={() => resize(event)} min={60} max={500} />
+        <input
+          type="range"
+          onChange={event => resize(event)}
+          min={60}
+          max={500}
+        />
         <span>500</span>
       </div>
       <span id="range-value-id"></span>
