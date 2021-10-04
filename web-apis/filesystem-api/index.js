@@ -16,18 +16,23 @@ const textFileUpload = async () => {
       },
     ],
   };
-  const [fileHandle] = await showOpenFilePicker(opts);
-  const file = await fileHandle.getFile();
-  const content = await file.text();
+  try {
+    const [fileHandle] = await showOpenFilePicker(opts);
+    const file = await fileHandle.getFile();
+    const content = await file.text();
 
-  // Display file
-  const textFileContents = document.getElementById('textFileContents');
-  const fileName = document.getElementById('fileName');
-  textFileContents.innerText = content;
-  fileName.innerText = `File name: ${file.name}`;
+    // Display file
+    const textFileContents = document.getElementById('textFileContents');
+    const fileName = document.getElementById('fileName');
+    textFileContents.innerText = content;
+    fileName.innerText = `File name: ${file.name}`;
 
-  // Remove image file
-  imagePreview.setAttribute('src', '');
+    // Remove image file
+    const imagePreviewParent = document.getElementById('imagePreviewParent');
+    imagePreviewParent.innerHTML = '';
+  } catch (error) {
+    console.log('File picking cancelled', error);
+  }
 };
 
 const imageUpload = async () => {
@@ -42,19 +47,32 @@ const imageUpload = async () => {
       },
     ],
   };
-  const [fileHandle] = await showOpenFilePicker(opts);
-  const file = await fileHandle.getFile();
-  const imagePreview = document.getElementById('imagePreview');
-  const fileName = document.getElementById('fileName');
+  try {
+    const [fileHandle] = await showOpenFilePicker(opts);
+    const file = await fileHandle.getFile();
+    const imageURL = URL.createObjectURL(file);
+    // Display image
+    const imagePreviewParent = document.getElementById('imagePreviewParent');
+    // Remove the previous contents.
+    imagePreviewParent.innerHTML = '';
+    // Create new image and set the attributes and styles
+    const img = document.createElement('img');
+    img.setAttribute('src', imageURL);
+    img.setAttribute('alt', file.name);
+    img.style.height = 'auto';
+    img.style.width = '100%';
+    // append image to the parent.
+    imagePreviewParent.appendChild(img);
+    // show the file name
+    const fileName = document.getElementById('fileName');
+    fileName.innerText = `File name: ${file.name}`;
 
-  // Display file
-  const imageURL = URL.createObjectURL(file);
-  imagePreview.setAttribute('src', imageURL);
-  imagePreview.setAttribute('alt', file.name);
-  fileName.innerText = `File name: ${file.name}`;
-
-  // Remove text file
-  textFileContents.innerText = '';
+    // Remove text file
+    const textFileContents = document.getElementById('textFileContents');
+    textFileContents.innerText = '';
+  } catch (error) {
+    console.log('Image selection canceled.', error);
+  }
 };
 
 export { isSupported, textFileUpload, imageUpload };

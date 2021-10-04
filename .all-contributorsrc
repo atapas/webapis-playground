@@ -51,6 +51,53 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "tiger-yash",
+      "name": "Yash Raj",
+      "avatar_url": "https://avatars.githubusercontent.com/u/74406801?v=4",
+      "profile": "https://tiger-yash.github.io/",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "rehan-sattar",
+      "name": "Rehan  Sattar",
+      "avatar_url": "https://avatars.githubusercontent.com/u/26999472?v=4",
+      "profile": "https://rehansattar.now.sh/",
+      "contributions": [
+        "code",
+        "bug"
+      ]
+    },
+    {
+      "login": "AhsanAyaz",
+      "name": "Muhammad Ahsan Ayaz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9844254?v=4",
+      "profile": "https://ahsanayaz.com",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "koustov",
+      "name": "Koustov",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7145967?v=4",
+      "profile": "http://koustov.com",
+      "contributions": [
+        "bug",
+        "code"
+      ]
+    },
+    {
+      "login": "aanchal-fatwani",
+      "name": "Aanchal",
+      "avatar_url": "https://avatars.githubusercontent.com/u/63228776?v=4",
+      "profile": "https://github.com/aanchal-fatwani",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,

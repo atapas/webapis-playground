@@ -22,29 +22,31 @@ import { getDemoById } from 'utils/data/data-access';
 // Component that Renders the Demo UI
 const ToRender = () => {
   return (
-    <div className="flex-colums">
-      <div className="btns">
-        <button id="textFileBtn" onClick={textFileUpload}>
-          <FiFileText style={{ width: '1rem', height: '1rem' }} />
-          Select a text file
+    <div className="tw-flex tw-flex-col tw-items-center tw-justify-center">
+      <div className="btns tw-flex tw-gap-4 tw-flex-col tw-items-center tw-justify-center sm:tw-flex-row tw-mb-5">
+        <button
+          id="textFileBtn"
+          onClick={textFileUpload}
+          className="tw-flex tw-px-5 tw-py-2 tw-justify-center tw-items-center"
+        >
+          <FiFileText />
+          <span className="tw-ml-2">Select a text file</span>
         </button>
         <button
           id="imageFileBtn"
-          style={{ marginLeft: '15px' }}
           onClick={imageUpload}
+          className="tw-flex tw-px-5 tw-py-2 tw-justify-center tw-items-center"
         >
-          <FiImage
-            data-feather="image"
-            style={{ width: '1rem', height: '1rem' }}
-          />
-          Select an image file
+          <FiImage data-feather="image" />
+          <span className="tw-ml-2">Select an image file</span>
         </button>
       </div>
       <h2 id="fileName"></h2>
-      <div className="content">
-        <p id="textFileContents"></p>
-        <img src="" id="imagePreview" alt="text image" layout="fill" />
-      </div>
+      <p id="textFileContents"></p>
+      <div
+        id="imagePreviewParent"
+        className="content tw-mt-4  tw-h-400px tw-w-400px"
+      ></div>
     </div>
   );
 };
@@ -69,7 +71,7 @@ const FileSystem = () => {
   return (
     <>
       {loaded && (
-        <div className="flex-colums">
+        <div className="tw-flex tw-flex-col tw-items-center tw-justify-center">
           <DemoSEO title={demoInfo.title} description={demoInfo.desc} />
           <DemoInfo info={demoInfo} />
           {isSupported() ? (

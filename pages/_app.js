@@ -1,11 +1,12 @@
 import '../styles/globals.css';
 
-import { Header } from '../components';
+import { Header, GithubCodeLink } from '../components';
 import SEO from '@bradgarropy/next-seo';
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
 
 function MyApp({ Component, pageProps, router }) {
+
   const [favicon, setFavicon] = useState("/faviconLight.ico");
   const changeFavicon = () => {
     const isDark = window.matchMedia("(prefers-color-scheme: dark)");
@@ -16,6 +17,11 @@ function MyApp({ Component, pageProps, router }) {
   useEffect(() => {
     changeFavicon();
   }, []);
+
+  const isDemoRoute = router.pathname && router.pathname.match(/demos/);
+  const webApiPathname = isDemoRoute && router.pathname.split('/demos/')[1];
+
+
   return (
     <motion.div
       key={router.route}
@@ -50,6 +56,11 @@ function MyApp({ Component, pageProps, router }) {
       />
       <Header />
       <Component {...pageProps} />
+      {isDemoRoute && (
+        <GithubCodeLink
+          url={`https://github.com/atapas/webapis-playground/blob/master/web-apis/${webApiPathname}/index.js`}
+        />
+      )}
     </motion.div>
   );
 }

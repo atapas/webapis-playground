@@ -1,9 +1,7 @@
 # 🔌 WEB APIS PLAYGROUND
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-
-[![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors-)
-
+[![All Contributors](https://img.shields.io/badge/all_contributors-10-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 The `Web APIs Playground` is a project to showcase the JavaScript Web APIs with examples and demonstrations. Client-side JavaScript APIs provides wrapper functions for many low-level tasks like,
@@ -78,6 +76,7 @@ So far, it includes the following examples:
 1. 🐢 Drag and Drop
 1. ⚓ Geolocation API
 1. 🖼️ Picture in Picture
+1. 💻 Screen Capture
 
 # 🤝 Open Source
 
@@ -115,6 +114,13 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="http://niteshseram.in"><img src="https://avatars.githubusercontent.com/u/51370246?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Nitesh Seram</b></sub></a><br /><a href="https://github.com/atapas/webapis-playground/commits?author=niteshseram" title="Code">💻</a> <a href="#a11y-niteshseram" title="Accessibility">️️️️♿️</a> <a href="https://github.com/atapas/webapis-playground/issues?q=author%3Aniteshseram" title="Bug reports">🐛</a></td>
     <td align="center"><a href="https://wsameer.github.io/v1/"><img src="https://avatars.githubusercontent.com/u/8468992?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Sameer Waskar</b></sub></a><br /><a href="https://github.com/atapas/webapis-playground/commits?author=wsameer" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/omriattiya"><img src="https://avatars.githubusercontent.com/u/26112374?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Omri Attiya</b></sub></a><br /><a href="https://github.com/atapas/webapis-playground/commits?author=omriattiya" title="Code">💻</a></td>
+    <td align="center"><a href="https://tiger-yash.github.io/"><img src="https://avatars.githubusercontent.com/u/74406801?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Yash Raj</b></sub></a><br /><a href="https://github.com/atapas/webapis-playground/commits?author=tiger-yash" title="Code">💻</a></td>
+    <td align="center"><a href="https://rehansattar.now.sh/"><img src="https://avatars.githubusercontent.com/u/26999472?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Rehan  Sattar</b></sub></a><br /><a href="https://github.com/atapas/webapis-playground/commits?author=rehan-sattar" title="Code">💻</a> <a href="https://github.com/atapas/webapis-playground/issues?q=author%3Arehan-sattar" title="Bug reports">🐛</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://ahsanayaz.com"><img src="https://avatars.githubusercontent.com/u/9844254?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Muhammad Ahsan Ayaz</b></sub></a><br /><a href="https://github.com/atapas/webapis-playground/commits?author=AhsanAyaz" title="Code">💻</a></td>
+    <td align="center"><a href="http://koustov.com"><img src="https://avatars.githubusercontent.com/u/7145967?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Koustov</b></sub></a><br /><a href="https://github.com/atapas/webapis-playground/issues?q=author%3Akoustov" title="Bug reports">🐛</a> <a href="https://github.com/atapas/webapis-playground/commits?author=koustov" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/aanchal-fatwani"><img src="https://avatars.githubusercontent.com/u/63228776?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Aanchal</b></sub></a><br /><a href="https://github.com/atapas/webapis-playground/commits?author=aanchal-fatwani" title="Code">💻</a></td>
   </tr>
 </table>
 
