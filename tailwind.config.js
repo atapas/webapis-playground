@@ -11,6 +11,7 @@ module.exports = {
       '30px': '30px',
     },
     borderWidth: {
+      'none': '0',
       '1': '1px',
       '3': '3px',
     },
@@ -19,6 +20,7 @@ module.exports = {
       '400px': '400px' 
     },
     borderRadius: {
+      'none': '0',
       '0.5em': '0.5em',
       '4px': '4px',
       '5px': '5px',

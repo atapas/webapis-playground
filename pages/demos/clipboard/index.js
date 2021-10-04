@@ -6,8 +6,15 @@ import { useRouter } from 'next/router';
 // icons
 import { FiFileText, FiImage } from 'react-icons/fi';
 
-// demo information
-import { DemoInfo, DemoSEO, NotSupported } from 'components';
+// demo and form components
+import {
+  DemoInfo,
+  DemoSEO,
+  NotSupported,
+  InputFieldWrapper,
+  InputFieldButton,
+  InputField,
+} from 'components';
 
 // apis
 import { isSupported, performCopy, performPaste } from 'web-apis/clipboard';
@@ -19,22 +26,25 @@ import { getDemoById } from 'utils/data/data-access';
 const ToRender = () => {
   return (
     <div className="tw-flex tw-flex-col tw-items-center tw-justify-center">
-      <form>
-        <label htmlFor="copy-input">Copy</label>
-        <input
+      <InputFieldWrapper>
+        <InputField
           id="copy-input"
           type="text"
           name="copy"
           placeholder="Write Something..."
         />
-        <button onClick={performCopy}>Copy</button>
-      </form>
-
-      <form>
-        <label htmlFor="paste">Paste</label>
-        <input id="paste-input" type="text" name="paste" readOnly />
-        <button onClick={performPaste}>Paste</button>
-      </form>
+        <InputFieldButton onClick={performCopy}>Copy</InputFieldButton>
+      </InputFieldWrapper>
+      <InputFieldWrapper>
+        <InputField
+          id="paste-input"
+          type="text"
+          name="paste"
+          placeholder="Click paste"
+          readOnly
+        />
+        <InputFieldButton onClick={performPaste}>Paste</InputFieldButton>
+      </InputFieldWrapper>
     </div>
   );
 };
