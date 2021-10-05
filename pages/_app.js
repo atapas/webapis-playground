@@ -23,7 +23,7 @@ function MyApp({ Component, pageProps, router }) {
         },
       }}
     >
-      <NextNProgress height={3} color="#fff" />
+      <NextNProgress height={3} color="#fff" options={{ showSpinner: false }} />
 
       <SEO
         title="Web APIs Playground - Create, Share, Learn JavaScript Web APIs"
