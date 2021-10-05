@@ -19,6 +19,7 @@ function MyApp({ Component, pageProps, router }) {
   };
 
   useEffect(() => {
+    changeFavicon();
     window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => changeFavicon());
   }, []);
 
