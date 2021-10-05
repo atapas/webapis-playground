@@ -15,10 +15,11 @@ function MyApp({ Component, pageProps, router }) {
     const isDark = window.matchMedia("(prefers-color-scheme: dark)");
     if (!isDark.matches)
       return setFavicon("/faviconDark.ico");
+    return setFavicon("/faviconLight.ico");
   };
 
   useEffect(() => {
-    changeFavicon();
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => changeFavicon());
   }, []);
 
   const isDemoRoute = router.pathname && router.pathname.match(/demos/);
