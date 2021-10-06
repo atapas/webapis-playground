@@ -20,7 +20,7 @@ function MyApp({ Component, pageProps, router }) {
 
   useEffect(() => {
     changeFavicon(); 
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => changeFavicon());
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', changeFavicon);
   }, []);
 
   const isDemoRoute = router.pathname && router.pathname.match(/demos/);
