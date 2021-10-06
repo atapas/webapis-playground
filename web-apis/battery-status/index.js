@@ -2,7 +2,7 @@ const isSupported = () => {
   return navigator.getBattery ? true : false;
 };
 
-let charging, level, chargingTime, dischargingTime;
+let charging, level;
 
 const getBatteryStatus = () => {
   if (navigator.getBattery) {
