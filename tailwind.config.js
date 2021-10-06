@@ -22,6 +22,7 @@ module.exports = {
       3: '3px',
     },
     maxWidth: {
+      container: '100rem',
       '500px': '500px',
       '400px': '400px',
     },
