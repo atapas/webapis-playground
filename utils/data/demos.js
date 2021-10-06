@@ -1,7 +1,8 @@
 const DEMOS = [
   {
     id: '_file_system_api_',
-    title: '📂 File System API',
+    title: 'File System API',
+    emoji: '📂',
     desc: "Only for Chromium-based web browsers. The File System Access API makes it easy and simple to read and write the user's files and access the file system.",
     path: 'filesystem-api',
     canIUseURL: 'https://caniuse.com/mdn-api_window_showopenfilepicker',
@@ -12,7 +13,8 @@ const DEMOS = [
   },
   {
     id: '_fullscreen_api_',
-    title: '📺 FullScreen API',
+    title: 'FullScreen API',
+    emoji: '📺',
     desc: 'The Fullscreen API adds methods to present a specific Element (and its descendants) in full-screen mode, and to exit full-screen mode once it is no longer needed.',
     path: 'fullscreen',
     canIUseURL: 'https://caniuse.com/fullscreen',
@@ -24,7 +26,8 @@ const DEMOS = [
   },
   {
     id: '_clipboard_api_',
-    title: '📋 Clipboard API',
+    title: 'Clipboard API',
+    emoji: '📋',
     desc: 'The Clipboard API provides the ability to respond to clipboard commands (cut, copy, and paste) as well as to asynchronously read from and write to the system clipboard.',
     path: 'clipboard',
     canIUseURL: 'https://caniuse.com/async-clipboard',
@@ -36,7 +39,8 @@ const DEMOS = [
   },
   {
     id: '_broadcast_api_',
-    title: '📡 Broadcast',
+    title: 'Broadcast',
+    emoji: '📡',
     desc: 'The BroadcastChannel is a named channel that allows communication between different documents (in different windows, tabs, frames or iframes) of the same origin.',
     path: 'broadcast-channel',
     canIUseURL: 'https://caniuse.com/broadcastchannel',
@@ -48,7 +52,8 @@ const DEMOS = [
   },
   {
     id: '_network_info_api_',
-    title: '📶 Network Info',
+    title: 'Network Info',
+    emoji: '📶',
     desc: "The Network Information API provides information about the system's connection in terms of general connection type (e.g., 'wifi', 'cellular', etc.).",
     path: 'network-information',
     canIUseURL: 'https://caniuse.com/netinfo',
@@ -60,7 +65,8 @@ const DEMOS = [
   },
   {
     id: '_resize_observer_api_',
-    title: '🧐 Resize Observer',
+    title: 'Resize Observer',
+    emoji: '🧐',
     desc: 'The Resize Observer API provides a performant mechanism by which code can monitor an element for changes to its size, with notifications.',
     path: 'resize-observer',
     canIUseURL: 'https://caniuse.com/mdn-api_resizeobserver',
@@ -72,7 +78,8 @@ const DEMOS = [
   },
   {
     id: '_payment_request_api_',
-    title: '💳 Web payment API',
+    title: 'Web payment API',
+    emoji: '💳',
     desc: 'The Payment Request API provides a consistent user experience for both merchants and users. Select a preferred way to pay for things.',
     path: 'web-payments',
     canIUseURL: 'https://caniuse.com/payment-request',
@@ -84,7 +91,8 @@ const DEMOS = [
   },
   {
     id: '_vibration_api_',
-    title: '📳 Vibration API',
+    title: 'Vibration API',
+    emoji: '📳',
     desc: 'Most modern mobile devices include vibration hardware, which lets software code provide physical feedback to the user by causing the device to shake.',
     path: 'vibration',
     canIUseURL: 'https://caniuse.com/vibration',
@@ -96,7 +104,8 @@ const DEMOS = [
   },
   {
     id: '_battery_api_',
-    title: '🔋 Battery API',
+    title: 'Battery API',
+    emoji: '🔋',
     desc: "The Battery Status API, more often referred to as the Battery API, provides information about the system's battery charge level",
     path: 'battery-status',
     canIUseURL: 'https://caniuse.com/battery-status',
@@ -108,7 +117,8 @@ const DEMOS = [
   },
   {
     id: '_dnd_api_',
-    title: '🐢 Drag and Drop',
+    title: 'Drag and Drop',
+    emoji: '🐢',
     desc: 'HTML Drag and Drop interfaces enable applications to use drag-and-drop features in browsers.',
     path: 'drag-and-drop',
     canIUseURL: 'https://caniuse.com/dragndrop',
@@ -120,7 +130,8 @@ const DEMOS = [
   },
   {
     id: '_image_capture_api_',
-    title: '📸 Image Capture',
+    title: 'Image Capture',
+    emoji: '📸',
     desc: 'The ImageCapture interface provides methods to enable the capture of images or photos from a camera or other photographic device.',
     path: 'image-capture',
     canIUseURL: 'https://caniuse.com/mdn-api_imagecapture',
@@ -132,7 +143,8 @@ const DEMOS = [
   },
   {
     id: '_web_share_api_',
-    title: '🔗 Web Share API',
+    title: 'Web Share API',
+    emoji: '🔗',
     desc: 'The Web Share API helps in invoking the native sharing mechanism of the user&#x27;s device',
     path: 'web-share-api',
     canIUseURL: 'https://caniuse.com/web-share',
@@ -144,7 +156,8 @@ const DEMOS = [
   },
   {
     id: '_geolocation_',
-    title: '⚓ Geolocation API',
+    title: 'Geolocation API',
+    emoji: '⚓',
     desc: 'The Geolocation API allows the user to provide their location to web applications if they so desire. This demo shows how it works using an example.',
     path: 'geolocation',
     canIUseURL: 'https://caniuse.com/mdn-api_geolocation',
@@ -156,7 +169,8 @@ const DEMOS = [
   },
   {
     id: '_picture_in_picture_',
-    title: '🖼️ Picture in Picture',
+    title: 'Picture in Picture',
+    emoji: '🖼️',
     desc: 'Picture-in-picture is a feature supported by some smart TVs, devices to show the content on a floating window. It allows users to continue to see the content while interacting with the background page, other sites.',
     path: 'picture-in-picture',
     canIUseURL: 'https://caniuse.com/picture-in-picture',
@@ -168,7 +182,8 @@ const DEMOS = [
   },
   {
     id: '_screen_capture_',
-    title: '💻 Screen Capture',
+    title: 'Screen Capture',
+    emoji: '💻',
     desc: 'The Screen Capture demo introduces additions to the existing Media Capture and Streams API to let the user select a screen to capture as a media stream',
     path: 'screen-capture',
     canIUseURL: 'https://caniuse.com/DisplayMedia',
