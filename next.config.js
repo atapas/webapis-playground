@@ -7,7 +7,7 @@ module.exports = withPWA({
     domains: ['unavatar.io', 'res.cloudinary.com'],
   },
   pwa: {
-    dest: 'public',
+    dest: '.next',
     runtimeCaching,
   },
 });
