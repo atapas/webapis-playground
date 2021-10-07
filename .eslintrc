@@ -1,9 +1,10 @@
 {
-  "extends": ["next/core-web-vitals", "prettier", "eslint:recommended"],
+  "extends": ["eslint:recommended", "next/core-web-vitals", "prettier"],
   "rules": {
     "@next/next/no-img-element": "off"
   },
   "env": {
-    "es6": true
+    "es6": true,
+    "browser": true
   }
 }
