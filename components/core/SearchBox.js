@@ -7,7 +7,7 @@ export const SearchBox = ({ onSearch }) => {
 
   useEffect(() => {
     onSearch(searchText);
-  }, [searchText, onSearch]);
+  }, [searchText]);
 
   const onSearchTextChange = event => setSearchText(event.target.value);
 
