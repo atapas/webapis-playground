@@ -1,7 +1,11 @@
 import { FiMoon, FiSun, FiTwitter, FiGithub } from 'react-icons/fi';
 import { FaBolt } from 'react-icons/fa';
 
+import { IconButton, Spacer } from 'components';
+
 function Header() {
+  let isLightMode = true;
+
   return (
     <header
       className="
@@ -12,8 +16,8 @@ function Header() {
 
         tw-w-full
 
+        tw-border-b
         tw-bg-white
-        tw-border-b-1
         tw-border-gray-200
       "
     >
@@ -28,13 +32,18 @@ function Header() {
           tw-mx-auto
 
           tw-flex
-          tw-align-middle
+          tw-items-center
           tw-justify-between
         "
       >
         <FaBolt />
 
-        {/* <HStack align="center">
+        <div
+          className="
+          tw-flex
+          tw-items-center
+        "
+        >
           <IconButton
             as="a"
             href="https://github.com/atapas/webapis-playground"
@@ -42,9 +51,11 @@ function Header() {
             target="_blank"
             aria-label="Source code"
             icon={<FiGithub />}
+            color="gray"
             variant="ghost"
-            color="gray.500"
           />
+
+          <Spacer orientation="x" size={2} />
 
           <IconButton
             as="a"
@@ -54,8 +65,10 @@ function Header() {
             aria-label="Share on twitter"
             icon={<FiTwitter />}
             variant="ghost"
-            color="gray.500"
+            color="gray"
           />
+
+          <Spacer orientation="x" size={2} />
 
           <IconButton
             icon={isLightMode ? <FiMoon /> : <FiSun />}
@@ -63,10 +76,10 @@ function Header() {
               isLightMode ? 'Switch to dark mode' : 'Switch to light mode'
             }
             variant="ghost"
-            color="gray.500"
-            onClick={toggleColorMode}
+            color="gray"
+            onClick={() => {}}
           />
-        </HStack> */}
+        </div>
       </div>
     </header>
   );
