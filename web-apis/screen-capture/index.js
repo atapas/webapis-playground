@@ -25,7 +25,6 @@ const startCapture = async withAudio => {
     displayMediaOptions
   );
   dumpOptionsInfo(videoElem);
-  const s = '';
   // return captureStream;
 };
 

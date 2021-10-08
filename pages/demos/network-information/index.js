@@ -12,7 +12,7 @@ import { getDemoById } from 'utils/data/data-access';
 
 // Component that Renders the Demo UI
 const ToRender = () => {
-  const [networkInfo, setNetworkInfo] = useState(getNetworkInfo());
+  const [networkInfo] = useState(getNetworkInfo());
   return (
     <div className="tw-flex tw-flex-col tw-items-center tw-justify-center">
       <ul id="network-info-main">

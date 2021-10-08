@@ -17,7 +17,7 @@ const textFileUpload = async () => {
     ],
   };
   try {
-    const [fileHandle] = await showOpenFilePicker(opts);
+    const [fileHandle] = await window.showOpenFilePicker(opts);
     const file = await fileHandle.getFile();
     const content = await file.text();
 
@@ -48,7 +48,7 @@ const imageUpload = async () => {
     ],
   };
   try {
-    const [fileHandle] = await showOpenFilePicker(opts);
+    const [fileHandle] = await window.showOpenFilePicker(opts);
     const file = await fileHandle.getFile();
     const imageURL = URL.createObjectURL(file);
     // Display image

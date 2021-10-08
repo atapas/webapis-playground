@@ -10,4 +10,7 @@ module.exports = withPWA({
     dest: 'public',
     runtimeCaching,
   },
+  eslint: {
+    dirs: ['pages', 'components', 'web-apis', 'utils'],
+  },
 });

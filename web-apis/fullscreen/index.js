@@ -12,7 +12,7 @@ const makeFullScreen = () => {
     console.log('The FullScreen API is Not Supported');
   }
 
-  document.addEventListener('fullscreenchange', event => {
+  document.addEventListener('fullscreenchange', () => {
     // document.fullscreenElement will point to the element that
     // is in fullscreen mode if there is one. If there isn't one,
     // the value of the property is null.

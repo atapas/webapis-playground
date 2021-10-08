@@ -6,7 +6,7 @@ const getAllDemos = () => {
 
 const getDemoById = demoId => {
   const allDemos = getAllDemos();
-  const thisDemo = allDemos.find((demo, index) => {
+  const thisDemo = allDemos.find(demo => {
     return demo.id === demoId;
   });
 
