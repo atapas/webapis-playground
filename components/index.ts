@@ -1,14 +1,26 @@
 /**
- * Components
+ * UI Components
  */
-export { Header } from './Header';
-
 export { Text } from './Text';
 export type { TextProps } from './Text';
 
 export { Button } from './Button';
 export type { ButtonProps } from './Button';
 
+export { Spacer } from './Spacer';
+export type { SpacerProps } from './Spacer';
+
+/**
+ * App Components
+ */
+export { Header } from './Header';
+
+export { Layout } from './Layout';
+export type { LayoutProps } from './Layout';
+
+/**
+ * Core Components
+ */
 export { Card } from './Card';
 export type { CardProps } from './Card';
 

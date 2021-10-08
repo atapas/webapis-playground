@@ -1,4 +1,4 @@
-import React, { ReactNode, ElementType, ComponentPropsWithoutRef } from 'react';
+import { ReactNode, ElementType, ComponentPropsWithoutRef } from 'react';
 
 import cx from 'clsx';
 // @ts-ignore
