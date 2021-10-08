@@ -30,6 +30,11 @@ export interface ButtonProps<Element extends ElementType> {
   as?: Element;
 
   /**
+   * The `Button` variants styles
+   */
+  variant?: 'ghost';
+
+  /**
    * Set a custom className
    */
   className?: string;
@@ -43,9 +48,19 @@ export interface ButtonProps<Element extends ElementType> {
 const Button = <Element extends ElementType = 'button'>(
   props: ButtonProps<Element> & ComponentPropsWithoutRef<Element>
 ) => {
-  let { children, as, className, leftIcon, rightIcon, color = 'blue' } = props;
+  let {
+    children,
+    as,
+    className,
+    leftIcon,
+    rightIcon,
+    color = 'blue',
+    variant,
+  } = props;
 
   let Component = as || 'button';
+
+  let isGhost = variant === 'ghost';
 
   return (
     <Component
@@ -55,31 +70,32 @@ const Button = <Element extends ElementType = 'button'>(
           tw-items-center
           tw-justify-center
 
-          tw-px-4
+          
+          ${isGhost ? 'tw-px-3' : 'tw-px-4'}
           tw-h-10
 
           tw-text-base
           tw-font-semibold 
-          tw-text-white
+          ${isGhost ? `tw-text-${color}-500` : 'tw-text-white'}
           tw-whitespace-nowrap
 
           tw-rounded-md 
-          tw-bg-${color}-500
+          ${isGhost ? 'tw-bg-transparent' : `tw-bg-${color}-500`}
 
-          transition
-          tw-duration-300
-          ease-in
+          tw-transition
+          tw-duration-200
+          tw-ease-in
 
           tw-appearance-none
           tw-select-none
           tw-align-middle
 
           focus:tw-ring-4
-          focus:tw-ring-${color}-200
+          focus:${isGhost ? `tw-ring-blue-100` : `tw-ring-${color}-300`}
           focus:tw-outline-none
 
           active:tw-bg-${color}-900
-          hover:tw-bg-${color}-600
+          hover:${isGhost ? `tw-bg-${color}-200` : `tw-bg-${color}-600`}
 
           disabled:tw-opacity-50
           disabled:tw-pointer-events-none

@@ -7,6 +7,9 @@ export type { TextProps } from './Text';
 export { Button } from './Button';
 export type { ButtonProps } from './Button';
 
+export { IconButton } from './Button';
+export type { IconButtonProps } from './Button';
+
 export { Spacer } from './Spacer';
 export type { SpacerProps } from './Spacer';
 
@@ -25,11 +28,9 @@ export { Card } from './Card';
 export type { CardProps } from './Card';
 
 // core
-export { default as App } from './core/App';
 export { default as GithubCodeLink } from './core/GithubCodeLink';
 
 // util
-export { default as Demo } from './util/Demo';
 export { default as DemoInfo } from './util/DemoInfo';
 export { default as Creator } from './util/Creator';
 export { default as NotSupported } from './util/NotSupported';
