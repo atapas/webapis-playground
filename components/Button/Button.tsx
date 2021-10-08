@@ -8,16 +8,6 @@ import { Colors } from '../../types/tailwind';
 
 export interface ButtonProps<Element extends ElementType> {
   /**
-   * Render as `any` HTMLElement
-   */
-  as?: Element;
-
-  /**
-   * Set a custom className
-   */
-  className?: string;
-
-  /**
    * The `background-color` css property
    */
   color?: Colors;
@@ -33,6 +23,16 @@ export interface ButtonProps<Element extends ElementType> {
    * on right side of the `Button`
    */
   rightIcon?: ReactNode;
+
+  /**
+   * Render as `any` HTMLElement
+   */
+  as?: Element;
+
+  /**
+   * Set a custom className
+   */
+  className?: string;
 
   /**
    * Render `children` nodes

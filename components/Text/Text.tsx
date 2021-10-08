@@ -4,11 +4,13 @@ import cx from 'clsx';
 // @ts-ignore
 import filterDOMProps from 'filter-react-dom-props';
 
+import { ClassColor } from '../../types/tailwind';
+
 export interface TextProps<Element extends ElementType> {
   /**
    * The `font-size` css property
    */
-  size:
+  size?:
     | 'xs'
     | 'sm'
     | 'base'
@@ -24,9 +26,24 @@ export interface TextProps<Element extends ElementType> {
     | '9xl';
 
   /**
+   * The `background-color` css property
+   */
+  color?: ClassColor;
+
+  /**
    * The `font-weight` css property
    */
   bold?: boolean;
+
+  /**
+   * Clamp lines
+   */
+  noOfLines?: number;
+
+  /**
+   * Render as `any` HTMLElement
+   */
+  as?: Element;
 
   /**
    * Set a custom className
@@ -42,7 +59,15 @@ export interface TextProps<Element extends ElementType> {
 const Text = <Element extends ElementType = 'span'>(
   props: TextProps<Element> & ComponentPropsWithoutRef<Element>
 ) => {
-  let { children, as, className, size = 'base', bold } = props;
+  let {
+    children,
+    as,
+    className,
+    size = 'base',
+    color = 'black',
+    noOfLines,
+    bold,
+  } = props;
 
   let Component = as || 'span';
 
@@ -51,8 +76,11 @@ const Text = <Element extends ElementType = 'span'>(
       className={cx(
         `
           tw-text-${size}
-          tw-whitespace-nowrap
+          tw-text-${color}
         `,
+        {
+          [`tw-line-clamp-${noOfLines}`]: noOfLines,
+        },
         {
           'tw-font-bold': bold,
         },
