@@ -125,6 +125,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "rzhekova",
+      "name": "Rosie Z",
+      "avatar_url": "https://avatars.githubusercontent.com/u/35401262?v=4",
+      "profile": "https://github.com/rzhekova",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
