@@ -21,6 +21,7 @@
   },
   "dependencies": {
     "@bradgarropy/next-seo": "^1.0.0",
+    "filter-react-dom-props": "^0.0.2",
     "framer-motion": "^4.1.17",
     "next": "11.1.2",
     "next-pwa": "^5.3.1",
@@ -31,7 +32,9 @@
   },
   "devDependencies": {
     "@types/react": "^17.0.27",
+    "@types/tailwindcss": "^2.2.1",
     "autoprefixer": "^10.3.7",
+    "clsx": "^1.1.1",
     "eslint": "7.29.0",
     "eslint-config-next": "11.0.0",
     "eslint-config-prettier": "^8.3.0",

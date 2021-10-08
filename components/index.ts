@@ -1,6 +1,19 @@
+/**
+ * Components
+ */
+export { Header } from './Header';
+
+export { Text } from './Text';
+export type { TextProps } from './Text';
+
+export { Button } from './Button';
+export type { ButtonProps } from './Button';
+
+export { Card } from './Card';
+export type { CardProps } from './Card';
+
 // core
 export { default as App } from './core/App';
-export { default as Header } from './core/Header';
 export { default as GithubCodeLink } from './core/GithubCodeLink';
 
 // util
