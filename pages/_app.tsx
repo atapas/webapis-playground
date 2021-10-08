@@ -6,7 +6,7 @@ import { AppProps } from 'next/app';
 import SEO from '@bradgarropy/next-seo';
 import NextNProgress from 'nextjs-progressbar';
 
-import { Header } from 'components/Header';
+import { Header, Layout } from 'components';
 import { GithubCodeLink } from '../components';
 
 function MyApp({ Component, pageProps, router }: AppProps) {
@@ -56,7 +56,11 @@ function MyApp({ Component, pageProps, router }: AppProps) {
         }}
       />
       <Header />
-      {/* <Component {...pageProps} /> */}
+
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+
       {isDemoRoute && (
         <GithubCodeLink
           url={`https://github.com/atapas/webapis-playground/blob/master/web-apis/${webApiPathname}/index.js`}

@@ -53,7 +53,9 @@ function Card({ data }: CardProps) {
       <Spacer size={8} />
 
       <Link href={`/demos/${data.path}`} passHref>
-        <Button leftIcon={<FaBolt />}>Try it</Button>
+        <Button as="a" leftIcon={<FaBolt />}>
+          Try it
+        </Button>
       </Link>
     </article>
   );
