@@ -1,7 +1,7 @@
 # 🔌 WEB APIS PLAYGROUND
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-13-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-14-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 The `Web APIs Playground` is a project to showcase the JavaScript Web APIs with examples and demonstrations. Client-side JavaScript APIs provides wrapper functions for many low-level tasks like,
@@ -124,6 +124,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://abhikhatri67.github.io/"><img src="https://avatars.githubusercontent.com/u/15958423?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Abhishek Khatri</b></sub></a><br /><a href="https://github.com/atapas/webapis-playground/commits?author=abhikhatri67" title="Code">💻</a></td>
     <td align="center"><a href="https://www.avneesh.tech/"><img src="https://avatars.githubusercontent.com/u/76690419?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Avneesh Agarwal</b></sub></a><br /><a href="https://github.com/atapas/webapis-playground/commits?author=avneesh0612" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/kvnal"><img src="https://avatars.githubusercontent.com/u/72142540?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Kunal Singh</b></sub></a><br /><a href="https://github.com/atapas/webapis-playground/commits?author=kvnal" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/rzhekova"><img src="https://avatars.githubusercontent.com/u/35401262?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Rosie Z</b></sub></a><br /><a href="https://github.com/atapas/webapis-playground/commits?author=rzhekova" title="Code">💻</a></td>
   </tr>
 </table>
 
