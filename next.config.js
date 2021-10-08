@@ -11,6 +11,6 @@ module.exports = withPWA({
     runtimeCaching,
   },
   eslint: {
-    dirs: ['pages', 'components', 'web-apis', 'utils'],
+    dirs: ['pages', 'components', 'web-apis', 'utils', 'hooks'],
   },
 });
