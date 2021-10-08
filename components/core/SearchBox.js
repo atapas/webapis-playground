@@ -1,15 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 
 const PLACEHOLDER = 'Search by API names';
 
-export const SearchBox = ({ onSearch }) => {
-  const [searchText, setSearchText] = useState('');
-
-  useEffect(() => {
-    onSearch(searchText);
-  }, [searchText]);
-
-  const onSearchTextChange = event => setSearchText(event.target.value);
+export const SearchBox = ({ searchText, setSearchText, setLoading }) => {
+  const onSearchTextChange = event => {
+    setLoading(true);
+    setSearchText(event.target.value);
+  };
 
   const clearSearch = () => setSearchText('');
 

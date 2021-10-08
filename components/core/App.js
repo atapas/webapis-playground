@@ -1,36 +1,27 @@
-import React, { useState } from 'react';
-
-// import data from json
-import { getAllDemos } from 'utils/data/data-access';
+import React from 'react';
 
 // Demo component
 import { Demo } from '..';
 import { SearchBox } from './SearchBox';
 
+// useSearchApi hook
+import { useSearchApi } from '../../hooks/useSearchApi';
+
 const NOT_FOUND_TEXT = 'No matched demo found';
 
 const App = () => {
-  const [demos, setDemos] = useState([]);
-  const [loading, setLoading] = useState(true);
-
-  const searchAPI = (searchText) => {
-    const lowerSearchText = searchText.toLowerCase();
-    setLoading(true);
-    let searchedDemos = getAllDemos();
-    if (searchText) {
-      searchedDemos = searchedDemos
-        .filter(demo => demo.title?.toLowerCase().includes(lowerSearchText));
-    }
-
-    setDemos(searchedDemos);
-    setLoading(false);
-  };
+  const { demos, loading, searchText, setSearchText, setLoading } =
+    useSearchApi();
 
   return (
     <>
-      <SearchBox onSearch={searchAPI} />
+      <SearchBox
+        searchText={searchText}
+        setSearchText={setSearchText}
+        setLoading={setLoading}
+      />
       <div className="tw-flex tw-flex-wrap tw-items-center tw-justify-center tw-p-10px">
-        {(!loading && demos.length > 0) ? (
+        {!loading && demos.length > 0 ? (
           demos.map((demo, index) => <Demo demo={demo} key={index} />)
         ) : (
           <div className="not-found">{NOT_FOUND_TEXT}</div>
