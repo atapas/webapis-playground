@@ -1,6 +1,19 @@
+/**
+ * UI Components
+ */
+export { IconButton } from './IconButton';
+export type { IconButtonProps } from './IconButton';
+
+/**
+ * App Components
+ */
+export { Header } from './Header';
+
+export { Layout } from './Layout';
+export type { LayoutProps } from './Layout';
+
 // core
 export { default as App } from './core/App';
-export { default as Header } from './core/Header';
 export { default as GithubCodeLink } from './core/GithubCodeLink';
 
 // util
