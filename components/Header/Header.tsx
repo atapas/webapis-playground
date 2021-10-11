@@ -1,5 +1,7 @@
+import Link from 'next/link';
+
 import { FiTwitter, FiGithub } from 'react-icons/fi';
-import { FaBolt } from 'react-icons/fa';
+import { FiActivity } from 'react-icons/fi';
 
 import { IconButton } from 'components';
 
@@ -34,7 +36,21 @@ function Header() {
           tw-justify-between
         "
       >
-        <FaBolt />
+        <Link href="/" passHref>
+          <a
+            className="
+            tw-flex
+            tw-items-center
+
+            tw-text-lg
+            tw-font-bold
+            tw-text-gray-700
+          "
+          >
+            <FiActivity className="tw-mr-2" />
+            Web APIs
+          </a>
+        </Link>
 
         <div className=" tw-flex tw-items-center">
           <IconButton

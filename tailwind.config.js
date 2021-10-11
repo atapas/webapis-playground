@@ -17,6 +17,7 @@ module.exports = {
       '18px': '18px',
       '25px': '25px',
       '30px': '30px',
+      ...defaultTheme.fontSize,
     },
     borderWidth: {
       none: '0',
