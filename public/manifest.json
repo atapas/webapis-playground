@@ -1,6 +1,6 @@
 {
-  "name": "Next.JS Progressive Web App",
-  "short_name": "Next PWA",
+  "name": "Web APIs Playground",
+  "short_name": "Web APIs",
   "theme_color": "#ffffff",
   "background_color": "#004740",
   "display": "fullscreen",
