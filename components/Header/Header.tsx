@@ -1,7 +1,7 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 import { FiTwitter, FiGithub } from 'react-icons/fi';
-import { FiActivity } from 'react-icons/fi';
 
 import { IconButton } from 'components';
 
@@ -41,7 +41,15 @@ function Header() {
             tw-text-gray-700
           "
           >
-            <FiActivity className="tw-mr-2" />
+            <div className="tw-inline-flex tw-mr-2">
+              <Image
+                src="/assets/svg/logoDark.svg"
+                width={24}
+                height={24}
+                alt="Web APIs"
+                aria-hidden="true"
+              />
+            </div>
             Web APIs
           </a>
         </Link>
