@@ -21,24 +21,28 @@
   },
   "dependencies": {
     "@bradgarropy/next-seo": "^1.0.0",
-    "autoprefixer": "^10.3.4",
+    "filter-react-props": "^0.0.4",
     "framer-motion": "^4.1.17",
     "next": "11.1.2",
     "next-pwa": "^5.3.1",
     "nextjs-progressbar": "^0.0.11",
-    "postcss": "^8.3.6",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "react-icons": "^4.2.0",
-    "tailwindcss": "^2.2.10"
+    "react-icons": "^4.2.0"
   },
   "devDependencies": {
+    "@types/react": "^17.0.27",
+    "autoprefixer": "^10.3.7",
+    "clsx": "^1.1.1",
     "eslint": "7.32.0",
     "eslint-config-next": "11.1.2",
     "eslint-config-prettier": "^8.3.0",
     "husky": "^7.0.2",
     "lint-staged": "^11.2.0",
     "plop": "^2.7.4",
-    "prettier": "2.3.2"
+    "postcss": "^8.3.9",
+    "prettier": "2.3.2",
+    "tailwindcss": "^2.2.16",
+    "typescript": "^4.4.3"
   }
 }
