@@ -134,6 +134,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "mverissimo",
+      "name": "Matheus Verissimo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/371844?v=4",
+      "profile": "https://github.com/mverissimo",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
