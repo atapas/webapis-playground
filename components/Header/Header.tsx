@@ -60,7 +60,7 @@ function Header() {
             href="https://github.com/atapas/webapis-playground"
             rel="noopener noreferrer"
             target="_blank"
-            aria-label="Source code"
+            ariaLabel="Source code"
             icon={<FiGithub />}
           />
 
@@ -71,7 +71,7 @@ function Header() {
             href="https://twitter.com/intent/tweet?text=Check%20this%20amazing%20Web%20APIs%20demo%20https://webapis-playground.vercel.app/,%20created%20by%20@tapasadhikary%20@MaxProgramming1%0A%0A%23DEVCommunity%20%23100DaysOfCode"
             rel="noopener noreferrer"
             target="_blank"
-            aria-label="Share on twitter"
+            ariaLabel="Share on twitter"
             icon={<FiTwitter />}
           />
         </div>
