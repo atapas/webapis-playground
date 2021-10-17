@@ -59,12 +59,13 @@ module.exports = {
         '13px': '13px',
         '75px': '75px',
         '175px': '175px',
+        ...defaultTheme.spacing,
       },
     },
   },
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/forms')],
   prefix: 'tw-',
 };
