@@ -13,47 +13,68 @@ import { getDemoById } from 'utils/data/data-access';
 // Component that Renders the Demo UI
 const ToRender = () => {
   const [networkInfo] = useState(getNetworkInfo());
+  const UNKNOWN_STRING = 'Unknown';
+
   return (
-    <div className="tw-flex tw-flex-col tw-items-center tw-justify-center">
-      <ul id="network-info-main">
-        <li>
-          <span>Network Type: </span>
-          <span>
-            <b>{networkInfo.effectiveType}</b>
-          </span>
-        </li>
-        <li>
-          <span>Round Trip Time(rtt): </span>
-          <span>
-            <b>{networkInfo.rtt}</b>
-          </span>
-        </li>
-        <li>
-          <span>Bandwidth estimate(in MBPS): </span>
-          <span>
-            <b>{networkInfo.downlink}</b>
-          </span>
-        </li>
-        <li>
-          <span>Max Bandwidth estimate(in MBPS): </span>
-          <span>
-            <b>{networkInfo.downlinksMax}</b>
-          </span>
-        </li>
-        <li>
-          <span>Save data enabled: </span>
-          <span>
-            <b>{networkInfo.saveData ? 'Yes' : 'No'}</b>
-          </span>
-        </li>
-        <li>
-          <span>Device Connection Type: </span>
-          <span>
-            <b>{networkInfo.type}</b>
-          </span>
-        </li>
-      </ul>
-    </div>
+    <table className="tw-shadow-lg tw-bg-white tw-mt-4">
+      <thead>
+        <tr>
+          <th className="tw-bg-blue-100 tw-border tw-text-left tw-px-8 tw-py-2">
+            Property
+          </th>
+          <th className="tw-bg-blue-100 tw-border tw-text-left tw-px-8 tw-py-2">
+            Value
+          </th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td className="tw-border tw-px-8 tw-py-2">Network Type</td>
+          <td className="tw-border tw-px-8 tw-py-2">
+            {networkInfo.effectiveType || UNKNOWN_STRING}
+          </td>
+        </tr>
+        <tr>
+          <td className="tw-border tw-px-8 tw-py-2">Round Trip Time(rtt)</td>
+          <td className="tw-border tw-px-8 tw-py-2">
+            {networkInfo.rtt || UNKNOWN_STRING}
+          </td>
+        </tr>
+
+        <tr>
+          <td className="tw-border tw-px-8 tw-py-2">
+            Bandwidth estimate(in MBPS)
+          </td>
+          <td className="tw-border tw-px-8 tw-py-2">
+            {networkInfo.downlink || UNKNOWN_STRING}
+          </td>
+        </tr>
+
+        <tr>
+          <td className="tw-border tw-px-8 tw-py-2">
+            Max Bandwidth estimate(in MBPS)
+          </td>
+          <td className="tw-border tw-px-8 tw-py-2">
+            {networkInfo.downlinksMax || UNKNOWN_STRING}
+          </td>
+        </tr>
+
+        <tr>
+          <td className="tw-border tw-px-8 tw-py-2">Save data enabled</td>
+          <td className="tw-border tw-px-8 tw-py-2">
+            {networkInfo.saveData ? 'Yes' : 'No'}
+          </td>
+        </tr>
+
+        <tr>
+          <td className="tw-border tw-px-8 tw-py-2">Device Connection Type</td>
+          <td className="tw-border tw-px-8 tw-py-2">
+            {networkInfo.type || UNKNOWN_STRING}
+          </td>
+        </tr>
+      </tbody>
+    </table>
   );
 };
 
