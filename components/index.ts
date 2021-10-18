@@ -4,6 +4,9 @@
 export { IconButton } from './IconButton';
 export type { IconButtonProps } from './IconButton';
 
+export { Input } from './Input';
+export type { InputProps } from './Input';
+
 /**
  * App Components
  */
@@ -11,6 +14,9 @@ export { Header } from './Header';
 
 export { Layout } from './Layout';
 export type { LayoutProps } from './Layout';
+
+export { InputSearch } from './InputSearch';
+export type { InputSearchProps } from './InputSearch';
 
 // core
 export { default as App } from './core/App';

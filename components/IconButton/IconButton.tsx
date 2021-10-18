@@ -1,14 +1,13 @@
 import React, { ReactNode, ElementType, ComponentPropsWithoutRef } from 'react';
 
 import cx from 'clsx';
-
 // @ts-ignore
 import filterDOMProps from 'filter-react-props';
 export interface IconButtonProps<Element extends ElementType> {
   /**
    * Acessible label
    */
-  'aria-label': string;
+  ariaLabel: string;
 
   /**
    * Render `as` any tag

@@ -9,7 +9,7 @@ import { Creator } from '..';
 
 const Demo = ({ demo }) => {
   return (
-    <div className="tw-border-1 tw-border-box tw-border-solid tw-p-2 tw-w-300px tw-bg-demo tw-m-4 tw-min-h-300px tw-rounded-4px">
+    <div className="tw-border-1 tw-border-box tw-border-solid tw-p-2 tw-w-full tw-bg-demo tw-rounded-4px">
       <h2 className="tw-text-center tw-text-1.5em tw-font-bold">
         {demo.title}
       </h2>
