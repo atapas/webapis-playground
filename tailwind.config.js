@@ -26,7 +26,7 @@ module.exports = {
       ...defaultTheme.borderWidth,
     },
     maxWidth: {
-      container: '100rem',
+      container: '82.5em',
       '500px': '500px',
       '400px': '400px',
     },
@@ -66,6 +66,6 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [require('@tailwindcss/forms')],
+  plugins: [require('@tailwindcss/forms'), require('@tailwindcss/line-clamp')],
   prefix: 'tw-',
 };
