@@ -21,7 +21,12 @@ export type { LayoutProps } from './Layout';
 export { InputSearch } from './InputSearch';
 export type { InputSearchProps } from './InputSearch';
 
-// core
+/**
+ * Core components
+ */
+export { Demo } from './Demo';
+export type { DemoProps } from './Demo';
+
 export { default as GithubCodeLink } from './core/GithubCodeLink';
 
 // util

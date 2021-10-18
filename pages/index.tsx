@@ -1,10 +1,8 @@
 import React, { ChangeEvent } from 'react';
 
-import { InputSearch } from 'components';
+import { InputSearch, Demo } from 'components';
 
 import { useSearchApi } from 'hooks/useSearchApi';
-
-import { Demo } from './components/Demo';
 
 const NOT_FOUND_TEXT = 'No matched demo found';
 
