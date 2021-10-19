@@ -5,7 +5,7 @@ const DemoSEO = ({ title, description }) => {
     <div>
       <meta
         property="og:image"
-        content="https://webapis-playground.vercel.app/readme/og.png?latest"
+        content="https://webapis-playground.vercel.app/readme/og.png"
       />
       <SEO title={title} description={description} />
     </div>
