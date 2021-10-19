@@ -9,9 +9,10 @@ interface GithubCodeLinkProps {
 const GithubCodeLink = ({ url }: GithubCodeLinkProps) => (
   <Button
     as="a"
-    leftIcon={<FiGithub />}
     href={url}
-    rel="noreferrer"
+    leftIcon={<FiGithub />}
+    target="_blank"
+    rel="noreferrer noopener"
     className="
       tw-fixed
       tw-right-8

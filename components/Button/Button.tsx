@@ -28,11 +28,14 @@ export interface ButtonProps<Element extends ElementType> {
   children: ReactNode;
 }
 
-const Button = <Element extends ElementType = 'button'>(
-  props: ButtonProps<Element> & ComponentPropsWithoutRef<Element>
-) => {
-  let { children, as, className, leftIcon, rightIcon } = props;
-
+const Button = <Element extends ElementType = 'button'>({
+  children,
+  as,
+  className,
+  leftIcon,
+  rightIcon,
+  ...props
+}: ButtonProps<Element> & ComponentPropsWithoutRef<Element>) => {
   let Component = as || 'button';
 
   return (
@@ -51,7 +54,7 @@ const Button = <Element extends ElementType = 'button'>(
           tw-rounded-md 
           tw-bg-blue-500
           tw-transition
-          tw-duration-200
+          tw-duration-100
           tw-ease-in
           tw-appearance-none
           tw-select-none
