@@ -34,12 +34,14 @@ export default function Home() {
             tw-w-full
             tw-max-w-container
             tw-m-auto
-            tw-mt-8
+            tw-mt-4
+            md:tw-mt-8
             tw-grid
             tw-grid-cols-1
             tw-gap-4
             md:tw-grid-cols-2
-            lg:tw-grid-cols-4
+            lg:tw-grid-cols-3
+            xl:tw-grid-cols-4
           "
         >
           {demos.map((demo, index) => (
