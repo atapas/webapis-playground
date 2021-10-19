@@ -65,6 +65,11 @@ function MyApp({ Component, pageProps, router }: AppProps) {
           image: 'https://webapis-playground.vercel.app/readme/og.png',
           type: 'website',
         }}
+        linkedIn={{
+          url: 'https://webapis-playground.vercel.app/',
+          image: 'https://webapis-playground.vercel.app/readme/og.png',
+          type: 'website',
+        }}
       />
       <Header />
 
