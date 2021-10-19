@@ -55,8 +55,6 @@ function MyApp({ Component, pageProps, router }: AppProps) {
           'full screen',
           'next.js',
         ]}
-        url="https://webapis-playground.vercel.app/"
-        image="https://webapis-playground.vercel.app/readme/og.png"
         twitter={{
           site: '@tapasadhikary',
           image: 'https://webapis-playground.vercel.app/readme/og.png',
