@@ -3,7 +3,10 @@ import SEO from '@bradgarropy/next-seo';
 const DemoSEO = ({ title, description }) => {
   return (
     <div>
-      <img src=".\public\readme\og.png" />
+      <meta
+        property="og:image"
+        content="https://webapis-playground.vercel.app/readme/og.png?latest"
+      />
       <SEO title={title} description={description} />
     </div>
   );
