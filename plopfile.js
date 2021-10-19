@@ -11,6 +11,11 @@ module.exports = plop => {
       },
       {
         type: 'input',
+        name: 'emoju',
+        message: 'Please provide a emoji thats represet the demo - 📺):',
+      },
+      {
+        type: 'input',
         name: 'title',
         message: 'Please provide a demo title(Example - Payment Request API):',
       },
