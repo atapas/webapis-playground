@@ -60,6 +60,11 @@ function MyApp({ Component, pageProps, router }: AppProps) {
           image: 'https://webapis-playground.vercel.app/readme/og.png',
           card: 'summary_large_image',
         }}
+        facebook={{
+          url: 'https://webapis-playground.vercel.app/',
+          image: 'https://webapis-playground.vercel.app/readme/og.png',
+          type: 'website',
+        }}
       />
       <Header />
 
