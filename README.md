@@ -77,6 +77,7 @@ So far, it includes the following examples:
 1. ⚓ Geolocation API
 1. 🖼️ Picture in Picture
 1. 💻 Screen Capture
+1. 🎙 Web Speech API
 
 # 🤝 Open Source
 

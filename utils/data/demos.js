@@ -177,6 +177,18 @@ const DEMOS = [
       twitter: 'koustov',
       email: 'koustov@live.com',
     },
+  },
+  {
+    id: '_web_speech_',
+    title: 'Web Speech API',
+    desc: 'The Web Speech API enables you to incorporate voice data into web apps. ',
+    path: 'web-speech',
+    canIUseURL: 'https://caniuse.com/speech-recognition',
+    creator: {
+      name: 'Abiola Farounbi',
+      twitter: 'abiolaEsther_',
+      email: 'farounbiabiola@gmail.com',
+    },
   }, //replace item here
 ];
 
