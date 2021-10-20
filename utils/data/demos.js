@@ -191,8 +191,20 @@ const data = [
       name: 'Koustov',
       twitter: 'koustov',
       email: 'koustov@live.com',
-    }, //replace item here
+    },
+  }, {
+  id: "test", 
+  emoji: "test",
+  title: "test", 
+  desc: "test", 
+  path: "test",
+  canIUseURL: "test", 
+  creator: { 
+    name: "test",
+    twitter: "test",
+    email: "test", 
   },
+}, //replace item here
 ];
 
 export default data;
