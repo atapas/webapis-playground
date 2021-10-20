@@ -12,24 +12,18 @@ import { getDemoById } from 'utils/data/data-access';
 
 // Component that Renders the Demo UI
 const ToRender = () => {
-  const SpeechRecognition =
-    window.SpeechRecognition || window.webkitSpeechRecognition;
-  const recognition = new SpeechRecognition();
+  const recognition = new window.webkitSpeechRecognition();
   recognition.continous = true;
   recognition.interimResults = true;
   recognition.lang = 'en-US';
 
-  const [isListening, setIsListening] = useState(false);
-
   function handleListen() {
-    setIsListening(true);
-    if (isListening) {
+    recognition.start();
+    recognition.onend = () => {
+      document.getElementById('loading').innerHTML = '...continue listening';
       recognition.start();
-      recognition.onend = () => {
-        console.log('...continue listening');
-        recognition.start();
-      };
-    }
+    };
+
     let finalTranscript = '';
     recognition.onresult = event => {
       let interimTranscript = '';
@@ -45,45 +39,27 @@ const ToRender = () => {
   }
 
   function stopListen() {
-    setIsListening(false);
     recognition.stop();
     recognition.onend = () => {
-      console.log('Stopped listening');
+      document.getElementById('loading').innerHTML = 'Stopped listening';
     };
   }
 
   return (
     <div className="tw-flex tw-flex-col  tw-items-center tw-justify-center">
-      <div
-        style={{
-          display: 'flex',
-          justifyContent: 'space-between',
-          alignItems: 'center',
-        }}
-      >
-        <button style={{ margin: '0px 10px' }} onClick={handleListen}>
+      <div className="tw-flex tw-items-center tw-justify-center">
+        <button className="tw-mx-4" onClick={handleListen}>
           {' '}
           Speak{' '}
         </button>
         <button onClick={stopListen}> Stop </button>
+        <br />
       </div>
-      <div
-        style={{
-          border: '1px solid blue',
-          margin: '10px',
-          padding: '10px',
-          width: '50%',
-        }}
-      >
-        <h1
-          style={{
-            textAlign: 'center',
-            fontSize: '24px',
-            fontWeight: 'bold',
-            borderBottom: '1px solid blue',
-          }}
-        >
-          {' '}
+
+      <div id="loading"></div>
+
+      <div className="tw-m-4 tw-p-4 tw-w-1/2 tw-border-solid tw-border tw-border-blue-500">
+        <h1 className=" tw-border-b tw-border-blue-500 tw-font-bold tw-text-xl tw-text-center">
           Transcript{' '}
         </h1>
         <div id="interim"></div>

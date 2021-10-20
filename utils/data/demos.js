@@ -180,7 +180,7 @@ const DEMOS = [
   },
   {
     id: '_web_speech_',
-    title: 'Web Speech API',
+    title: '🎙 Web Speech API',
     desc: 'The Web Speech API enables you to incorporate voice data into web apps. ',
     path: 'web-speech',
     canIUseURL: 'https://caniuse.com/speech-recognition',
