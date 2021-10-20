@@ -23,17 +23,19 @@ export interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   ref: Ref<HTMLInputElement>;
 }
 
-const Input = React.forwardRef<HTMLInputElement, InputProps>((props, ref) => {
-  let { renderPrefix: Prefix, renderSuffix: Suffix, className } = props;
+const Input = React.forwardRef<HTMLInputElement, InputProps>(
+  (
+    { renderPrefix: Prefix, renderSuffix: Suffix, className, ...props },
+    ref
+  ) => {
+    const prefix = Prefix && <Prefix />;
+    const suffix = Suffix && <Suffix />;
 
-  const prefix = Prefix && <Prefix />;
-  const suffix = Suffix && <Suffix />;
-
-  return (
-    <div className="tw-relative">
-      {prefix && (
-        <div
-          className="
+    return (
+      <div className="tw-relative">
+        {prefix && (
+          <div
+            className="
             tw-absolute
             tw-top-0
             tw-left-0
@@ -44,14 +46,14 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>((props, ref) => {
             tw-justify-center
             tw-text-gray-400
           "
-        >
-          {prefix}
-        </div>
-      )}
-      <input
-        ref={ref}
-        className={cx(
-          `
+          >
+            {prefix}
+          </div>
+        )}
+        <input
+          ref={ref}
+          className={cx(
+            `
             tw-w-full
             tw-border-gray-200
             tw-placeholder-gray-400
@@ -59,15 +61,15 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>((props, ref) => {
             tw-duration-200
             tw-ease-in
           `,
-          [prefix ? 'tw-pl-10' : 'tw-pl-4'],
-          [suffix ? 'tw-pr-10' : 'tw-pr-4'],
-          className
-        )}
-        {...filterDOMProps(props)}
-      />
-      {suffix && (
-        <div
-          className="
+            [prefix ? 'tw-pl-10' : 'tw-pl-4'],
+            [suffix ? 'tw-pr-10' : 'tw-pr-4'],
+            className
+          )}
+          {...filterDOMProps(props)}
+        />
+        {suffix && (
+          <div
+            className="
             tw-absolute
             tw-top-0
             tw-right-0
@@ -78,13 +80,14 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>((props, ref) => {
             tw-justify-center
             tw-text-gray-400
           "
-        >
-          {suffix}
-        </div>
-      )}
-    </div>
-  );
-});
+          >
+            {suffix}
+          </div>
+        )}
+      </div>
+    );
+  }
+);
 
 Input.displayName = 'Input';
 

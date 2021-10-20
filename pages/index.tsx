@@ -1,14 +1,12 @@
 import React, { ChangeEvent } from 'react';
 
-// Demo component
-import { Demo } from '..';
-import { InputSearch } from 'components';
+import { InputSearch, Demo } from 'components';
 
-import { useSearchApi } from '../../hooks/useSearchApi';
+import { useSearchApi } from 'hooks/useSearchApi';
 
 const NOT_FOUND_TEXT = 'No matched demo found';
 
-const App = () => {
+export default function Home() {
   const { demos, searchText, setSearchText } = useSearchApi();
 
   const handleChange = ({
@@ -36,16 +34,18 @@ const App = () => {
             tw-w-full
             tw-max-w-container
             tw-m-auto
-            tw-mt-8
+            tw-mt-4
+            md:tw-mt-8
             tw-grid
             tw-grid-cols-1
             tw-gap-4
             md:tw-grid-cols-2
-            lg:tw-grid-cols-5
+            lg:tw-grid-cols-3
+            xl:tw-grid-cols-4
           "
         >
           {demos.map((demo, index) => (
-            <Demo demo={demo} key={index} />
+            <Demo data={demo} key={index} />
           ))}
         </div>
       ) : (
@@ -53,6 +53,4 @@ const App = () => {
       )}
     </>
   );
-};
-
-export default App;
+}
