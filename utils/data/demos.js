@@ -191,7 +191,7 @@ const data = [
       name: 'Koustov',
       twitter: 'koustov',
       email: 'koustov@live.com',
-    },
+    }, //replace item here
   },
 ];
 
