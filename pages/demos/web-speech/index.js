@@ -12,7 +12,8 @@ import { getDemoById } from 'utils/data/data-access';
 
 // Component that Renders the Demo UI
 const ToRender = () => {
-  const SpeechRecognition = SpeechRecognition || webkitSpeechRecognition;
+  const SpeechRecognition =
+    window.SpeechRecognition || window.webkitSpeechRecognition;
   const recognition = new SpeechRecognition();
   recognition.continous = true;
   recognition.interimResults = true;
