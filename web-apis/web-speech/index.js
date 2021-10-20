@@ -1,5 +1,5 @@
 const isSupported = () => {
-  return window.webkitSpeechRecognition
+  return window.SpeechRecognition || window.webkitSpeechRecognition
     ? true
     : false;
 };
