@@ -55,17 +55,17 @@ module.exports = plop => {
     actions: [
       {
         type: 'add',
-        path: 'pages/demos/{{path}}/index.js',
+        path: 'src/pages/demos/{{path}}/index.js',
         templateFile: 'plop-templates/page.hbs',
       },
       {
         type: 'add',
-        path: 'web-apis/{{path}}/index.js',
+        path: 'src/web-apis/{{path}}/index.js',
         templateFile: 'plop-templates/api.hbs',
       },
       {
         type: 'modify',
-        path: 'utils/data/demos.js',
+        path: 'src/utils/data/demos.js',
         pattern: /\/\/replace item here/gi,
         templateFile: 'plop-templates/demo.hbs',
       },
