@@ -1,6 +1,9 @@
 /**
  * UI Components
  */
+export { Button } from './Button';
+export type { ButtonProps } from './Button';
+
 export { IconButton } from './IconButton';
 export type { IconButtonProps } from './IconButton';
 
@@ -18,12 +21,15 @@ export type { LayoutProps } from './Layout';
 export { InputSearch } from './InputSearch';
 export type { InputSearchProps } from './InputSearch';
 
-// core
-export { default as App } from './core/App';
+/**
+ * Core components
+ */
+export { Demo } from './Demo';
+export type { DemoProps } from './Demo';
+
 export { default as GithubCodeLink } from './core/GithubCodeLink';
 
 // util
-export { default as Demo } from './util/Demo';
 export { default as DemoInfo } from './util/DemoInfo';
 export { default as Creator } from './util/Creator';
 export { default as NotSupported } from './util/NotSupported';

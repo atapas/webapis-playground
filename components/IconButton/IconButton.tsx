@@ -25,10 +25,13 @@ export interface IconButtonProps<Element extends ElementType> {
   children?: ReactNode;
 }
 
-const IconButton = <Element extends ElementType = 'button'>(
-  props: IconButtonProps<Element> & ComponentPropsWithoutRef<Element>
-) => {
-  let { children, icon, as, className } = props;
+const IconButton = <Element extends ElementType = 'button'>({
+  children,
+  icon,
+  as,
+  className,
+  ...props
+}: IconButtonProps<Element> & ComponentPropsWithoutRef<Element>) => {
   let element = children || icon;
 
   const child = React.isValidElement(element)
