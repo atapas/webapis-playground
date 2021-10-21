@@ -1,7 +1,7 @@
 # 🔌 WEB APIS PLAYGROUND
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-15-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-16-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 The `Web APIs Playground` is a project to showcase the JavaScript Web APIs with examples and demonstrations. Client-side JavaScript APIs provides wrapper functions for many low-level tasks like,
@@ -77,6 +77,7 @@ So far, it includes the following examples:
 1. ⚓ Geolocation API
 1. 🖼️ Picture in Picture
 1. 💻 Screen Capture
+1. 🎙️ Web Speech API
 
 # 🤝 Open Source
 
@@ -128,6 +129,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   </tr>
   <tr>
     <td align="center"><a href="https://github.com/mverissimo"><img src="https://avatars.githubusercontent.com/u/371844?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Matheus Verissimo</b></sub></a><br /><a href="https://github.com/atapas/webapis-playground/commits?author=mverissimo" title="Code">💻</a></td>
+    <td align="center"><a href="http://abiolaesther.me"><img src="https://avatars.githubusercontent.com/u/49586787?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Abiola</b></sub></a><br /><a href="https://github.com/atapas/webapis-playground/commits?author=Abiola-Farounbi" title="Code">💻</a></td>
   </tr>
 </table>
 
