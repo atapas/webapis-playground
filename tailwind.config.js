@@ -19,6 +19,7 @@ module.exports = {
       '30px': '30px',
       ...defaultTheme.fontSize,
     },
+
     borderWidth: {
       none: '0',
       1: '1px',
@@ -37,8 +38,21 @@ module.exports = {
       '5px': '5px',
       '10px': '10px',
       '30px': '30px',
+      header: '100% 0% 100% 0% / 0% 50% 50% 100%',
       half: '50%',
       ...defaultTheme.borderRadius,
+    },
+    boxShadow: {
+      sm: 'rgba(0, 0, 0, 0.19) 0px 10px 20px,rgba(0, 0, 0, 0.23) 0px 6px 6px',
+      none: 'none',
+    },
+    left: {
+      logo: '-100',
+      dp: '-100',
+    },
+    top: {
+      logo: '-100',
+      dp: '-100',
     },
     extend: {
       colors: {
@@ -48,7 +62,17 @@ module.exports = {
         payments: '#ebebeb',
         demo: '#f4f4f4',
         link: '#551A8B',
+        bgstart: '#3f2b96',
+        bgend: '#a8c0ff',
       },
+      height: {
+        card: '30rem',
+      },
+      backgroundColor: {
+        card: '#64B5F6',
+        base: '#FFF',
+      },
+      boxShadow: ['active'],
       spacing: {
         '300px': '300px',
         '100px': '100px',

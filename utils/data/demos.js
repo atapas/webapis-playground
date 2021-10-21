@@ -1,8 +1,17 @@
+import {
+  FaFileAlt,
+  FaDesktop,
+  FaRegClipboard,
+  FaBroadcastTower,
+  FaWifi,
+} from 'react-icons/fa';
+
 const data = [
   {
     id: '_file_system_api_',
     title: 'File System API',
     emoji: '📂',
+    icon: <FaFileAlt />,
     desc: "Only for Chromium-based web browsers. The File System Access API makes it easy and simple to read and write the user's files and access the file system.",
     path: 'filesystem-api',
     canIUseURL: 'https://caniuse.com/mdn-api_window_showopenfilepicker',
@@ -15,6 +24,7 @@ const data = [
     id: '_fullscreen_api_',
     title: 'FullScreen API',
     emoji: '📺',
+    icon: <FaDesktop />,
     desc: 'The Fullscreen API adds methods to present a specific Element (and its descendants) in full-screen mode, and to exit full-screen mode once it is no longer needed.',
     path: 'fullscreen',
     canIUseURL: 'https://caniuse.com/fullscreen',
@@ -28,6 +38,7 @@ const data = [
     id: '_clipboard_api_',
     title: 'Clipboard API',
     emoji: '📋',
+    icon: <FaRegClipboard />,
     desc: 'The Clipboard API provides the ability to respond to clipboard commands (cut, copy, and paste) as well as to asynchronously read from and write to the system clipboard.',
     path: 'clipboard',
     canIUseURL: 'https://caniuse.com/async-clipboard',
@@ -41,6 +52,7 @@ const data = [
     id: '_broadcast_api_',
     title: 'Broadcast',
     emoji: '📡',
+    icon: <FaBroadcastTower />,
     desc: 'The BroadcastChannel is a named channel that allows communication between different documents (in different windows, tabs, frames or iframes) of the same origin.',
     path: 'broadcast-channel',
     canIUseURL: 'https://caniuse.com/broadcastchannel',
@@ -54,6 +66,7 @@ const data = [
     id: '_network_info_api_',
     title: 'Network Info',
     emoji: '📶',
+    icon: <FaWifi />,
     desc: "The Network Information API provides information about the system's connection in terms of general connection type (e.g., 'wifi', 'cellular', etc.).",
     path: 'network-information',
     canIUseURL: 'https://caniuse.com/netinfo',

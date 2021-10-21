@@ -22,7 +22,7 @@ export default function Home() {
   return (
     <>
       <InputSearch
-        placeholder="Search by API names"
+        placeholder="Search by API or contributor name"
         value={searchText}
         onClear={handleClear}
         onChange={handleChange}
@@ -38,10 +38,10 @@ export default function Home() {
             md:tw-mt-8
             tw-grid
             tw-grid-cols-1
-            tw-gap-4
+            tw-gap-10
             md:tw-grid-cols-2
-            lg:tw-grid-cols-3
-            xl:tw-grid-cols-4
+            lg:tw-grid-cols-4
+            xl:tw-grid-cols-5
           "
         >
           {demos.map((demo, index) => (
