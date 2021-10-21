@@ -195,7 +195,8 @@ const data = [
   },
   {
     id: '_web_speech_',
-    title: '🎙 Web Speech API',
+    title: 'Web Speech API',
+    emoji: '🎙️',
     desc: 'The Web Speech API enables you to incorporate voice data into web apps. ',
     path: 'web-speech',
     canIUseURL: 'https://caniuse.com/speech-recognition',
