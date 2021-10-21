@@ -192,18 +192,20 @@ const data = [
       twitter: 'koustov',
       email: 'koustov@live.com',
     },
-  }, {
-  id: "css_font_loading", 
-  title: "CSS Font Loading API", 
-  desc: "The CSS Font Loading API provides events and interfaces for dynamically loading font resources", 
-  path: "font-loading",
-  canIUseURL: "font-loading", 
-  creator: { 
-    name: "Emit Dutcher",
-    twitter: "develemit",
-    email: "emitdutcher@gmail.com", 
   },
-}, //replace item here
+  {
+    id: 'css_font_loading',
+    title: 'CSS Font Loading API',
+    emoji: '✍️',
+    desc: 'The CSS Font Loading API provides events and interfaces for dynamically loading font resources',
+    path: 'font-loading',
+    canIUseURL: 'font-loading',
+    creator: {
+      name: 'Emit Dutcher',
+      twitter: 'develemit',
+      email: 'emitdutcher@gmail.com',
+    },
+  }, //replace item here
 ];
 
 export default data;

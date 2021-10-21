@@ -13,16 +13,17 @@ import { getDemoById } from 'utils/data/data-access';
 const loadableFonts = ['Roboto', 'OpenSans', 'Festive', 'Ephesis'];
 
 const RenderRadioButton = ({ font, onChange, ...rest }) => (
-  <div>
+  <div className="tw-w-40 tw-m-auto">
+    <input
+      type="radio"
+      name="font"
+      className="tw-mr-2"
+      value={font}
+      onChange={() => onChange(font)}
+      {...rest}
+    />
     <label htmlFor="font">
-      <span>{font}</span>
-      <input
-        type="radio"
-        name="font"
-        value={font}
-        onChange={() => onChange(font)}
-        {...rest}
-      />
+      <span onClick={() => onChange(font)}>{font}</span>
     </label>
   </div>
 );
@@ -53,15 +54,15 @@ const ToRender = () => {
   }, [font]);
 
   return (
-    <div className="flex-colums" style={{ fontFamily: font }}>
-      <div style={{ textAlign: 'center' }}>
+    <div className="flex-colums tw-text-center" style={{ fontFamily: font }}>
+      <div className="tw-mb-2">
         <i>
           Find more fonts at{' '}
           <a
+            className="tw-underline tw-text-blue-500"
             target="_blank"
             href="https://fonts.google.com/"
             rel="noreferrer"
-            style={{ textDecoration: 'underline', color: 'blue' }}
           >
             fonts.google.com
           </a>
@@ -69,17 +70,19 @@ const ToRender = () => {
         </i>
         <p>
           The currently selected font is{' '}
-          <span style={{ textDecoration: 'underline' }}>{font}</span>
+          <span className="tw-underline">{font}</span>
         </p>
       </div>
-      {loadableFonts.map(f => (
-        <RenderRadioButton
-          key={f}
-          font={f}
-          onChange={setFont}
-          checked={f === font}
-        />
-      ))}
+      <div className="tw-text-left">
+        {loadableFonts.map(f => (
+          <RenderRadioButton
+            key={f}
+            font={f}
+            onChange={setFont}
+            checked={f === font}
+          />
+        ))}
+      </div>
     </div>
   );
 };
