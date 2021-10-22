@@ -152,6 +152,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "develemit",
+      "name": "Emit",
+      "avatar_url": "https://avatars.githubusercontent.com/u/27447016?v=4",
+      "profile": "http://linkedin.com/in/emitdutcher",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
