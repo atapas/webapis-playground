@@ -1,32 +1,28 @@
 import { useEffect, useState } from 'react';
 
-// import data from json
-import { getAllDemos } from 'utils/data/data-access';
+import { getAllDemos } from 'services/demo';
 
 export const useSearchApi = () => {
-  const [demos, setDemos] = useState(getAllDemos());
-  const [loading, setLoading] = useState();
+  const [demos, setDemos] = useState(getAllDemos);
   const [searchText, setSearchText] = useState('');
 
   useEffect(() => {
-    let allDemos = getAllDemos();
+    let allDemos = getAllDemos;
 
     if (searchText) {
-      const lowerSearchText = searchText.toLowerCase();
+      let lowerSearchText = searchText.toLowerCase();
+
       allDemos = allDemos.filter(demo =>
         demo.title?.toLowerCase().includes(lowerSearchText)
       );
     }
 
-    setLoading(false);
     setDemos(allDemos);
   }, [searchText]);
 
   return {
     demos,
-    loading,
     searchText,
     setSearchText,
-    setLoading,
   };
 };

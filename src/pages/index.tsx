@@ -1,6 +1,8 @@
 import React, { ChangeEvent } from 'react';
 
-import { InputSearch, Demo } from 'components';
+import { Demo } from 'types/demo';
+
+import { InputSearch, Card } from 'components';
 
 import { useSearchApi } from 'hooks/useSearchApi';
 
@@ -44,8 +46,8 @@ export default function Home() {
             xl:tw-grid-cols-4
           "
         >
-          {demos.map((demo, index) => (
-            <Demo data={demo} key={index} />
+          {demos.map((demo: Demo, index: number) => (
+            <Card data={demo} key={index} />
           ))}
         </div>
       ) : (
