@@ -1,4 +1,5 @@
-export const hasSupport = () => (document.fullscreenEnabled ? true : false);
+export const hasSupport = (): boolean =>
+  document.fullscreenEnabled ? true : false;
 
 function run() {
   const root = document.getElementById('fs-img-id') as HTMLElement;
