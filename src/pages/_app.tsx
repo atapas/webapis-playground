@@ -3,6 +3,7 @@ import '../styles/globals.css';
 import React from 'react';
 import { AppProps } from 'next/app';
 
+import Head from 'next/head';
 import SEO from '@bradgarropy/next-seo';
 import NextNProgress from 'nextjs-progressbar';
 
@@ -41,7 +42,18 @@ function MyApp({ Component, pageProps, router }: AppProps) {
         },
       }}
     >
-      <NextNProgress height={3} color="#fff" options={{ showSpinner: false }} />
+      <Head>
+        <meta charSet="utf-8" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+        <meta
+          name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=5"
+        />
+        <meta name="theme-color" content="#317EFB" />
+
+        <link rel="manifest" href="/manifest.json" />
+        <link rel="apple-touch-icon" href="/apple-icon.png"></link>
+      </Head>
 
       <SEO
         title="Web APIs Playground - Create, Share, Learn JavaScript Web APIs"
@@ -61,6 +73,8 @@ function MyApp({ Component, pageProps, router }: AppProps) {
           card: 'summary_large_image',
         }}
       />
+
+      <NextNProgress height={3} color="#fff" options={{ showSpinner: false }} />
       <Header />
 
       <Layout>

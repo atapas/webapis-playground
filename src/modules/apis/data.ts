@@ -18,7 +18,7 @@ export const data: Array<Demo> = [
     },
   },
   {
-    id: '_fullscreen_api_',
+    id: 'fullscreen',
     title: 'FullScreen API',
     emoji: '📺',
     description:
