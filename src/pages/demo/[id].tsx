@@ -6,6 +6,8 @@ import SEO from '@bradgarropy/next-seo';
 
 import { getDemoById } from 'services/demo';
 
+import { GithubCodeLink } from 'components';
+
 function Demo() {
   let router = useRouter();
   let id = router.query.id as string;
@@ -28,6 +30,10 @@ function Demo() {
         icon={demo?.emoji}
       />
       <Component />
+
+      <GithubCodeLink
+        url={`https://github.com/atapas/webapis-playground/blob/master/src/modules/apis/${id}/index.ts`}
+      />
     </React.Fragment>
   );
 }

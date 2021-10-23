@@ -7,7 +7,7 @@ import Head from 'next/head';
 import SEO from '@bradgarropy/next-seo';
 import NextNProgress from 'nextjs-progressbar';
 
-import { Header, Layout, GithubCodeLink } from '../components';
+import { Header, Layout, GithubCodeLink } from 'components';
 import { motion } from 'framer-motion';
 
 function MyApp({ Component, pageProps, router }: AppProps) {
