@@ -2,7 +2,7 @@ import { Demo } from 'types/demo';
 
 export const data: Array<Demo> = [
   {
-    id: '_file_system_api_',
+    id: 'filesystem-api',
     title: 'File System API',
     emoji: '📂',
     description:
@@ -35,7 +35,7 @@ export const data: Array<Demo> = [
     },
   },
   {
-    id: '_clipboard_api_',
+    id: 'clipboard',
     title: 'Clipboard API',
     emoji: '📋',
     description:
@@ -52,7 +52,7 @@ export const data: Array<Demo> = [
     },
   },
   {
-    id: '_broadcast_api_',
+    id: 'broadcast-channel',
     title: 'Broadcast',
     emoji: '📡',
     description:
@@ -69,7 +69,7 @@ export const data: Array<Demo> = [
     },
   },
   {
-    id: '_network_info_api_',
+    id: 'network-information',
     title: 'Network Info',
     emoji: '📶',
     description:
@@ -86,7 +86,7 @@ export const data: Array<Demo> = [
     },
   },
   {
-    id: '_resize_observer_api_',
+    id: 'resize-observer',
     title: 'Resize Observer',
     emoji: '🧐',
     description:
@@ -103,7 +103,7 @@ export const data: Array<Demo> = [
     },
   },
   {
-    id: '_payment_request_api_',
+    id: 'web-payments',
     title: 'Web payment API',
     emoji: '💳',
     description:
@@ -120,7 +120,7 @@ export const data: Array<Demo> = [
     },
   },
   {
-    id: '_vibration_api_',
+    id: 'vibration',
     title: 'Vibration API',
     emoji: '📳',
     description:
@@ -137,7 +137,7 @@ export const data: Array<Demo> = [
     },
   },
   {
-    id: '_battery_api_',
+    id: 'battery-status',
     title: 'Battery API',
     emoji: '🔋',
     description:
@@ -154,7 +154,7 @@ export const data: Array<Demo> = [
     },
   },
   {
-    id: '_dnd_api_',
+    id: 'drag-and-drop',
     title: 'Drag and Drop',
     emoji: '🐢',
     description:
@@ -171,7 +171,7 @@ export const data: Array<Demo> = [
     },
   },
   {
-    id: '_image_capture_api_',
+    id: 'image-capture',
     title: 'Image Capture',
     emoji: '📸',
     description:
@@ -188,7 +188,7 @@ export const data: Array<Demo> = [
     },
   },
   {
-    id: '_web_share_api_',
+    id: 'web-share-api',
     title: 'Web Share API',
     emoji: '🔗',
     description:
@@ -205,7 +205,7 @@ export const data: Array<Demo> = [
     },
   },
   {
-    id: '_geolocation_',
+    id: 'geolocation',
     title: 'Geolocation API',
     emoji: '⚓',
     description:
@@ -222,7 +222,7 @@ export const data: Array<Demo> = [
     },
   },
   {
-    id: '_picture_in_picture_',
+    id: 'picture-in-picture',
     title: 'Picture in Picture',
     emoji: '🖼️',
     description:
@@ -239,7 +239,7 @@ export const data: Array<Demo> = [
     },
   },
   {
-    id: '_screen_capture_',
+    id: 'screen-capture',
     title: 'Screen Capture',
     emoji: '💻',
     description:
@@ -256,7 +256,7 @@ export const data: Array<Demo> = [
     },
   },
   {
-    id: '_web_speech_',
+    id: 'web-speech',
     title: 'Web Speech API',
     emoji: '🎙️',
     description:
@@ -273,7 +273,7 @@ export const data: Array<Demo> = [
     },
   },
   {
-    id: 'css_font_loading',
+    id: 'font-loading',
     title: 'CSS Font Loading API',
     emoji: '✍️',
     description:
