@@ -14,7 +14,8 @@ export const data: Array<Demo> = [
           twitter: 'MaxProgramming1',
         },
       },
-      apiDocURL: '',
+      apiDocURL:
+        'https://developer.mozilla.org/en-US/docs/Web/API/File_System_Access_API',
       canIUseURL: 'https://caniuse.com/mdn-api_window_showopenfilepicker',
     },
   },
@@ -32,7 +33,8 @@ export const data: Array<Demo> = [
           twitter: 'tapasadhikary',
         },
       },
-      apiDocURL: '',
+      apiDocURL:
+        'https://developer.mozilla.org/en-US/docs/Web/API/Fullscreen_API',
       canIUseURL: 'https://caniuse.com/fullscreen',
     },
   },
@@ -50,7 +52,8 @@ export const data: Array<Demo> = [
           twitter: 'tapasadhikary',
         },
       },
-      apiDocURL: '',
+      apiDocURL:
+        'https://developer.mozilla.org/en-US/docs/Web/API/Clipboard_API',
       canIUseURL: 'https://caniuse.com/async-clipboard',
     },
   },
@@ -68,7 +71,8 @@ export const data: Array<Demo> = [
           twitter: 'tapasadhikary',
         },
       },
-      apiDocURL: '',
+      apiDocURL:
+        'https://developer.mozilla.org/en-US/docs/Web/API/Broadcast_Channel_API',
       canIUseURL: 'https://caniuse.com/broadcastchannel',
     },
   },
@@ -86,7 +90,8 @@ export const data: Array<Demo> = [
           twitter: 'tapasadhikary',
         },
       },
-      apiDocURL: '',
+      apiDocURL:
+        'https://developer.mozilla.org/en-US/docs/Web/API/Network_Information_API',
       canIUseURL: 'https://caniuse.com/netinfo',
     },
   },
@@ -104,7 +109,8 @@ export const data: Array<Demo> = [
           twitter: 'tapasadhikary',
         },
       },
-      apiDocURL: '',
+      apiDocURL:
+        'https://developer.mozilla.org/en-US/docs/Web/API/Resize_Observer_API',
       canIUseURL: 'https://caniuse.com/mdn-api_resizeobserver',
     },
   },
@@ -122,7 +128,8 @@ export const data: Array<Demo> = [
           email: 'tapas.adhikary@gmail.com',
         },
       },
-      apiDocURL: '',
+      apiDocURL:
+        'https://developer.mozilla.org/en-US/docs/Web/API/Payment_Request_API',
       canIUseURL: 'https://caniuse.com/payment-request',
     },
   },
@@ -140,7 +147,8 @@ export const data: Array<Demo> = [
           email: 'tapas.adhikary@gmail.com',
         },
       },
-      apiDocURL: '',
+      apiDocURL:
+        'https://developer.mozilla.org/en-US/docs/Web/API/Vibration_API',
       canIUseURL: 'https://caniuse.com/vibration',
     },
   },
@@ -158,7 +166,8 @@ export const data: Array<Demo> = [
           email: 'tapas.adhikary@gmail.com',
         },
       },
-      apiDocURL: '',
+      apiDocURL:
+        'https://developer.mozilla.org/en-US/docs/Web/API/Battery_Status_API',
       canIUseURL: 'https://caniuse.com/battery-status',
     },
   },
@@ -176,7 +185,8 @@ export const data: Array<Demo> = [
           email: 'tapas.adhikary@gmail.com',
         },
       },
-      apiDocURL: '',
+      apiDocURL:
+        'https://developer.mozilla.org/en-US/docs/Web/API/HTML_Drag_and_Drop_API',
       canIUseURL: 'https://caniuse.com/dragndrop',
     },
   },
@@ -194,7 +204,8 @@ export const data: Array<Demo> = [
           email: 'tapas.adhikary@gmail.com',
         },
       },
-      apiDocURL: '',
+      apiDocURL:
+        'https://developer.mozilla.org/en-US/docs/Web/API/MediaStream_Image_Capture_API',
       canIUseURL: 'https://caniuse.com/mdn-api_imagecapture',
     },
   },
@@ -212,7 +223,8 @@ export const data: Array<Demo> = [
           email: 'maxprogramming05@gmail.com',
         },
       },
-      apiDocURL: '',
+      apiDocURL:
+        ' https://developer.mozilla.org/en-US/docs/Web/API/Web_Share_API',
       canIUseURL: 'https://caniuse.com/web-share',
     },
   },
@@ -230,7 +242,8 @@ export const data: Array<Demo> = [
           email: 'dev.wsameer@gmail.com',
         },
       },
-      apiDocURL: '',
+      apiDocURL:
+        'https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API',
       canIUseURL: 'https://caniuse.com/mdn-api_geolocation',
     },
   },
@@ -248,7 +261,8 @@ export const data: Array<Demo> = [
           email: 'tapas.adhikary@gmail.com',
         },
       },
-      apiDocURL: '',
+      apiDocURL:
+        'https://developer.mozilla.org/en-US/docs/Web/API/Picture-in-Picture_API',
       canIUseURL: 'https://caniuse.com/picture-in-picture',
     },
   },
@@ -266,7 +280,8 @@ export const data: Array<Demo> = [
           email: 'koustov@live.com',
         },
       },
-      apiDocURL: '',
+      apiDocURL:
+        'https://developer.mozilla.org/en-US/docs/Web/API/Screen_Capture_API',
       canIUseURL: 'https://caniuse.com/DisplayMedia',
     },
   },
@@ -284,7 +299,8 @@ export const data: Array<Demo> = [
           email: 'farounbiabiola@gmail.com',
         },
       },
-      apiDocURL: '',
+      apiDocURL:
+        'https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API',
       canIUseURL: 'https://caniuse.com/speech-recognition',
     },
   },
@@ -302,7 +318,8 @@ export const data: Array<Demo> = [
           email: 'emitdutcher@gmail.com',
         },
       },
-      apiDocURL: '',
+      apiDocURL:
+        'https://developer.mozilla.org/en-US/docs/Web/API/CSS_Font_Loading_API',
       canIUseURL: 'font-loading',
     },
   }, //replace item here
