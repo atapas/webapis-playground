@@ -40,26 +40,36 @@ npm run gen-demo # Or yarn gen-demo
 
 Now you will be asked to give answers to a few questions.
 
-- **Give us a demo id**: This is the id of the demo that you want to add. Please provide a unique id, preferably in this format, `_payment_request`(assuming you are adding a demo for the Payment Request API).
-- **Please provide a demo title**: This is the title of the demo that you want to add.
-- **Tell us more about the demo**: This is the description of the demo that you want to add.
-- **Please provide the demo folder name**: This is the folder name of the demo that you want to add. Please provide a folder name, preferably in this format, `payment-request`(assuming you are adding a demo for the Payment Request API).
-- **Give us the feature URL from https://caniuse.com/**: This is the feature URL of the demo that you want to add. Would you please provide a feature URL, preferably in this format, `https://caniuse.com/payment-request`(assuming you are adding a demo for the Payment Request API)?
-- **Tell us your name:** This is the name of the author of the demo you want to add. Please provide a name.
-- **Your Twitter handle:** This is the Twitter handle of the author of the demo that you want to add. Please provide a Twitter handle without the `@` symbol.
-- **Your e-mail address:** This is the email of the author of the demo that you want to add. Please provide an email.
+1. Give us a demo id:
+   This is the id of the demo that you want to add. Please provide a unique id, for example, `payment-request`(assuming you are adding a demo for the Payment Request API).
+
+2. Please provide a demo title:
+   This is the title of the demo that you want to add.
+
+3. Tell us more about the demo:
+   This is the description of the demo that you want to add.
+
+4. Give us the feature URL from https://caniuse.com/:
+   This is the feature URL of the demo that you want to add. Would you please provide a feature URL, preferably in this format, `https://caniuse.com/payment-request`(assuming you are adding a demo for the Payment Request API)?
+
+5. Tell us your name:
+   This is the name of the author of the demo you want to add.
+
+6. Your Twitter username:
+   This is the Twitter handle of the author of the demo that you want to add.
+
+7. Your github username:
+   This is the Github handle of the author of the demo that you want to add.
 
 > Here is a screenshot of the process: <img src='./public/readme/gen-demo-steps.png' alt='flow'>
 
 ## 5. Autogenerating the code for the demo
 
-The above process will automatically generate the code for the demo to start with.
+1. The code will be generated in the `modules` folder:
+   Here you find two other folders `apis` where you write the `api` logic and `demos` where you write the `UI` to show the `api` working.
 
-- **The code will be generated in the `pages/demos` folder**: You will see a new folder created for your demo with a file called `index.js`. This file will contain the user interface code for your demo. Please write the UI code in the `ToRender` component.
-
-- **The Web API logic to go to `web-apis` folder**: You will see a new folder created under the `web-apis` folder with a file named `index.js`. This file will contain all the logic for your demo. Your logic should be exported as functions in the UI component(under `pages/demos` folder) we discussed above.
-
-- **The `isSupported()` method**: It is important to define the browser support for an API in the `isSupported()` method of your API file. Please check the [MDN documentation](https://developer.mozilla.org/en-US/docs/Web/API) for the support logic for the API you are adding.
+2. The `hasSupport()` method:
+   It is important to define the browser support for an API in the `hasSupport()` method of your API file. Please check the [MDN documentation](https://developer.mozilla.org/en-US/docs/Web/API) for the support logic for the API you are adding.
 
 ## 6. Update the main Readme file
 
