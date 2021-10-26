@@ -15,6 +15,10 @@ The `Web APIs Playground` is a project to showcase the JavaScript Web APIs with 
 
 Please [follow this link](https://developer.mozilla.org/en-US/docs/Web/API) to know about different Web APIs and their usages.
 
+# 🔥 The App
+
+> [webapis-playground.vercel.app/](webapis-playground.vercel.app/)
+
 # 🎯 Vision and Mission of this Playground
 
 The primary mission is to provide working examples of the JavaScript web APIs with simple demonstration that can be accessed using browsers on different devices. It may help many beginners to this topic in understanding how to code and use the Web APIs.
