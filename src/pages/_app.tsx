@@ -68,7 +68,7 @@ function MyApp({ Component, pageProps, router }: AppProps) {
 
         {isDemoRoute && (
           <GithubCodeLink
-            url={`https://github.com/atapas/webapis-playground/blob/master/web-apis/${webApiPathname}/index.js`}
+            url={`https://github.com/atapas/webapis-playground/blob/master/src/web-apis/${webApiPathname}/index.js`}
           />
         )}
       </Layout>
