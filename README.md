@@ -17,7 +17,7 @@ Please [follow this link](https://developer.mozilla.org/en-US/docs/Web/API) to k
 
 # 🔥 The App
 
-> [webapis-playground.vercel.app/](webapis-playground.vercel.app/)
+> [https://webapis-playground.vercel.app](https://webapis-playground.vercel.app)
 
 # 🎯 Vision and Mission of this Playground
 
