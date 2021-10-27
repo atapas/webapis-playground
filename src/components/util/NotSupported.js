@@ -4,7 +4,12 @@ const NotSupported = ({ canIUseURL }) => {
       <h1>OOPS!!!</h1>
       <h3>
         It seems your browser does not support this feature. Please check out{' '}
-        <a href={canIUseURL} target="_blank" rel="noreferrer">
+        <a
+          href={canIUseURL}
+          target="_blank"
+          rel="noreferrer"
+          className="tw-transition-all tw-text-blue-600 tw-hover:border-b-2 hover:tw-border-b-blue-600 tw-border-b-2"
+        >
           Can I Use
         </a>{' '}
         for more details.
