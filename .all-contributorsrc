@@ -170,6 +170,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "chosunosu",
+      "name": "chosunosu",
+      "avatar_url": "https://avatars.githubusercontent.com/u/49362226?v=4",
+      "profile": "https://github.com/chosunosu",
+      "contributions": [
+        "bug"
+      ]
     }
   ],
   "contributorsPerLine": 7,
