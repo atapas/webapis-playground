@@ -1,49 +1,15 @@
-// state management
-import { useState, useEffect } from 'react';
+import run, { hasSupport } from '../../apis/{{dashCase id}}';
 
-// demo information
-import { DemoInfo, DemoSEO, NotSupported } from 'components';
-
-// api
-import { isSupported } from 'web-apis/{{path}}';
-
-// demo info by id
-import { getDemoById } from 'utils/data/data-access';
-
-// Component that Renders the Demo UI
-const ToRender = () => {
-  return <div className='flex-colums'></div>;
-};
-
-const {{pascalCase path}} = () => {
-  const [loaded, setLoaded] = useState(false);
-  const [demoInfo, setDemoInfo] = useState();
-
-  // Get the demo id
-  const id = '{{id}}';
-
-  useEffect(() => {
-    // find the demo details
-    const thisDemo = getDemoById(id);
-    setDemoInfo(thisDemo);
-    setLoaded(true);
-  }, [id]);
+function {{pascalCase id}}() {
+  if (!hasSupport) {
+    return <h1>Unsupported</h1>;
+  }
 
   return (
-    <>
-      {loaded && (
-        <div className='flex-colums'>
-          <DemoSEO title={demoInfo.title} description={demoInfo.desc} />
-          <DemoInfo info={demoInfo} />
-          {isSupported() ? (
-            <ToRender />
-          ) : (
-            <NotSupported canIUseURL={demoInfo.canIUseURL} />
-          )}
-        </div>
-      )}
-    </>
+    <div>
+      <button onClick={run}>run demo</button>
+    </div>
   );
-};
+}
 
-export default {{pascalCase path}};
+export default {{pascalCase id}};

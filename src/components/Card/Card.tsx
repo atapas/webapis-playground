@@ -2,18 +2,15 @@ import Link from 'next/link';
 
 import { FaBolt } from 'react-icons/fa';
 
+import { Demo } from 'types/demo';
+
 import { Button } from 'components';
 
-/**
- *
- * NOTE:
- * I will add the types soon
- */
-export interface DemoProps {
-  data: any;
+export interface CardProps {
+  data: Demo;
 }
 
-function Demo({ data }: DemoProps) {
+function Card({ data }: CardProps) {
   return (
     <article
       className="
@@ -57,10 +54,10 @@ function Demo({ data }: DemoProps) {
           tw-line-clamp-3
         "
       >
-        {data.desc}
+        {data.description}
       </p>
 
-      <Link href={`/demos/${data.path}`} passHref>
+      <Link href={`/demos/${data.id}`} passHref>
         <Button as="a" leftIcon={<FaBolt />}>
           Try it
         </Button>
@@ -69,4 +66,4 @@ function Demo({ data }: DemoProps) {
   );
 }
 
-export default Demo;
+export default Card;

@@ -26,12 +26,6 @@ module.exports = plop => {
       },
       {
         type: 'input',
-        name: 'path',
-        message:
-          'Please provide the demo folder name(Any string without space. Example - payment-request):',
-      },
-      {
-        type: 'input',
         name: 'canIUseURL',
         message:
           'Give us the feature url from https://caniuse.com/(Example - https://caniuse.com/payment-request):',
@@ -51,21 +45,26 @@ module.exports = plop => {
         name: 'email',
         message: 'Your e-mail address:',
       },
+      {
+        type: 'input',
+        name: 'github',
+        message: 'Your github username:',
+      },
     ],
     actions: [
       {
         type: 'add',
-        path: 'src/pages/demos/{{path}}/index.js',
+        path: 'src/modules/demos/{{dashCase id}}/index.tsx',
         templateFile: 'plop-templates/page.hbs',
       },
       {
         type: 'add',
-        path: 'src/web-apis/{{path}}/index.js',
+        path: 'src/modules/apis/{{dashCase id}}/index.ts',
         templateFile: 'plop-templates/api.hbs',
       },
       {
         type: 'modify',
-        path: 'src/utils/data/demos.js',
+        path: 'src/modules/apis/data.ts',
         pattern: /\/\/replace item here/gi,
         templateFile: 'plop-templates/demo.hbs',
       },

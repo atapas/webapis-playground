@@ -17,8 +17,10 @@
     "paths": {
       "@/components/*": ["components/*"],
       "@/hooks/*": ["hooks/*"],
+      "@/modules/*": ["modules/*"],
       "@/pages/*": ["pages/*"],
       "@/styles/*": ["styles/*"],
+      "@/types/*": ["types/*"],
       "@/utils/*": ["utils/*"]
     },
     "typeRoots": ["node_modules/@types", "src/types"]

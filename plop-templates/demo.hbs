@@ -1,13 +1,18 @@
 {
-  id: "{{id}}", 
-  emoji: "{{emoji}}",
-  title: "{{title}}", 
-  desc: "{{description}}", 
-  path: "{{path}}",
-  canIUseURL: "{{canIUseURL}}", 
-  creator: { 
-    name: "{{author}}",
-    twitter: "{{twitter}}",
-    email: "{{email}}", 
+  id: '{{dashCase id}}', 
+  emoji: '{{emoji}}',
+  title: '{{title}}', 
+  description: '{{description}}', 
+  meta: {
+    author: { 
+      name: '{{author}}',
+      social: {
+        email: '{{email}}', 
+        github: '{{github}}',
+        twitter: '{{twitter}}',
+      },
+    },
+    apiDocURL: '{{apiDocURL}}',
+    canIUseURL: '{{canIUseURL}}', 
   },
 }, //replace item here

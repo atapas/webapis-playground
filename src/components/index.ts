@@ -24,8 +24,8 @@ export type { InputSearchProps } from './InputSearch';
 /**
  * Core components
  */
-export { Demo } from './Demo';
-export type { DemoProps } from './Demo';
+export { Card } from './Card';
+export type { CardProps } from './Card';
 
 export { default as GithubCodeLink } from './core/GithubCodeLink';
 
