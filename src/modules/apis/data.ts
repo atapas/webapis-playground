@@ -322,5 +322,22 @@ export const data: Array<Demo> = [
         'https://developer.mozilla.org/en-US/docs/Web/API/CSS_Font_Loading_API',
       canIUseURL: 'font-loading',
     },
-  }, //replace item here
+  }, {
+  id: 'css-counter-styles', 
+  emoji: '🚅',
+  title: 'CSS Counter Styles', 
+  description: 'The CSS Counter Styles module allows to define custom counter styles, which can be used for CSS list-marker and generated-content counters.', 
+  meta: {
+    author: { 
+      name: 'Tyler Morales',
+      social: {
+        email: 'tyler.morales.dev@gmail.com', 
+        github: 'tyler-morales',
+        twitter: 'Ty_Morales914',
+      },
+    },
+    apiDocURL: '',
+    canIUseURL: 'https://caniuse.com/?search&#x3D;counter-styles', 
+  },
+}, //replace item here
 ];
