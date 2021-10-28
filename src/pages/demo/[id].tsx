@@ -5,14 +5,16 @@ import { useRouter } from 'next/router';
 import SEO from '@bradgarropy/next-seo';
 
 import { getDemoById } from 'services/demo';
+import { Demo } from 'types/demo';
 
-import { GithubCodeLink } from 'components';
+import { Author } from './components/Author';
+import { Content } from './components/Content';
 
-function Demo() {
+function DemoPage() {
   let router = useRouter();
   let id = router.query.id as string;
 
-  let [demo, setdemo] = React.useState(getDemoById(id));
+  let [demo, setdemo] = React.useState<Demo | undefined>(getDemoById(id));
 
   React.useEffect(() => {
     setdemo(getDemoById(id));
@@ -22,20 +24,38 @@ function Demo() {
     ssr: false,
   });
 
+  if (!demo?.meta) {
+    return null;
+  }
+
   return (
-    <React.Fragment>
+    <article>
       <SEO
         title={`Web APIs Playground - ${demo?.title}`}
         description={demo?.description}
         icon={demo?.emoji}
       />
-      <Component />
 
-      <GithubCodeLink
-        url={`https://github.com/atapas/webapis-playground/blob/master/src/modules/apis/${id}/index.ts`}
-      />
-    </React.Fragment>
+      <div
+        className="
+          tw-w-full
+          tw-grid
+          tw-grid-cols-12
+          tw-gap-4
+        "
+      >
+        <div className="tw-col-span-4">
+          <Author meta={demo?.meta} />
+        </div>
+
+        <div className="tw-col-span-8">
+          <Content title={demo?.title} description={demo?.description}>
+            <Component />
+          </Content>
+        </div>
+      </div>
+    </article>
   );
 }
 
-export default Demo;
+export default DemoPage;
