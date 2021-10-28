@@ -3,6 +3,7 @@ const runtimeCaching = require('next-pwa/cache');
 
 module.exports = withPWA({
   reactStrictMode: true,
+  pageExtensions: ['page.tsx'],
   images: {
     domains: ['unavatar.io', 'res.cloudinary.com'],
   },
