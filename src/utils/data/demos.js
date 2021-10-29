@@ -218,6 +218,19 @@ const data = [
       twitter: 'develemit',
       email: 'emitdutcher@gmail.com',
     },
+  },
+  {
+    id: '_push_',
+    emoji: '🔔',
+    title: 'Push API',
+    desc: 'The Push API gives web applications the ability to receive messages pushed to them from a server, whether or not the web app is in the foreground, or even currently loaded, on a user agent.',
+    path: 'push',
+    canIUseURL: 'https://caniuse.com/push-api',
+    creator: {
+      name: 'Jesse Moore',
+      twitter: 'jamoore',
+      email: 'moore.jesse@gmail.com',
+    },
   }, //replace item here
 ];
 

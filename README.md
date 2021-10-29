@@ -53,6 +53,17 @@ npm install
 yarn install
 ```
 
+- Setup Push API keys
+  - Goto https://web-push-codelab.glitch.me/ and generate a public and private key.
+  - Rename .env.local.example to .env.local in the root directory.
+  - Copy keys to .env.local file.
+
+```bash
+# .env.local
+PUSH_API_PRIVATE_KEY=<PRIVATE KEY>
+NEXT_PUBLIC_PUSH_API_PUBLIC_KEY=<PUBLIC KEY>
+```
+
 - Run the application locally
 
 ```bash
@@ -83,6 +94,7 @@ So far, it includes the following examples:
 1. 💻 Screen Capture
 1. ✍️ CSS Font Loading
 1. 🎙️ Web Speech API
+1. 🔔 Push API
 
 # 🤝 Open Source
 

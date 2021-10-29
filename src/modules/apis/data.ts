@@ -322,5 +322,24 @@ export const data: Array<Demo> = [
         'https://developer.mozilla.org/en-US/docs/Web/API/CSS_Font_Loading_API',
       canIUseURL: 'font-loading',
     },
+  },
+  {
+    id: 'push',
+    emoji: '🔔',
+    title: 'Push API',
+    description:
+      'The Push API gives web applications the ability to receive messages pushed to them from a server, whether or not the web app is in the foreground, or even currently loaded, on a user agent.',
+    meta: {
+      author: {
+        name: 'Jesse Moore',
+        social: {
+          email: 'moore.jesse@gmail.com',
+          github: 'jesse-moore',
+          twitter: 'jamoore',
+        },
+      },
+      apiDocURL: '',
+      canIUseURL: 'https://caniuse.com/push-api',
+    },
   }, //replace item here
 ];
