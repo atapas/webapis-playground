@@ -95,7 +95,19 @@ function Content({ id, title, description, meta, children }: ContentProps) {
           </Tag>
         </div>
       </div>
-      <div className="tw-mt-24">{children}</div>
+
+      <span
+        className="
+          tw-block
+          tw-text-1xl lg:tw-text-2xl
+          tw-font-semibold
+          tw-mt-8 lg:tw-mt-16
+          tw-mb-16 lg:tw-mb-24
+        "
+      >
+        Live preview
+      </span>
+      {children}
     </React.Fragment>
   );
 }
