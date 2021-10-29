@@ -1,5 +1,7 @@
 import run, { hasSupport } from '../../apis/fullscreen';
 
+import { Button } from 'components';
+
 function FullScreen() {
   if (!hasSupport) {
     return <h1>Unsupported</h1>;
@@ -16,7 +18,7 @@ function FullScreen() {
         />
       </div>
 
-      <button onClick={run}>Make FullScreen</button>
+      <Button onClick={run}>go to fullscreen</Button>
     </div>
   );
 }
