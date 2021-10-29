@@ -29,7 +29,7 @@ function DemoPage() {
   }
 
   return (
-    <article>
+    <React.Fragment>
       <SEO
         title={`Web APIs Playground - ${demo?.title}`}
         description={demo?.description}
@@ -40,15 +40,15 @@ function DemoPage() {
         className="
           tw-w-full
           tw-grid
-          tw-grid-cols-12
+          lg:tw-grid-cols-12
           tw-gap-4
         "
       >
-        <div className="tw-col-span-4">
+        <div className="lg:tw-col-span-4">
           <Author meta={demo?.meta} />
         </div>
 
-        <div className="tw-col-span-8">
+        <div className="lg:tw-col-span-8">
           <Content
             id={demo?.id}
             title={demo?.title}
@@ -59,7 +59,7 @@ function DemoPage() {
           </Content>
         </div>
       </div>
-    </article>
+    </React.Fragment>
   );
 }
 

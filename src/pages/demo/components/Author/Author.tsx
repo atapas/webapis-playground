@@ -11,30 +11,39 @@ function Author({ meta }: AuthorProps) {
     <div
       className="
         tw-flex
+        tw-items-center
+        tw-mb-4 lg:tw-mb-0
       "
     >
-      <NextImage
-        src={`https://unavatar.io/${
-          meta.author.social.twitter || meta.author.social.github
-        }`}
-        alt={meta.author.name}
-        width={80}
-        height={80}
-        className="tw-rounded-2xl"
-      />
+      <div
+        className="
+          tw-flex
+          tw-w-[64px] lg:tw-w-[80px]
+        "
+      >
+        <NextImage
+          src={`https://unavatar.io/${
+            meta.author.social.twitter || meta.author.social.github
+          }`}
+          alt={meta.author.name}
+          width={80}
+          height={80}
+          className="tw-rounded-2xl"
+        />
+      </div>
       <div
         className="
           tw-flex
           tw-flex-col
           tw-justify-center
-          tw-ml-4
+          tw-ml-3 lg:tw-ml-4
         "
       >
         <h5
           className="
-          tw-text-xl
-          tw-font-bold
-        "
+            tw-text-lg lg:tw-text-xl
+            tw-font-bold
+          "
         >
           {meta.author.name}
         </h5>

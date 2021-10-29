@@ -1,7 +1,7 @@
-import { ReactNode } from 'react';
+import React, { ReactNode } from 'react';
 import { Demo } from 'types/demo';
 
-import { FiGithub } from 'react-icons/fi';
+import { FaGithubAlt, FaBook, FaLifeRing } from 'react-icons/fa';
 
 import { Tag } from 'components/Tag';
 
@@ -34,12 +34,12 @@ export interface ContentProps {
 
 function Content({ id, title, description, meta, children }: ContentProps) {
   return (
-    <div>
+    <React.Fragment>
       <h1
         className="
-          tw-text-4xl
+          tw-text-2xl lg:tw-text-4xl
           tw-font-bold
-          tw-mb-6
+          tw-mb-2 lg:tw-mb-4
         "
       >
         {title}
@@ -50,18 +50,26 @@ function Content({ id, title, description, meta, children }: ContentProps) {
           tw-prose-sm sm:tw-prose
           lg:tw-prose-lg
           xl:tw-prose-xl
-          tw-mb-4
+          tw-mb-6
         "
       >
         {description}
       </p>
-      <div className="tw-space-x-2 tw-mb-12">
+      <div
+        className="
+          tw-grid
+          tw-gap-2
+          tw-grid-cols-2
+          lg:tw-flex
+        "
+      >
         <Tag
           as="a"
           href={`https://github.com/atapas/webapis-playground/blob/master/src/modules/apis/${id}/index.ts`}
           rel="noopener noreferrer"
           target="_blank"
-          leftIcon={<FiGithub />}
+          leftIcon={<FaGithubAlt />}
+          className="tw-bg-black"
         >
           Source code
         </Tag>
@@ -70,6 +78,7 @@ function Content({ id, title, description, meta, children }: ContentProps) {
           href={meta?.apiDocURL}
           rel="noopener noreferrer"
           target="_blank"
+          leftIcon={<FaBook />}
         >
           Documentation
         </Tag>
@@ -78,12 +87,13 @@ function Content({ id, title, description, meta, children }: ContentProps) {
           href={meta?.canIUseURL}
           rel="noopener noreferrer"
           target="_blank"
+          leftIcon={<FaLifeRing />}
         >
           Support
         </Tag>
       </div>
-      {children}
-    </div>
+      <div className="tw-mt-24">{children}</div>
+    </React.Fragment>
   );
 }
 
