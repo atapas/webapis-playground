@@ -49,7 +49,12 @@ function DemoPage() {
         </div>
 
         <div className="tw-col-span-8">
-          <Content title={demo?.title} description={demo?.description}>
+          <Content
+            id={demo?.id}
+            title={demo?.title}
+            description={demo?.description}
+            meta={demo?.meta}
+          >
             <Component />
           </Content>
         </div>
