@@ -54,7 +54,7 @@ function Header() {
           </a>
         </Link>
 
-        <div className=" tw-flex tw-items-center">
+        <div className=" tw-flex tw-items-center tw-space-x-2">
           <IconButton
             as="a"
             href="https://github.com/atapas/webapis-playground"
@@ -63,8 +63,6 @@ function Header() {
             ariaLabel="Source code"
             icon={<FiGithub />}
           />
-
-          <div className="tw-w-2" />
 
           <IconButton
             as="a"
