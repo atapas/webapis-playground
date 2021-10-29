@@ -55,42 +55,45 @@ function Content({ id, title, description, meta, children }: ContentProps) {
       >
         {description}
       </p>
-      <div
-        className="
-          tw-grid
-          tw-gap-2
-          tw-grid-cols-2
-          lg:tw-flex
-        "
-      >
-        <Tag
-          as="a"
-          href={`https://github.com/atapas/webapis-playground/blob/master/src/modules/apis/${id}/index.ts`}
-          rel="noopener noreferrer"
-          target="_blank"
-          leftIcon={<FaGithubAlt />}
-          className="tw-bg-black"
+      <div className="tw-flow-root">
+        <div
+          className="
+            tw--m-1
+            tw-flex
+            tw-flex-wrap
+          "
         >
-          Source code
-        </Tag>
-        <Tag
-          as="a"
-          href={meta?.apiDocURL}
-          rel="noopener noreferrer"
-          target="_blank"
-          leftIcon={<FaBook />}
-        >
-          Documentation
-        </Tag>
-        <Tag
-          as="a"
-          href={meta?.canIUseURL}
-          rel="noopener noreferrer"
-          target="_blank"
-          leftIcon={<FaLifeRing />}
-        >
-          Support
-        </Tag>
+          <Tag
+            as="a"
+            href={`https://github.com/atapas/webapis-playground/blob/master/src/modules/apis/${id}/index.ts`}
+            rel="noopener noreferrer"
+            target="_blank"
+            leftIcon={<FaGithubAlt />}
+            className="tw-bg-black tw-m-1"
+          >
+            Source code
+          </Tag>
+          <Tag
+            as="a"
+            href={meta?.apiDocURL}
+            rel="noopener noreferrer"
+            target="_blank"
+            leftIcon={<FaBook />}
+            className="tw-m-1"
+          >
+            Documentation
+          </Tag>
+          <Tag
+            as="a"
+            href={meta?.canIUseURL}
+            rel="noopener noreferrer"
+            target="_blank"
+            leftIcon={<FaLifeRing />}
+            className="tw-m-1"
+          >
+            Support
+          </Tag>
+        </div>
       </div>
       <div className="tw-mt-24">{children}</div>
     </React.Fragment>
