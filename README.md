@@ -53,21 +53,12 @@ npm install
 yarn install
 ```
 
-- Rename .env.local.example to .env.local in the root directory.
-- Generate Push API keys
+- Generate .env.local file.
 
 ```bash
 npm run gen-keys
 # Or
 yarn gen-keys
-```
-
-- Copy keys to .env.local file.
-
-```bash
-# .env.local
-PUSH_API_PRIVATE_KEY=<PRIVATE KEY>
-NEXT_PUBLIC_PUSH_API_PUBLIC_KEY=<PUBLIC KEY>
 ```
 
 - Run the application locally
