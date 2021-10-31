@@ -188,6 +188,15 @@
       "contributions": [
         "bug"
       ]
+    },
+    {
+      "login": "vaibhav-if",
+      "name": "Vaibhav Agrawal",
+      "avatar_url": "https://avatars.githubusercontent.com/u/78676331?v=4",
+      "profile": "https://www.linkedin.com/in/vaibhav-agr/",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7,

@@ -28,7 +28,7 @@ If you do not find an existing issue, please [create a new one](https://github.c
 
 ## 3. Create a branch
 
-Would you please create a branch for the issue? The branch name should be `demo-<issue-number>-<some-text-about-it>`. For example, if the issue number is `14`, the branch name should be `demo-14-geo-location`. Now switch to the branch and start working on the demo.
+Please create a branch for the issue. The branch name should be `demo-<issue-number>-<some-text-about-it>`. For example, if the issue number is `14`, the branch name should be `demo-14-geo-location`. Now switch to the branch and start working on the demo.
 
 ## 4. Add a demo
 
@@ -50,7 +50,7 @@ Now you will be asked to give answers to a few questions.
    This is the description of the demo that you want to add.
 
 4. Give us the feature URL from https://caniuse.com/:
-   This is the feature URL of the demo that you want to add. Would you please provide a feature URL, preferably in this format, `https://caniuse.com/payment-request`(assuming you are adding a demo for the Payment Request API)?
+   This is the feature URL of the demo that you want to add. Please provide a feature URL, preferably in this format, `https://caniuse.com/payment-request`(assuming you are adding a demo for the Payment Request API)?
 
 5. Tell us your name:
    This is the name of the author of the demo you want to add.
