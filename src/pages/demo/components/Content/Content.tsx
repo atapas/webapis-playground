@@ -102,7 +102,7 @@ function Content({ id, title, description, meta, children }: ContentProps) {
           tw-text-1xl lg:tw-text-2xl
           tw-font-semibold
           tw-mt-8 lg:tw-mt-16
-          tw-mb-16 lg:tw-mb-24
+          tw-mb-8
         "
       >
         Live preview

@@ -1,4 +1,4 @@
-const NotSupported = ({ canIUseURL }) => {
+const NotSupported = ({ canIUseURL = '' }) => {
   return (
     <div className="tw-bg-payments tw-p-5px tw-rounded-10px tw-flex tw-flex-col tw-items-center tw-justify-center">
       <h1>OOPS!!!</h1>
