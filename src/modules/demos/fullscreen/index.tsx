@@ -12,8 +12,14 @@ function FullScreen() {
   }
 
   return (
-    <React.Fragment>
-      <div id="js-api--fullscreen" className="tw-mb-4">
+    <div
+      className="
+        tw-flex
+        tw-flex-col
+        tw-items-center md:tw-items-start
+      "
+    >
+      <div id="js-api--fullscreen" className=" tw-mb-4">
         <img
           src="https://res.cloudinary.com/atapas/image/upload/v1602226996/artists/Rock_oz3kq1.png"
           alt="The Rock"
@@ -25,7 +31,7 @@ function FullScreen() {
       <Button leftIcon={<FaExpand />} onClick={run}>
         Go Fullscreen
       </Button>
-    </React.Fragment>
+    </div>
   );
 }
 
