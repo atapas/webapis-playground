@@ -9,7 +9,8 @@
     "lint": "next lint",
     "gen-demo": "plop",
     "format": "prettier --write .",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "gen-keys": "node genKeys.js"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
@@ -28,12 +29,14 @@
     "nextjs-progressbar": "^0.0.11",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "react-icons": "^4.2.0"
+    "react-icons": "^4.2.0",
+    "web-push": "^3.4.5"
   },
   "devDependencies": {
     "@tailwindcss/forms": "^0.3.4",
     "@tailwindcss/line-clamp": "^0.2.2",
     "@types/react": "^17.0.27",
+    "@types/web-push": "^3.3.2",
     "autoprefixer": "^10.3.7",
     "clsx": "^1.1.1",
     "eslint": "7.32.0",

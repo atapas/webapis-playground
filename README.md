@@ -53,6 +53,14 @@ npm install
 yarn install
 ```
 
+- Generate .env.local file.
+
+```bash
+npm run gen-keys
+# Or
+yarn gen-keys
+```
+
 - Run the application locally
 
 ```bash
@@ -83,6 +91,7 @@ So far, it includes the following examples:
 1. 💻 Screen Capture
 1. ✍️ CSS Font Loading
 1. 🎙️ Web Speech API
+1. 🔔 Push API
 
 # 🤝 Open Source
 
