@@ -9,7 +9,8 @@
     "lint": "next lint",
     "gen-demo": "plop",
     "format": "prettier --write .",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "gen-keys": "node genKeys.js"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [

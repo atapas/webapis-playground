@@ -53,10 +53,16 @@ npm install
 yarn install
 ```
 
-- Setup Push API keys
-  - Goto https://web-push-codelab.glitch.me/ and generate a public and private key.
-  - Rename .env.local.example to .env.local in the root directory.
-  - Copy keys to .env.local file.
+- Rename .env.local.example to .env.local in the root directory.
+- Generate Push API keys
+
+```bash
+npm run gen-keys
+# Or
+yarn gen-keys
+```
+
+- Copy keys to .env.local file.
 
 ```bash
 # .env.local
