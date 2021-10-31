@@ -7,8 +7,8 @@ import { Button, NotSupported } from 'components';
 import run, { hasSupport } from '../../apis/fullscreen';
 
 function FullScreen() {
-  if (!hasSupport) {
-    return <NotSupported canIUseURL="" />;
+  if (!hasSupport()) {
+    return <NotSupported />;
   }
 
   return (
