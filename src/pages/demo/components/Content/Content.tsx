@@ -47,9 +47,10 @@ function Content({ id, title, description, meta, children }: ContentProps) {
       <p
         className="
           tw-prose
-          tw-prose-sm sm:tw-prose
+          tw-prose-sm
+          md:tw-prose-lg
           lg:tw-prose-lg
-          xl:tw-prose-xl
+          xl:tw-prose-2xl
           tw-mb-6
         "
       >
