@@ -1,3 +1,5 @@
+import { FormEvent } from 'react';
+
 export const hasSupport = (): boolean => (window.ResizeObserver ? true : false);
 
 function init() {
@@ -13,7 +15,7 @@ function init() {
   return 'Not Supported';
 }
 
-function resize(event: Event): void {
+function resize(event: FormEvent<HTMLInputElement>) {
   const target = event.target as HTMLInputElement;
 
   const content = document.getElementById('js-resize--content') as HTMLElement;
