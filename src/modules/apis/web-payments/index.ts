@@ -1,24 +1,30 @@
-const isSupported = () => {
-  // Write supported or not condition here. Eg,
-  return window.PaymentRequest ? true : false;
-};
+//@ts-nocheck
+export const hasSupport = (): boolean => (window.PaymentRequest ? true : false);
 
-const buy = () => {
-  console.log('initiate purchase');
-  document.getElementById('payment-msg-id').innerHTML = '<span/>';
-  let request = initPaymentRequest();
-  request
-    .show()
-    .then(function (instrumentResponse) {
-      console.log({ instrumentResponse });
-      sendPaymentToServer(instrumentResponse);
-    })
-    .catch(function (err) {
-      console.error(err);
-    });
-};
+function updateDetails(details, shippingOption, resolve, reject) {
+  let selectedShippingOption;
+  let otherShippingOption;
+  if (shippingOption === 'standard') {
+    selectedShippingOption = details.shippingOptions[0];
+    otherShippingOption = details.shippingOptions[1];
+    details.total.amount.value = '55.00';
+  } else if (shippingOption === 'express') {
+    selectedShippingOption = details.shippingOptions[1];
+    otherShippingOption = details.shippingOptions[0];
+    details.total.amount.value = '67.00';
+  } else {
+    reject("Unknown shipping option '" + shippingOption + "'");
+    return;
+  }
 
-const initPaymentRequest = () => {
+  selectedShippingOption.selected = true;
+  otherShippingOption.selected = false;
+  details.displayItems.splice(2, 1, selectedShippingOption);
+
+  resolve(details);
+}
+
+function initPaymentRequest() {
   let networks = [
     'amex',
     'diners',
@@ -90,28 +96,7 @@ const initPaymentRequest = () => {
   });
 
   return request;
-};
-
-const updateDetails = (details, shippingOption, resolve, reject) => {
-  let selectedShippingOption;
-  let otherShippingOption;
-  if (shippingOption === 'standard') {
-    selectedShippingOption = details.shippingOptions[0];
-    otherShippingOption = details.shippingOptions[1];
-    details.total.amount.value = '55.00';
-  } else if (shippingOption === 'express') {
-    selectedShippingOption = details.shippingOptions[1];
-    otherShippingOption = details.shippingOptions[0];
-    details.total.amount.value = '67.00';
-  } else {
-    reject("Unknown shipping option '" + shippingOption + "'");
-    return;
-  }
-  selectedShippingOption.selected = true;
-  otherShippingOption.selected = false;
-  details.displayItems.splice(2, 1, selectedShippingOption);
-  resolve(details);
-};
+}
 
 const sendPaymentToServer = instrumentResponse => {
   // There's no server-side component of these samples. No transactions are
@@ -122,7 +107,9 @@ const sendPaymentToServer = instrumentResponse => {
       .complete('success')
       .then(function () {
         console.log('Done');
-        document.getElementById('payment-msg-id').innerHTML =
+        (
+          document.getElementById('js-payment--message') as HTMLElement
+        ).innerHTML =
           '<span class="success-msg"> The payment is successful. We are shipping your order. </span>';
       })
       .catch(function (err) {
@@ -131,4 +118,20 @@ const sendPaymentToServer = instrumentResponse => {
   }, 2000);
 };
 
-export { isSupported, buy };
+function run() {
+  console.log('initiate purchase');
+  (document.getElementById('js-payment--message') as HTMLElement).innerHTML =
+    '<span/>';
+  let request = initPaymentRequest();
+  request
+    .show()
+    .then(function (instrumentResponse) {
+      console.log({ instrumentResponse });
+      sendPaymentToServer(instrumentResponse);
+    })
+    .catch(function (err) {
+      console.error(err);
+    });
+}
+
+export default run;
