@@ -9,8 +9,9 @@ import run, { hasSupport } from '../../apis/vibration';
 function Vibration() {
   const [status, setStatus] = React.useState<'start' | 'stop'>('stop');
 
-  let toggle = React.useCallback(() => {
-    setStatus(prev => (prev === 'start' ? 'stop' : 'start'));
+  let toggle = () => setStatus(prev => (prev === 'stop' ? 'start' : 'stop'));
+
+  React.useEffect(() => {
     run(status);
   }, [status]);
 
