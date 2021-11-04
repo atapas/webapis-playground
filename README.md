@@ -73,6 +73,7 @@ So far, it includes the following examples:
 1. 📡 Broadcast
 1. 📷 Image Capture
 1. 📶 Network Info
+1. 🔔 Notifications
 1. 🧐 Resize Observer
 1. 💳 Payment Request
 1. 📳 Vibration API
