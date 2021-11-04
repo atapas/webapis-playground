@@ -322,5 +322,25 @@ export const data: Array<Demo> = [
         'https://developer.mozilla.org/en-US/docs/Web/API/CSS_Font_Loading_API',
       canIUseURL: 'font-loading',
     },
+  },
+  {
+    id: 'notifications',
+    emoji: '🔔',
+    title: 'Notifications API',
+    description:
+      'The Notifications API allows web pages to control the display of system notifications to the end user',
+    meta: {
+      author: {
+        name: 'Mohammed Taha',
+        social: {
+          email: 'gsft22221@gmail.com',
+          github: 'JustE3saR',
+          twitter: 'JustE3saR',
+        },
+      },
+      apiDocURL:
+        'https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API',
+      canIUseURL: 'https://caniuse.com/notifications',
+    },
   }, //replace item here
 ];

@@ -219,6 +219,19 @@ const data = [
       email: 'emitdutcher@gmail.com',
     },
   }, //replace item here
+  {
+    id: '_notifications_',
+    title: 'Notifications API',
+    emoji: '🔔',
+    desc: 'The Notifications API allows web pages to control the display of system notifications to the end user',
+    path: 'notifications',
+    canIUseURL: 'https://caniuse.com/notifications',
+    creator: {
+      name: 'Mohammed Taha',
+      twitter: 'JustE3saR',
+      email: 'gsft22221@gmail.com',
+    },
+  },
 ];
 
 export default data;
