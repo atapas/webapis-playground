@@ -36,7 +36,7 @@ const Tag = <Element extends ElementType = 'span'>({
   rightIcon,
   ...props
 }: TagProps<Element> & ComponentPropsWithoutRef<Element>) => {
-  let Component = as || 'Tag';
+  let Component = as || 'span';
 
   return (
     <Component
