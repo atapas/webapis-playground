@@ -12,34 +12,38 @@ interface BatteryType {
 }
 
 function getColor(level: number) {
-  let status: {
-    text: string;
-    background: string;
-  } = {
-    text: '#6B7280',
-    background: '#F3F4F6',
+  const statusColors = {
+    base: {
+      text: '#6B7280',
+      background: '#F3F4F6',
+    },
+    low: {
+      text: '#EF4444',
+      background: '#FEE2E2',
+    },
+    medium: {
+      text: '#F59E0B',
+      background: '#FEF3C7',
+    },
+    full: {
+      text: '#10B981',
+      background: '#D1FAE5',
+    },
   };
 
   if (level >= 0 && level <= 20) {
-    status = {
-      text: '#EF4444',
-      background: '#FEE2E2',
-    };
-  } else if (level > 20 && level <= 60) {
-    status = {
-      text: '#F59E0B',
-      background: '#FEF3C7',
-    };
+    return statusColors.low;
+  }
+
+  if (level > 20 && level <= 60) {
+    return statusColors.medium;
   }
 
   if (level > 60 && level <= 100) {
-    status = {
-      text: '#10B981',
-      background: '#D1FAE5',
-    };
+    return statusColors.full;
   }
 
-  return status;
+  return statusColors.base;
 }
 
 function updateUI(battery: BatteryType) {
@@ -59,6 +63,7 @@ function updateUI(battery: BatteryType) {
 
 async function getBattery() {
   try {
+    //@ts-ignore
     const battery = await navigator.getBattery();
 
     updateUI(battery);
