@@ -24,7 +24,7 @@ function ImageCapture() {
         tw-items-start
       "
     >
-      <div className="tw-space-x-4">
+      <div className="tw-grid tw-grid-cols-2 tw-gap-2 md:tw-space-x-4 md:tw-flex md:tw-gap-0">
         <Button leftIcon={<FaPlayCircle />} onClick={run.onGetUserMedia}>
           Start the stream
         </Button>

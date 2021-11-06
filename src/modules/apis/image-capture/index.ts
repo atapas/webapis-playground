@@ -34,19 +34,21 @@ function setMessage(msg: string = '') {
   el.innerText = msg;
 }
 
-async function onGetUserMedia() {
+function onGetUserMedia() {
   const video = document.querySelector('js-image--video') as HTMLVideoElement;
 
-  try {
-    stream = await navigator.mediaDevices.getUserMedia({ video: true });
-
-    video.srcObject = stream;
-    stream = stream.getVideoTracks()[0];
-    enableCapture = true;
-    setMessage('Recording');
-  } catch (error) {
-    console.error(` ${error} is not yet supported`);
-  }
+  setMessage('Started');
+  console.log('Getting User Media');
+  navigator.mediaDevices
+    .getUserMedia({ video: true })
+    .then(mediaStream => {
+      video.srcObject = mediaStream;
+      stream = mediaStream.getVideoTracks()[0];
+      enableCapture = true;
+    })
+    .catch(error => {
+      console.error(` ${error} is not yet supported`);
+    });
 }
 
 function onStop() {
