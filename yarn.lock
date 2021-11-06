@@ -1281,6 +1281,13 @@
   dependencies:
     source-map "^0.6.1"
 
+"@types/w3c-image-capture@^1.0.5":
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/@types/w3c-image-capture/-/w3c-image-capture-1.0.5.tgz#d953701356c4bceacc23f9465a76d3eab864328e"
+  integrity sha512-MzkDgLz8bJLzxMlPJYoIQbuFdbYzydlr1DQ3jPcqEZhEWBACxsqvrUB99CegClXCxoTs2BDDdbuvAPOZ/zec1g==
+  dependencies:
+    "@types/webrtc" "*"
+
 "@types/webpack-sources@*":
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/@types/webpack-sources/-/webpack-sources-3.2.0.tgz#16d759ba096c289034b26553d2df1bf45248d38b"
@@ -1301,6 +1308,11 @@
     "@types/webpack-sources" "*"
     anymatch "^3.0.0"
     source-map "^0.6.0"
+
+"@types/webrtc@*":
+  version "0.0.31"
+  resolved "https://registry.yarnpkg.com/@types/webrtc/-/webrtc-0.0.31.tgz#164b8d6f40ff0238b3e62604e8d23f7377125284"
+  integrity sha512-GEoJIoM/ddxdaGnu0enJVDTdvwwr3/tPkpXz0LBTSi282gqxWDg1ffk4fzHU2dosNshp+Slq1kfGxpKs5083Nw==
 
 "@types/wicg-file-system-access@^2020.9.4":
   version "2020.9.4"
