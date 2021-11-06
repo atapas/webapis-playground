@@ -30,14 +30,4 @@ export type { InputSearchProps } from './InputSearch';
 export { Card } from './Card';
 export type { CardProps } from './Card';
 
-export { default as GithubCodeLink } from './core/GithubCodeLink';
-
-// util
-export { default as DemoInfo } from './util/DemoInfo';
-export { default as Creator } from './util/Creator';
 export { default as NotSupported } from './util/NotSupported';
-export { default as DemoSEO } from './util/DemoSEO';
-
-export { default as InputField } from './core/form/InputField';
-export { default as InputFieldButton } from './core/form/InputFieldButton';
-export { default as InputFieldWrapper } from './core/form/InputFieldWrapper';

@@ -7,7 +7,7 @@ import Head from 'next/head';
 import SEO from '@bradgarropy/next-seo';
 import NextNProgress from 'nextjs-progressbar';
 
-import { Header, Layout, GithubCodeLink } from 'components';
+import { Header, Layout } from 'components';
 import { motion } from 'framer-motion';
 
 function MyApp({ Component, pageProps, router }: AppProps) {
@@ -24,9 +24,6 @@ function MyApp({ Component, pageProps, router }: AppProps) {
       .matchMedia('(prefers-color-scheme: dark)')
       .addEventListener('change', changeFavicon);
   }, []);
-
-  const isDemoRoute = router.pathname && router.pathname.match(/demos/);
-  const webApiPathname = isDemoRoute && router.pathname.split('/demos/')[1];
 
   return (
     <motion.div
@@ -79,12 +76,6 @@ function MyApp({ Component, pageProps, router }: AppProps) {
 
       <Layout>
         <Component {...pageProps} />
-
-        {isDemoRoute && (
-          <GithubCodeLink
-            url={`https://github.com/atapas/webapis-playground/blob/master/src/web-apis/${webApiPathname}/index.js`}
-          />
-        )}
       </Layout>
     </motion.div>
   );
