@@ -30,4 +30,4 @@ export type { InputSearchProps } from './InputSearch';
 export { Card } from './Card';
 export type { CardProps } from './Card';
 
-export { default as NotSupported } from './util/NotSupported';
+export { NotSupported } from './NotSupported';
