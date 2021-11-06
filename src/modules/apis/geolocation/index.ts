@@ -1,4 +1,4 @@
-export const hasSupport = (): boolean => Boolean(navigator.geolocation);
+export const hasSupport = (): boolean => Boolean('geolocation' in navigator);
 
 const roundToTwo = (length: number) =>
   Math.round((length + Number.EPSILON) * 100) / 100;

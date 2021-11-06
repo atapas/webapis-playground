@@ -1,5 +1,5 @@
 //@ts-nocheck
-export const hasSupport = (): boolean => (window.PaymentRequest ? true : false);
+export const hasSupport = (): boolean => Boolean('PaymentRequest' in window);
 
 function updateDetails(details, shippingOption, resolve, reject) {
   let selectedShippingOption;

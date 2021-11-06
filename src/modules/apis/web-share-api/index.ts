@@ -1,4 +1,4 @@
-export const hasSupport = (): boolean => Boolean(navigator.share);
+export const hasSupport = (): boolean => Boolean('share' in navigator);
 
 async function run() {
   try {

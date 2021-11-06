@@ -1,5 +1,4 @@
-export const hasSupport = (): boolean =>
-  window.BroadcastChannel ? true : false;
+export const hasSupport = (): boolean => Boolean('BroadcastChannel' in window);
 
 const CHANNEL_NAME = 'web_api_channel';
 

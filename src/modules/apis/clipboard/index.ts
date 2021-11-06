@@ -1,6 +1,6 @@
 import { FormEvent } from 'react';
 
-export const hasSupport = (): boolean => (navigator.clipboard ? true : false);
+export const hasSupport = (): boolean => Boolean('clipboard' in navigator);
 
 async function onCopy(event: FormEvent<HTMLButtonElement>) {
   event.preventDefault();

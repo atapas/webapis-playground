@@ -1,4 +1,4 @@
-export const hasSupport = (): boolean => Boolean(navigator.vibrate);
+export const hasSupport = (): boolean => Boolean('vibrate' in navigator);
 
 function run(type: 'start' | 'stop') {
   if (hasSupport()) {

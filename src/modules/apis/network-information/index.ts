@@ -1,5 +1,5 @@
 export const hasSupport = (): boolean =>
-  window.navigator.connection ? true : false;
+  Boolean('connection' in window.navigator);
 
 function run() {
   let conn = window.navigator.connection;

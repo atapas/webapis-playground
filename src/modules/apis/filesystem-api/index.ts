@@ -1,5 +1,5 @@
 export const hasSupport = (): boolean =>
-  typeof window !== 'undefined' && window.showOpenFilePicker ? true : false;
+  Boolean('showOpenFilePicker' in window);
 
 async function textUpload() {
   const root = document.getElementById('js-api--filesystem') as HTMLElement;

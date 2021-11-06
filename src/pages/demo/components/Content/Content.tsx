@@ -70,7 +70,7 @@ function Content({ id, title, description, meta, children }: ContentProps) {
             rel="noopener noreferrer"
             target="_blank"
             leftIcon={<FaGithubAlt />}
-            className="tw-bg-black tw-m-1"
+            className="tw-m-1 tw-bg-gray-900 hover:tw-bg-gray-800"
           >
             Source code
           </Tag>
