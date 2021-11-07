@@ -35,7 +35,7 @@ function setMessage(msg: string = '') {
 }
 
 function onGetUserMedia() {
-  const video = document.querySelector('js-image--video') as HTMLVideoElement;
+  const video = document.getElementById('js-image--video') as HTMLVideoElement;
 
   setMessage('Started');
   console.log('Getting User Media');
