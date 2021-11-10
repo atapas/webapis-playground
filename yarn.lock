@@ -1132,6 +1132,11 @@
     ejs "^2.6.1"
     magic-string "^0.25.0"
 
+"@tailwindcss/aspect-ratio@^0.3.0":
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/@tailwindcss/aspect-ratio/-/aspect-ratio-0.3.0.tgz#f779ab3f07cac848fb844122d6662ba6560010b8"
+  integrity sha512-DMgWskNJR6FNPLbQ8Xoq/PKV/9DfNKh5dvKB+SM8x7lVl4+pnxlZ3Ns4+yGmurA/ze708HrnCG1tXk85HolJmw==
+
 "@tailwindcss/forms@^0.3.4":
   version "0.3.4"
   resolved "https://registry.yarnpkg.com/@tailwindcss/forms/-/forms-0.3.4.tgz#e4939dc16450eccf4fd2029770096f38cbb556d4"
@@ -1143,6 +1148,16 @@
   version "0.2.2"
   resolved "https://registry.yarnpkg.com/@tailwindcss/line-clamp/-/line-clamp-0.2.2.tgz#05843c004bf069353a0c43f9df8cc3a6016252b8"
   integrity sha512-NgA4Ds+/eCiO+6O3SooRsfJ8m7M2+QvNvHwOjBQq7FIYoWwAV4I4Wu4fjHeuO9Yi6p47ceHUKEGGEBh0ozQodg==
+
+"@tailwindcss/typography@^0.4.1":
+  version "0.4.1"
+  resolved "https://registry.yarnpkg.com/@tailwindcss/typography/-/typography-0.4.1.tgz#51ddbceea6a0ee9902c649dbe58871c81a831212"
+  integrity sha512-ovPPLUhs7zAIJfr0y1dbGlyCuPhpuv/jpBoFgqAc658DWGGrOBWBMpAWLw2KlzbNeVk4YBJMzue1ekvIbdw6XA==
+  dependencies:
+    lodash.castarray "^4.4.0"
+    lodash.isplainobject "^4.0.6"
+    lodash.merge "^4.6.2"
+    lodash.uniq "^4.5.0"
 
 "@types/estree@0.0.39":
   version "0.0.39"
@@ -1266,6 +1281,13 @@
   dependencies:
     source-map "^0.6.1"
 
+"@types/w3c-image-capture@^1.0.5":
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/@types/w3c-image-capture/-/w3c-image-capture-1.0.5.tgz#d953701356c4bceacc23f9465a76d3eab864328e"
+  integrity sha512-MzkDgLz8bJLzxMlPJYoIQbuFdbYzydlr1DQ3jPcqEZhEWBACxsqvrUB99CegClXCxoTs2BDDdbuvAPOZ/zec1g==
+  dependencies:
+    "@types/webrtc" "*"
+
 "@types/webpack-sources@*":
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/@types/webpack-sources/-/webpack-sources-3.2.0.tgz#16d759ba096c289034b26553d2df1bf45248d38b"
@@ -1286,6 +1308,16 @@
     "@types/webpack-sources" "*"
     anymatch "^3.0.0"
     source-map "^0.6.0"
+
+"@types/webrtc@*":
+  version "0.0.31"
+  resolved "https://registry.yarnpkg.com/@types/webrtc/-/webrtc-0.0.31.tgz#164b8d6f40ff0238b3e62604e8d23f7377125284"
+  integrity sha512-GEoJIoM/ddxdaGnu0enJVDTdvwwr3/tPkpXz0LBTSi282gqxWDg1ffk4fzHU2dosNshp+Slq1kfGxpKs5083Nw==
+
+"@types/wicg-file-system-access@^2020.9.4":
+  version "2020.9.4"
+  resolved "https://registry.yarnpkg.com/@types/wicg-file-system-access/-/wicg-file-system-access-2020.9.4.tgz#83f255d6bd20b0ae131d555693473d15a0574e92"
+  integrity sha512-o43jUljwP0ZrQ927mPjGdJaBMfS12nf3VPj6Z52fMucxILrSs8tnfLbMDSn6cP3hrrLChc3SYneeEvecknNVtA==
 
 "@typescript-eslint/parser@^4.20.0":
   version "4.28.0"
@@ -4366,6 +4398,11 @@ locate-path@^5.0.0:
   dependencies:
     p-locate "^4.1.0"
 
+lodash.castarray@^4.4.0:
+  version "4.4.0"
+  resolved "https://registry.yarnpkg.com/lodash.castarray/-/lodash.castarray-4.4.0.tgz#c02513515e309daddd4c24c60cfddcf5976d9115"
+  integrity sha1-wCUTUV4wna3dTCTGDP3c9ZdtkRU=
+
 lodash.clonedeep@^4.5.0:
   version "4.5.0"
   resolved "https://registry.yarnpkg.com/lodash.clonedeep/-/lodash.clonedeep-4.5.0.tgz#e23f3f9c4f8fbdde872529c1071857a086e5ccef"
@@ -4380,6 +4417,11 @@ lodash.get@^4.4.2:
   version "4.4.2"
   resolved "https://registry.yarnpkg.com/lodash.get/-/lodash.get-4.4.2.tgz#2d177f652fa31e939b4438d5341499dfa3825e99"
   integrity sha1-LRd/ZS+jHpObRDjVNBSZ36OCXpk=
+
+lodash.isplainobject@^4.0.6:
+  version "4.0.6"
+  resolved "https://registry.yarnpkg.com/lodash.isplainobject/-/lodash.isplainobject-4.0.6.tgz#7c526a52d89b45c45cc690b88163be0497f550cb"
+  integrity sha1-fFJqUtibRcRcxpC4gWO+BJf1UMs=
 
 lodash.merge@^4.6.2:
   version "4.6.2"
@@ -4400,6 +4442,11 @@ lodash.truncate@^4.4.2:
   version "4.4.2"
   resolved "https://registry.yarnpkg.com/lodash.truncate/-/lodash.truncate-4.4.2.tgz#5a350da0b1113b837ecfffd5812cbe58d6eae193"
   integrity sha1-WjUNoLERO4N+z//VgSy+WNbq4ZM=
+
+lodash.uniq@^4.5.0:
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/lodash.uniq/-/lodash.uniq-4.5.0.tgz#d0225373aeb652adc1bc82e4945339a842754773"
+  integrity sha1-0CJTc662Uq3BvILklFM5qEJ1R3M=
 
 lodash@^4.17.19, lodash@^4.17.20, lodash@^4.17.21:
   version "4.17.21"
