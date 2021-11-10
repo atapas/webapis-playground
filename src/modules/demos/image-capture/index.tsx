@@ -58,10 +58,7 @@ function ImageCapture() {
           "
         >
           <video id="js-resize--content" className="tw-w-full" autoPlay />
-          <canvas id="js-image--frame" className="tw-w-full"></canvas>
-          <canvas id="js-image--photo" className="tw-w-full"></canvas>
         </div>
-
         <span
           id="js-image--error"
           className="
@@ -74,6 +71,10 @@ function ImageCapture() {
         >
           Frame
         </span>
+      </div>
+      <div className="tw-mt-4">
+        <canvas id="js-image--frame" className="tw-inline-block"></canvas>
+        <canvas id="js-image--photo" className="tw-inline-block"></canvas>
       </div>
     </div>
   );

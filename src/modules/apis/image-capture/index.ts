@@ -35,7 +35,9 @@ function setMessage(msg: string = '') {
 }
 
 function onGetUserMedia() {
-  const video = document.getElementById('js-image--video') as HTMLVideoElement;
+  const video = document.getElementById(
+    'js-resize--content'
+  ) as HTMLVideoElement;
 
   setMessage('Started');
   console.log('Getting User Media');
@@ -52,7 +54,7 @@ function onGetUserMedia() {
 }
 
 function onStop() {
-  setMessage('Stoped');
+  setMessage('Stopped');
   stream && stream.stop();
   enableCapture = false;
 }
