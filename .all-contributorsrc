@@ -197,6 +197,15 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "bharati-21",
+      "name": "Bharati Subramanian",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51514137?v=4",
+      "profile": "https://bharati-portfolio.netlify.app/",
+      "contributions": [
+        "design"
+      ]
     }
   ],
   "contributorsPerLine": 7,
