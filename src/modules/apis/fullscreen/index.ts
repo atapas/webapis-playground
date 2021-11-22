@@ -1,8 +1,8 @@
 export const hasSupport = (): boolean =>
-  document.fullscreenEnabled ? true : false;
+  Boolean('fullscreenEnabled' in document);
 
 function run() {
-  const root = document.getElementById('fs-img-id') as HTMLElement;
+  const root = document.getElementById('js-api--fullscreen') as HTMLElement;
 
   if (hasSupport()) {
     root?.requestFullscreen();

@@ -56,6 +56,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
             `
             tw-w-full
             tw-border-gray-200
+            tw-rounded-md
             tw-placeholder-gray-400
             tw-transition
             tw-duration-200
