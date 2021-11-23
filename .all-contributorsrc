@@ -206,6 +206,15 @@
       "contributions": [
         "design"
       ]
+    },
+    {
+      "login": "Sukhseerat-Kaur",
+      "name": "Sukhseerat Kaur",
+      "avatar_url": "https://avatars.githubusercontent.com/u/54837213?v=4",
+      "profile": "https://github.com/Sukhseerat-Kaur",
+      "contributions": [
+        "bug"
+      ]
     }
   ],
   "contributorsPerLine": 7,
