@@ -36,7 +36,7 @@ async function onPaste(event: FormEvent<HTMLButtonElement>) {
       console.log(`Clipboard API is Not Supported`);
     }
   } catch (err) {
-    console.error(`Failed to copy: ${err}`);
+    console.error(`Failed to paste: ${err}`);
   }
 }
 
