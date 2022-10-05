@@ -340,8 +340,9 @@ export const data: Array<Demo> = [
       apiDocURL:
         'https://developer.mozilla.org/en-US/docs/Web/API/Pointer_events',
       canIUseURL: 'https://caniuse.com/pointer',
-},
-{
+    },
+  },
+  {
     id: 'canvas-api',
     emoji: '🎨',
     title: 'Canvas API',
@@ -358,5 +359,6 @@ export const data: Array<Demo> = [
       },
       apiDocURL: 'https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API',
       canIUseURL: 'https://caniuse.com/canvas',
+    },
   }, //replace item here
 ];
