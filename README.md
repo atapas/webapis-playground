@@ -1,9 +1,7 @@
 # 🔌 WEB APIS PLAYGROUND
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-
-[![All Contributors](https://img.shields.io/badge/all_contributors-23-orange.svg?style=flat-square)](#contributors-)
-
+[![All Contributors](https://img.shields.io/badge/all_contributors-24-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 The `Web APIs Playground` is a project to showcase the JavaScript Web APIs with examples and demonstrations. Client-side JavaScript APIs provides wrapper functions for many low-level tasks like,
@@ -117,37 +115,43 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
 <table>
-  <tr>
-    <td align="center"><a href="https://usman-s.me"><img src="https://avatars.githubusercontent.com/u/51731966?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Max Programming</b></sub></a><br /><a href="https://github.com/atapas/webapis-playground/commits?author=max-programming" title="Code">💻</a></td>
-    <td align="center"><a href="https://tapasadhikary.com"><img src="https://avatars.githubusercontent.com/u/3633137?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Tapas Adhikary</b></sub></a><br /><a href="https://github.com/atapas/webapis-playground/commits?author=atapas" title="Code">💻</a></td>
-    <td align="center"><a href="http://niteshseram.in"><img src="https://avatars.githubusercontent.com/u/51370246?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Nitesh Seram</b></sub></a><br /><a href="https://github.com/atapas/webapis-playground/commits?author=niteshseram" title="Code">💻</a> <a href="#a11y-niteshseram" title="Accessibility">️️️️♿️</a> <a href="https://github.com/atapas/webapis-playground/issues?q=author%3Aniteshseram" title="Bug reports">🐛</a></td>
-    <td align="center"><a href="https://wsameer.github.io/v1/"><img src="https://avatars.githubusercontent.com/u/8468992?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Sameer Waskar</b></sub></a><br /><a href="https://github.com/atapas/webapis-playground/commits?author=wsameer" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/omriattiya"><img src="https://avatars.githubusercontent.com/u/26112374?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Omri Attiya</b></sub></a><br /><a href="https://github.com/atapas/webapis-playground/commits?author=omriattiya" title="Code">💻</a></td>
-    <td align="center"><a href="https://tiger-yash.github.io/"><img src="https://avatars.githubusercontent.com/u/74406801?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Yash Raj</b></sub></a><br /><a href="https://github.com/atapas/webapis-playground/commits?author=tiger-yash" title="Code">💻</a></td>
-    <td align="center"><a href="https://rehansattar.now.sh/"><img src="https://avatars.githubusercontent.com/u/26999472?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Rehan  Sattar</b></sub></a><br /><a href="https://github.com/atapas/webapis-playground/commits?author=rehan-sattar" title="Code">💻</a> <a href="https://github.com/atapas/webapis-playground/issues?q=author%3Arehan-sattar" title="Bug reports">🐛</a></td>
-  </tr>
-  <tr>
-    <td align="center"><a href="https://ahsanayaz.com"><img src="https://avatars.githubusercontent.com/u/9844254?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Muhammad Ahsan Ayaz</b></sub></a><br /><a href="https://github.com/atapas/webapis-playground/commits?author=AhsanAyaz" title="Code">💻</a></td>
-    <td align="center"><a href="http://koustov.com"><img src="https://avatars.githubusercontent.com/u/7145967?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Koustov</b></sub></a><br /><a href="https://github.com/atapas/webapis-playground/issues?q=author%3Akoustov" title="Bug reports">🐛</a> <a href="https://github.com/atapas/webapis-playground/commits?author=koustov" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/aanchal-fatwani"><img src="https://avatars.githubusercontent.com/u/63228776?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Aanchal</b></sub></a><br /><a href="https://github.com/atapas/webapis-playground/commits?author=aanchal-fatwani" title="Code">💻</a></td>
-    <td align="center"><a href="https://abhikhatri67.github.io/"><img src="https://avatars.githubusercontent.com/u/15958423?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Abhishek Khatri</b></sub></a><br /><a href="https://github.com/atapas/webapis-playground/commits?author=abhikhatri67" title="Code">💻</a></td>
-    <td align="center"><a href="https://www.avneesh.tech/"><img src="https://avatars.githubusercontent.com/u/76690419?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Avneesh Agarwal</b></sub></a><br /><a href="https://github.com/atapas/webapis-playground/commits?author=avneesh0612" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/kvnal"><img src="https://avatars.githubusercontent.com/u/72142540?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Kunal Singh</b></sub></a><br /><a href="https://github.com/atapas/webapis-playground/commits?author=kvnal" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/rzhekova"><img src="https://avatars.githubusercontent.com/u/35401262?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Rosie Z</b></sub></a><br /><a href="https://github.com/atapas/webapis-playground/commits?author=rzhekova" title="Code">💻</a></td>
-  </tr>
-  <tr>
-    <td align="center"><a href="https://github.com/mverissimo"><img src="https://avatars.githubusercontent.com/u/371844?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Matheus Verissimo</b></sub></a><br /><a href="https://github.com/atapas/webapis-playground/commits?author=mverissimo" title="Code">💻</a></td>
-    <td align="center"><a href="http://abiolaesther.me"><img src="https://avatars.githubusercontent.com/u/49586787?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Abiola</b></sub></a><br /><a href="https://github.com/atapas/webapis-playground/commits?author=Abiola-Farounbi" title="Code">💻</a></td>
-    <td align="center"><a href="http://linkedin.com/in/emitdutcher"><img src="https://avatars.githubusercontent.com/u/27447016?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Emit</b></sub></a><br /><a href="https://github.com/atapas/webapis-playground/commits?author=develemit" title="Code">💻</a></td>
-    <td align="center"><a href="http://tmo.codes"><img src="https://avatars.githubusercontent.com/u/44333523?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Tyler Morales </b></sub></a><br /><a href="https://github.com/atapas/webapis-playground/commits?author=tyler-morales" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/chosunosu"><img src="https://avatars.githubusercontent.com/u/49362226?v=4?s=100" width="100px;" alt=""/><br /><sub><b>chosunosu</b></sub></a><br /><a href="https://github.com/atapas/webapis-playground/issues?q=author%3Achosunosu" title="Bug reports">🐛</a></td>
-    <td align="center"><a href="https://webplatform.news"><img src="https://avatars.githubusercontent.com/u/716405?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Šime Vidas</b></sub></a><br /><a href="https://github.com/atapas/webapis-playground/issues?q=author%3Asimevidas" title="Bug reports">🐛</a></td>
-    <td align="center"><a href="https://www.linkedin.com/in/vaibhav-agr/"><img src="https://avatars.githubusercontent.com/u/78676331?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Vaibhav Agrawal</b></sub></a><br /><a href="https://github.com/atapas/webapis-playground/commits?author=vaibhav-if" title="Documentation">📖</a></td>
-  </tr>
-  <tr>
-    <td align="center"><a href="https://bharati-portfolio.netlify.app/"><img src="https://avatars.githubusercontent.com/u/51514137?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Bharati Subramanian</b></sub></a><br /><a href="#design-bharati-21" title="Design">🎨</a></td>
-    <td align="center"><a href="https://github.com/Sukhseerat-Kaur"><img src="https://avatars.githubusercontent.com/u/54837213?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Sukhseerat Kaur</b></sub></a><br /><a href="https://github.com/atapas/webapis-playground/issues?q=author%3ASukhseerat-Kaur" title="Bug reports">🐛</a></td>
-  </tr>
+  <tbody>
+    <tr>
+      <td align="center"><a href="https://usman-s.me"><img src="https://avatars.githubusercontent.com/u/51731966?v=4?s=100" width="100px;" alt="Max Programming"/><br /><sub><b>Max Programming</b></sub></a><br /><a href="https://github.com/atapas/webapis-playground/commits?author=max-programming" title="Code">💻</a></td>
+      <td align="center"><a href="https://tapasadhikary.com"><img src="https://avatars.githubusercontent.com/u/3633137?v=4?s=100" width="100px;" alt="Tapas Adhikary"/><br /><sub><b>Tapas Adhikary</b></sub></a><br /><a href="https://github.com/atapas/webapis-playground/commits?author=atapas" title="Code">💻</a></td>
+      <td align="center"><a href="http://niteshseram.in"><img src="https://avatars.githubusercontent.com/u/51370246?v=4?s=100" width="100px;" alt="Nitesh Seram"/><br /><sub><b>Nitesh Seram</b></sub></a><br /><a href="https://github.com/atapas/webapis-playground/commits?author=niteshseram" title="Code">💻</a> <a href="#a11y-niteshseram" title="Accessibility">️️️️♿️</a> <a href="https://github.com/atapas/webapis-playground/issues?q=author%3Aniteshseram" title="Bug reports">🐛</a></td>
+      <td align="center"><a href="https://wsameer.github.io/v1/"><img src="https://avatars.githubusercontent.com/u/8468992?v=4?s=100" width="100px;" alt="Sameer Waskar"/><br /><sub><b>Sameer Waskar</b></sub></a><br /><a href="https://github.com/atapas/webapis-playground/commits?author=wsameer" title="Code">💻</a></td>
+      <td align="center"><a href="https://github.com/omriattiya"><img src="https://avatars.githubusercontent.com/u/26112374?v=4?s=100" width="100px;" alt="Omri Attiya"/><br /><sub><b>Omri Attiya</b></sub></a><br /><a href="https://github.com/atapas/webapis-playground/commits?author=omriattiya" title="Code">💻</a></td>
+      <td align="center"><a href="https://tiger-yash.github.io/"><img src="https://avatars.githubusercontent.com/u/74406801?v=4?s=100" width="100px;" alt="Yash Raj"/><br /><sub><b>Yash Raj</b></sub></a><br /><a href="https://github.com/atapas/webapis-playground/commits?author=tiger-yash" title="Code">💻</a></td>
+      <td align="center"><a href="https://rehansattar.now.sh/"><img src="https://avatars.githubusercontent.com/u/26999472?v=4?s=100" width="100px;" alt="Rehan  Sattar"/><br /><sub><b>Rehan  Sattar</b></sub></a><br /><a href="https://github.com/atapas/webapis-playground/commits?author=rehan-sattar" title="Code">💻</a> <a href="https://github.com/atapas/webapis-playground/issues?q=author%3Arehan-sattar" title="Bug reports">🐛</a></td>
+    </tr>
+    <tr>
+      <td align="center"><a href="https://ahsanayaz.com"><img src="https://avatars.githubusercontent.com/u/9844254?v=4?s=100" width="100px;" alt="Muhammad Ahsan Ayaz"/><br /><sub><b>Muhammad Ahsan Ayaz</b></sub></a><br /><a href="https://github.com/atapas/webapis-playground/commits?author=AhsanAyaz" title="Code">💻</a></td>
+      <td align="center"><a href="http://koustov.com"><img src="https://avatars.githubusercontent.com/u/7145967?v=4?s=100" width="100px;" alt="Koustov"/><br /><sub><b>Koustov</b></sub></a><br /><a href="https://github.com/atapas/webapis-playground/issues?q=author%3Akoustov" title="Bug reports">🐛</a> <a href="https://github.com/atapas/webapis-playground/commits?author=koustov" title="Code">💻</a></td>
+      <td align="center"><a href="https://github.com/aanchal-fatwani"><img src="https://avatars.githubusercontent.com/u/63228776?v=4?s=100" width="100px;" alt="Aanchal"/><br /><sub><b>Aanchal</b></sub></a><br /><a href="https://github.com/atapas/webapis-playground/commits?author=aanchal-fatwani" title="Code">💻</a></td>
+      <td align="center"><a href="https://abhikhatri67.github.io/"><img src="https://avatars.githubusercontent.com/u/15958423?v=4?s=100" width="100px;" alt="Abhishek Khatri"/><br /><sub><b>Abhishek Khatri</b></sub></a><br /><a href="https://github.com/atapas/webapis-playground/commits?author=abhikhatri67" title="Code">💻</a></td>
+      <td align="center"><a href="https://www.avneesh.tech/"><img src="https://avatars.githubusercontent.com/u/76690419?v=4?s=100" width="100px;" alt="Avneesh Agarwal"/><br /><sub><b>Avneesh Agarwal</b></sub></a><br /><a href="https://github.com/atapas/webapis-playground/commits?author=avneesh0612" title="Code">💻</a></td>
+      <td align="center"><a href="https://github.com/kvnal"><img src="https://avatars.githubusercontent.com/u/72142540?v=4?s=100" width="100px;" alt="Kunal Singh"/><br /><sub><b>Kunal Singh</b></sub></a><br /><a href="https://github.com/atapas/webapis-playground/commits?author=kvnal" title="Code">💻</a></td>
+      <td align="center"><a href="https://github.com/rzhekova"><img src="https://avatars.githubusercontent.com/u/35401262?v=4?s=100" width="100px;" alt="Rosie Z"/><br /><sub><b>Rosie Z</b></sub></a><br /><a href="https://github.com/atapas/webapis-playground/commits?author=rzhekova" title="Code">💻</a></td>
+    </tr>
+    <tr>
+      <td align="center"><a href="https://github.com/mverissimo"><img src="https://avatars.githubusercontent.com/u/371844?v=4?s=100" width="100px;" alt="Matheus Verissimo"/><br /><sub><b>Matheus Verissimo</b></sub></a><br /><a href="https://github.com/atapas/webapis-playground/commits?author=mverissimo" title="Code">💻</a></td>
+      <td align="center"><a href="http://abiolaesther.me"><img src="https://avatars.githubusercontent.com/u/49586787?v=4?s=100" width="100px;" alt="Abiola"/><br /><sub><b>Abiola</b></sub></a><br /><a href="https://github.com/atapas/webapis-playground/commits?author=Abiola-Farounbi" title="Code">💻</a></td>
+      <td align="center"><a href="http://linkedin.com/in/emitdutcher"><img src="https://avatars.githubusercontent.com/u/27447016?v=4?s=100" width="100px;" alt="Emit"/><br /><sub><b>Emit</b></sub></a><br /><a href="https://github.com/atapas/webapis-playground/commits?author=develemit" title="Code">💻</a></td>
+      <td align="center"><a href="http://tmo.codes"><img src="https://avatars.githubusercontent.com/u/44333523?v=4?s=100" width="100px;" alt="Tyler Morales "/><br /><sub><b>Tyler Morales </b></sub></a><br /><a href="https://github.com/atapas/webapis-playground/commits?author=tyler-morales" title="Code">💻</a></td>
+      <td align="center"><a href="https://github.com/chosunosu"><img src="https://avatars.githubusercontent.com/u/49362226?v=4?s=100" width="100px;" alt="chosunosu"/><br /><sub><b>chosunosu</b></sub></a><br /><a href="https://github.com/atapas/webapis-playground/issues?q=author%3Achosunosu" title="Bug reports">🐛</a></td>
+      <td align="center"><a href="https://webplatform.news"><img src="https://avatars.githubusercontent.com/u/716405?v=4?s=100" width="100px;" alt="Šime Vidas"/><br /><sub><b>Šime Vidas</b></sub></a><br /><a href="https://github.com/atapas/webapis-playground/issues?q=author%3Asimevidas" title="Bug reports">🐛</a></td>
+      <td align="center"><a href="https://www.linkedin.com/in/vaibhav-agr/"><img src="https://avatars.githubusercontent.com/u/78676331?v=4?s=100" width="100px;" alt="Vaibhav Agrawal"/><br /><sub><b>Vaibhav Agrawal</b></sub></a><br /><a href="https://github.com/atapas/webapis-playground/commits?author=vaibhav-if" title="Documentation">📖</a></td>
+    </tr>
+    <tr>
+      <td align="center"><a href="https://bharati-portfolio.netlify.app/"><img src="https://avatars.githubusercontent.com/u/51514137?v=4?s=100" width="100px;" alt="Bharati Subramanian"/><br /><sub><b>Bharati Subramanian</b></sub></a><br /><a href="#design-bharati-21" title="Design">🎨</a></td>
+      <td align="center"><a href="https://github.com/Sukhseerat-Kaur"><img src="https://avatars.githubusercontent.com/u/54837213?v=4?s=100" width="100px;" alt="Sukhseerat Kaur"/><br /><sub><b>Sukhseerat Kaur</b></sub></a><br /><a href="https://github.com/atapas/webapis-playground/issues?q=author%3ASukhseerat-Kaur" title="Bug reports">🐛</a></td>
+      <td align="center"><a href="https://github.com/richardnikolas"><img src="https://avatars.githubusercontent.com/u/20261986?v=4?s=100" width="100px;" alt="Richard Nikolas"/><br /><sub><b>Richard Nikolas</b></sub></a><br /><a href="https://github.com/atapas/webapis-playground/commits?author=richardnikolas" title="Code">💻</a></td>
+    </tr>
+  </tbody>
+  <tfoot>
+    
+  </tfoot>
 </table>
 
 <!-- markdownlint-restore -->
