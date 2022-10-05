@@ -340,6 +340,23 @@ export const data: Array<Demo> = [
       apiDocURL:
         'https://developer.mozilla.org/en-US/docs/Web/API/Pointer_events',
       canIUseURL: 'https://caniuse.com/pointer',
-    },
+},
+{
+    id: 'canvas-api',
+    emoji: '🎨',
+    title: 'Canvas API',
+    description:
+      'The Canvas API provides a means for drawing graphics via JavaScript and the HTML <canvas> element. It can be use for animation, game graphics, data visualization, photo manipulation and real-time video processing. This API is largely focuses on 2D graphics.',
+    meta: {
+      author: {
+        name: 'Richard Nikolas',
+        social: {
+          email: 'richardnikolas1@gmail.com',
+          github: 'richardnikolas',
+          twitter: 'RichardTiti',
+        },
+      },
+      apiDocURL: 'https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API',
+      canIUseURL: 'https://caniuse.com/canvas',
   }, //replace item here
 ];
