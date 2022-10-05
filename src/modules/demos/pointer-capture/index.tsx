@@ -56,11 +56,11 @@ function PointerCapture() {
           className="tw-h-5 tw-w-full tw-bg-gray-400 tw-mb-5 tw-flex tw-items-center tw-relative tw-cursor-pointer"
           onPointerUp={e => run.onPointerUp(e, isCapture)}
           onPointerDown={e => run.onPointerDown(e, isCapture)}
+          onPointerMove={run.onPointerMove}
         >
           <div
             id="red-timeline"
             className="tw-relative tw-bg-red-600 tw-h-full tw-rounded-r-full tw-w-7"
-            onPointerMove={run.onPointerMove}
           >
             <div
               id="dot"
