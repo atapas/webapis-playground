@@ -1,7 +1,9 @@
 # 🔌 WEB APIS PLAYGROUND
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+
 [![All Contributors](https://img.shields.io/badge/all_contributors-23-orange.svg?style=flat-square)](#contributors-)
+
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 The `Web APIs Playground` is a project to showcase the JavaScript Web APIs with examples and demonstrations. Client-side JavaScript APIs provides wrapper functions for many low-level tasks like,
@@ -83,6 +85,7 @@ So far, it includes the following examples:
 1. 💻 Screen Capture
 1. ✍️ CSS Font Loading
 1. 🎙️ Web Speech API
+1. 👆 Pointer Capture API
 
 # 🤝 Open Source
 
