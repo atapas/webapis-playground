@@ -1,7 +1,7 @@
 # 🔌 WEB APIS PLAYGROUND
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-24-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-25-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 The `Web APIs Playground` is a project to showcase the JavaScript Web APIs with examples and demonstrations. Client-side JavaScript APIs provides wrapper functions for many low-level tasks like,
@@ -147,6 +147,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
       <td align="center"><a href="https://bharati-portfolio.netlify.app/"><img src="https://avatars.githubusercontent.com/u/51514137?v=4?s=100" width="100px;" alt="Bharati Subramanian"/><br /><sub><b>Bharati Subramanian</b></sub></a><br /><a href="#design-bharati-21" title="Design">🎨</a></td>
       <td align="center"><a href="https://github.com/Sukhseerat-Kaur"><img src="https://avatars.githubusercontent.com/u/54837213?v=4?s=100" width="100px;" alt="Sukhseerat Kaur"/><br /><sub><b>Sukhseerat Kaur</b></sub></a><br /><a href="https://github.com/atapas/webapis-playground/issues?q=author%3ASukhseerat-Kaur" title="Bug reports">🐛</a></td>
       <td align="center"><a href="https://github.com/richardnikolas"><img src="https://avatars.githubusercontent.com/u/20261986?v=4?s=100" width="100px;" alt="Richard Nikolas"/><br /><sub><b>Richard Nikolas</b></sub></a><br /><a href="https://github.com/atapas/webapis-playground/commits?author=richardnikolas" title="Code">💻</a></td>
+      <td align="center"><a href="https://kvarunkk.github.io/Portfolio_Official/"><img src="https://avatars.githubusercontent.com/u/98093422?v=4?s=100" width="100px;" alt="Varun"/><br /><sub><b>Varun</b></sub></a><br /><a href="https://github.com/atapas/webapis-playground/commits?author=kVarunkk" title="Code">💻</a></td>
     </tr>
   </tbody>
   <tfoot>
