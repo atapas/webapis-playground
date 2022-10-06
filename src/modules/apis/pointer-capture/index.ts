@@ -13,6 +13,7 @@ function onPointerMove(event: React.PointerEvent<Element>) {
     childTag.style.left = `${event.clientX - rect.left - 20}px`;
   }
 }
+
 function onPointerDown(event: React.PointerEvent<Element>, isCapture: boolean) {
   const timeline = document.querySelector('#red-timeline') as HTMLElement;
   if (isCapture) {

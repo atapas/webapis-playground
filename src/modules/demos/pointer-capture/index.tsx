@@ -35,25 +35,33 @@ function PointerCapture() {
       </button>
       <div
         id="video"
-        className="tw-w-5/6 tw-h-72 tw-bg-gray-600 tw-overflow-hidden "
+        className="tw-w-5/6 tw-h-96 sm:tw-h-72  tw-bg-gray-600 tw-overflow-hidden"
       >
-        <div className="tw-h-60 tw-p-4 tw-px-8 tw-text-gray-300 tw-text-base md:tw-text-xl">
-          <p className="tw-text-3xl tw-mb-2">Steps:</p>
+        <div className="tw-p-4 tw-text-gray-300 tw-text-sm md:tw-text-base">
+          <p className="tw-text-2xl tw-mb-2">Steps:</p>
           <p>
             1. Turn on {`"`}Pointer Capture{`"`} and start draging the below
             circle.
           </p>
           <p>
-            2. Move towards this text 👉 {`"`}HERE{`"`} while dragging the
-            circle.
+            2. Move the cursor towards this text 👉{' '}
+            <strong>
+              {`"`}HERE{`"`}
+            </strong>{' '}
+            while dragging the circle. Observe that the slider is still moving
+            event when the cursor is moved out of the target focus.
           </p>
           <p>
-            3. Try this activity by turning off {`"`}Pointer Capture{`"`}.
+            3. Try this activity by turning off {`"`}Pointer Capture{`"`}. Now,
+            you can see that the slider stops moving once your cursor is out of
+            the target focus. This is becuase the pointer is{' '}
+            <strong>not</strong> captured.
           </p>
         </div>
         <div
           id="gray-timeline"
           className="tw-h-5 tw-w-full tw-bg-gray-400 tw-mb-5 tw-flex tw-items-center tw-relative tw-cursor-pointer"
+          style={{ touchAction: isCapture ? 'none' : 'auto' }}
           onPointerUp={e => run.onPointerUp(e, isCapture)}
           onPointerDown={e => run.onPointerDown(e, isCapture)}
           onPointerMove={run.onPointerMove}
@@ -64,7 +72,7 @@ function PointerCapture() {
           >
             <div
               id="dot"
-              className="tw-absolute tw-bg-red-700 tw-h-7 tw-w-7 tw-rounded-full tw--top-1 tw-left-4 tw-touch-none"
+              className="tw-absolute tw-bg-red-700 tw-h-7 tw-w-7 tw-rounded-full tw--top-1 tw-left-4"
             ></div>
           </div>
         </div>
