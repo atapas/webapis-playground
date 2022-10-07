@@ -1,7 +1,5 @@
 import React from 'react';
-export const hasSupport = (): boolean => {
-  return true;
-};
+export const hasSupport = (): boolean => Boolean('PointerEvent' in window);
 
 let flag = false;
 function onPointerMove(event: React.PointerEvent<Element>) {
