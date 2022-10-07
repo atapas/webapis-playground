@@ -233,6 +233,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "supminn",
+      "name": "Supriya M",
+      "avatar_url": "https://avatars.githubusercontent.com/u/30731236?v=4",
+      "profile": "https://supminn-neog.netlify.app/",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
@@ -240,5 +249,6 @@
   "projectOwner": "atapas",
   "repoType": "github",
   "repoHost": "https://github.com",
-  "skipCi": true
+  "skipCi": true,
+  "commitConvention": "angular"
 }
