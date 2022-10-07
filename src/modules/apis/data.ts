@@ -324,6 +324,25 @@ export const data: Array<Demo> = [
     },
   },
   {
+    id: 'pointer-capture',
+    emoji: '👆',
+    title: 'Pointer Capture API',
+    description: `Pointer events are DOM events that are fired for a pointing device. They are designed to create a single DOM event model to handle pointing input devices such as a mouse, pen/stylus or touch (such as one or more fingers).`,
+    meta: {
+      author: {
+        name: 'Supriya M',
+        social: {
+          email: 'sansup49+developer@gmail.com',
+          github: 'supminn',
+          twitter: 'supminn',
+        },
+      },
+      apiDocURL:
+        'https://developer.mozilla.org/en-US/docs/Web/API/Pointer_events',
+      canIUseURL: 'https://caniuse.com/pointer',
+    },
+  },
+  {
     id: 'canvas-api',
     emoji: '🎨',
     title: 'Canvas API',

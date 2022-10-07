@@ -84,6 +84,7 @@ So far, it includes the following examples:
 1. ✍️ CSS Font Loading
 1. 🎙️ Web Speech API
 1. 🎨 Canvas API
+1. 👆 Pointer Capture API
 
 # 🤝 Open Source
 
