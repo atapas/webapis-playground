@@ -1,4 +1,4 @@
-import { Button, NotSupported } from 'components';
+import { Button, Input, NotSupported } from 'components';
 import run, { hasSupport } from '../../apis/url-api';
 
 function UrlApi() {
@@ -8,7 +8,13 @@ function UrlApi() {
 
   return (
     <div>
-      <p>Example URL: http://www.example.com/something?hello=hey#myhas</p>
+      <label htmlFor="js-url--input">Enter a URL:</label>
+      <Input
+        type="text"
+        id="js-url--input"
+        placeholder="Enter a URL"
+        defaultValue="http://www.example.com/something?hello=hey#myhash"
+      />
 
       <Button className="tw-mt-3" onClick={run}>
         Parse URL
@@ -105,7 +111,7 @@ function UrlApi() {
                     tw-text-gray-900
                   "
                 >
-                  Unknown
+                  -
                 </span>
               </td>
             </tr>
@@ -140,7 +146,7 @@ function UrlApi() {
                     tw-text-gray-900
                   "
                 >
-                  Unknown
+                  -
                 </span>
               </td>
             </tr>
@@ -175,7 +181,7 @@ function UrlApi() {
                     tw-text-gray-900
                   "
                 >
-                  Unknown
+                  -
                 </span>
               </td>
             </tr>
@@ -210,7 +216,7 @@ function UrlApi() {
                     tw-text-gray-900
                   "
                 >
-                  Unknown
+                  -
                 </span>
               </td>
             </tr>
@@ -245,7 +251,7 @@ function UrlApi() {
                     tw-text-gray-900
                   "
                 >
-                  Unknown
+                  -
                 </span>
               </td>
             </tr>
@@ -280,7 +286,7 @@ function UrlApi() {
                     tw-text-gray-900
                   "
                 >
-                  Unknown
+                  -
                 </span>
               </td>
             </tr>
@@ -315,7 +321,7 @@ function UrlApi() {
                     tw-text-gray-900
                   "
                 >
-                  Unknown
+                  -
                 </span>
               </td>
             </tr>
@@ -350,7 +356,7 @@ function UrlApi() {
                     tw-text-gray-900
                   "
                 >
-                  Unknown
+                  -
                 </span>
               </td>
             </tr>
