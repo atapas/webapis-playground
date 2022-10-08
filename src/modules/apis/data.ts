@@ -376,7 +376,8 @@ export const data: Array<Demo> = [
           twitter: 'williams_codes',
         },
       },
-      apiDocURL: '',
+      apiDocURL:
+        'https://developer.mozilla.org/en-US/docs/Web/API/Page_Visibility_API',
       canIUseURL: 'https://caniuse.com/pagevisibility',
     },
   }, //replace item here
