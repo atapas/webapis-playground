@@ -360,5 +360,24 @@ export const data: Array<Demo> = [
       apiDocURL: 'https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API',
       canIUseURL: 'https://caniuse.com/canvas',
     },
+  },
+  {
+    id: 'page-visibility',
+    emoji: '📃',
+    title: 'Page Visibility API',
+    description:
+      'The Page Visibility API provides events you can watch for to know when a document becomes visible or hidden, as well as features to look at the current visibility state of the page. This means that when the user minimizes the window or switches to another tab, an event will be sent.',
+    meta: {
+      author: {
+        name: 'Williams Samuel',
+        social: {
+          email: 'samwill300@gmail.com',
+          github: 'williamssam',
+          twitter: 'williams_codes',
+        },
+      },
+      apiDocURL: '',
+      canIUseURL: 'https://caniuse.com/pagevisibility',
+    },
   }, //replace item here
 ];
