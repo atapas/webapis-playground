@@ -391,7 +391,7 @@ export const data: Array<Demo> = [
         name: 'ArunKumar Nadikattu',
         social: {
           email: 'arunaiekhil+dev@gmail.com',
-          github: 'Aru_Ku',
+          github: 'Aru-Ku',
           twitter: 'Aru_Ku_',
         },
       },
