@@ -2,7 +2,14 @@
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 
+<<<<<<< HEAD
+
 [![All Contributors](https://img.shields.io/badge/all_contributors-26-orange.svg?style=flat-square)](#contributors-)
+
+=======
+[![All Contributors](https://img.shields.io/badge/all_contributors-27-orange.svg?style=flat-square)](#contributors-)
+
+> > > > > > > 0c7bbe5fc640a9cfe0fef21624535074ba7cc830
 
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
@@ -87,6 +94,7 @@ So far, it includes the following examples:
 1. 🎙️ Web Speech API
 1. 🎨 Canvas API
 1. 👆 Pointer Capture API
+1. 🌐 URL API
 1. 📃 Page Visibility API
 
 # 🤝 Open Source
@@ -153,6 +161,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
       <td align="center"><a href="https://github.com/richardnikolas"><img src="https://avatars.githubusercontent.com/u/20261986?v=4?s=100" width="100px;" alt="Richard Nikolas"/><br /><sub><b>Richard Nikolas</b></sub></a><br /><a href="https://github.com/atapas/webapis-playground/commits?author=richardnikolas" title="Code">💻</a></td>
       <td align="center"><a href="https://kvarunkk.github.io/Portfolio_Official/"><img src="https://avatars.githubusercontent.com/u/98093422?v=4?s=100" width="100px;" alt="Varun"/><br /><sub><b>Varun</b></sub></a><br /><a href="https://github.com/atapas/webapis-playground/commits?author=kVarunkk" title="Code">💻</a></td>
       <td align="center"><a href="https://supminn-neog.netlify.app/"><img src="https://avatars.githubusercontent.com/u/30731236?v=4?s=100" width="100px;" alt="Supriya M"/><br /><sub><b>Supriya M</b></sub></a><br /><a href="https://github.com/atapas/webapis-playground/commits?author=supminn" title="Code">💻</a></td>
+      <td align="center"><a href="https://williamssam.netlify.app/"><img src="https://avatars.githubusercontent.com/u/68322437?v=4?s=100" width="100px;" alt="Williams Samuel"/><br /><sub><b>Williams Samuel</b></sub></a><br /><a href="https://github.com/atapas/webapis-playground/commits?author=williamssam" title="Code">💻</a></td>
     </tr>
   </tbody>
 </table>

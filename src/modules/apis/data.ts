@@ -362,6 +362,25 @@ export const data: Array<Demo> = [
     },
   },
   {
+    id: 'url-api',
+    emoji: '🌐',
+    title: 'URL API',
+    description:
+      'The URL API is a component of the URL standard, which defines what constitutes a valid Uniform Resource Locator and the API that provides an easy way to parse, construct, normalize and encode URLs. The URL standard also defines concepts such as domains, hosts, and IP addresses.',
+    meta: {
+      author: {
+        name: 'Williams Samuel',
+        social: {
+          email: 'samwill300@gmail.com',
+          github: 'williamssam',
+          twitter: 'williams_codes',
+        },
+      },
+      apiDocURL: 'https://developer.mozilla.org/en-US/docs/Web/API/URL_API',
+      canIUseURL: 'https://caniuse.com/url',
+    },
+  },
+  {
     id: 'page-visibility',
     emoji: '📃',
     title: 'Page Visibility API',
@@ -376,8 +395,7 @@ export const data: Array<Demo> = [
           twitter: 'williams_codes',
         },
       },
-      apiDocURL:
-        'https://developer.mozilla.org/en-US/docs/Web/API/Page_Visibility_API',
+      apiDocURL: '',
       canIUseURL: 'https://caniuse.com/pagevisibility',
     },
   }, //replace item here
