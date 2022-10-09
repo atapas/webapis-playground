@@ -242,6 +242,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "williamssam",
+      "name": "Williams Samuel",
+      "avatar_url": "https://avatars.githubusercontent.com/u/68322437?v=4",
+      "profile": "https://williamssam.netlify.app/",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
