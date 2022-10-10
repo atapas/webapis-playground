@@ -16,3 +16,10 @@ export interface Demo {
     canIUseURL: string;
   };
 }
+
+// Adds EyeDropper to the window global window interface
+declare global {
+  export interface Window {
+    EyeDropper: any; // 👈️ turn off type checking
+  }
+}
