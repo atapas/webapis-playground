@@ -86,6 +86,7 @@ So far, it includes the following examples:
 1. 🎨 Canvas API
 1. 👆 Pointer Capture API
 1. 🌐 URL API
+1. 🗒️ Selection API
 
 # 🤝 Open Source
 
