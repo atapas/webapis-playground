@@ -17,7 +17,7 @@ export interface Demo {
   };
 }
 
-// Adds EyeDropper to the window global window interface
+// Adds EyeDropper to the global window object
 declare global {
   export interface Window {
     EyeDropper: any; // 👈️ turn off type checking
