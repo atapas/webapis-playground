@@ -399,4 +399,24 @@ export const data: Array<Demo> = [
       canIUseURL: 'https://caniuse.com/pagevisibility',
     },
   }, //replace item here
+  {
+    id: 'selection-api',
+    emoji: '🗒️',
+    title: 'Selection API',
+    description:
+      'The Selection API enables developers to access and manipulate the portion of a document selected by the user.',
+    meta: {
+      author: {
+        name: 'ArunKumar Nadikattu',
+        social: {
+          email: 'arunaiekhil+dev@gmail.com',
+          github: 'Aru-Ku',
+          twitter: 'Aru_Ku_',
+        },
+      },
+      apiDocURL:
+        'https://developer.mozilla.org/en-US/docs/Web/API/Selection_API',
+      canIUseURL: 'https://caniuse.com/selection-api',
+    },
+  },
 ];

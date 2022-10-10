@@ -2,14 +2,7 @@
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 
-<<<<<<< HEAD
-
-[![All Contributors](https://img.shields.io/badge/all_contributors-26-orange.svg?style=flat-square)](#contributors-)
-
-=======
 [![All Contributors](https://img.shields.io/badge/all_contributors-27-orange.svg?style=flat-square)](#contributors-)
-
-> > > > > > > 0c7bbe5fc640a9cfe0fef21624535074ba7cc830
 
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
@@ -95,6 +88,7 @@ So far, it includes the following examples:
 1. 🎨 Canvas API
 1. 👆 Pointer Capture API
 1. 🌐 URL API
+1. 🗒️ Selection API
 1. 📃 Page Visibility API
 
 # 🤝 Open Source
