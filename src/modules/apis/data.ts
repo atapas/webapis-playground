@@ -438,5 +438,5 @@ export const data: Array<Demo> = [
         'https://developer.mozilla.org/en-US/docs/Web/API/EyeDropper_API',
       canIUseURL: 'https://caniuse.com/mdn-api_eyedropper',
     },
-  },
+  }, //replace item here
 ];
