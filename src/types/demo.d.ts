@@ -19,7 +19,8 @@ export interface Demo {
 
 // Adds EyeDropper to the global window object
 declare global {
-  export interface Window {
+  // eslint-disable-next-line no-unused-vars
+  interface Window {
     EyeDropper: any; // 👈️ turn off type checking
   }
 }
