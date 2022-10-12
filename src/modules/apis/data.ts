@@ -398,7 +398,26 @@ export const data: Array<Demo> = [
       apiDocURL: '',
       canIUseURL: 'https://caniuse.com/pagevisibility',
     },
-  }, //replace item here
+  },
+  {
+    id: 'storage',
+    emoji: '📦',
+    title: 'Storage API',
+    description:
+      "The Storage interface of the Web Storage API provides access to a particular domain's session or local storage. It allows, for example, the addition, modification, or deletion of stored data items.",
+    meta: {
+      author: {
+        name: 'Milan Mehra',
+        social: {
+          email: 'milan@milanm.org',
+          github: 'milanmdev',
+          twitter: 'milanmdev',
+        },
+      },
+      apiDocURL: 'https://developer.mozilla.org/en-US/docs/Web/API/Storage',
+      canIUseURL: 'https://caniuse.com/mdn-api_storage',
+    },
+  },
   {
     id: 'selection-api',
     emoji: '🗒️',
