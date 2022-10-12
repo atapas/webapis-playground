@@ -398,6 +398,25 @@ export const data: Array<Demo> = [
       apiDocURL: '',
       canIUseURL: 'https://caniuse.com/pagevisibility',
     },
+  },
+  {
+    id: 'fetch-api',
+    emoji: '〽️',
+    title: 'Fetch API',
+    description:
+      'The Fetch API provides an interface for fetching resources (including across the network). It will seem familiar to anyone who has used XMLHttpRequest, but the new API provides a more powerful and flexible feature set. Used JSONPlaceholder a free online REST API that you can use whenever you need some fake data for testing and prototyping.',
+    meta: {
+      author: {
+        name: 'Shyaka Tresor',
+        social: {
+          email: 'shyakadev@gmail.com',
+          github: 'shyakadev',
+          twitter: 'tshyaka',
+        },
+      },
+      apiDocURL: '',
+      canIUseURL: 'https://caniuse.com/fetch',
+    },
   }, //replace item here
   {
     id: 'selection-api',
