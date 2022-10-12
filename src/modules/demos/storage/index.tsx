@@ -9,8 +9,6 @@ const UNKNOWN_STRING = 'Unknown';
 function Network() {
   const [data] = React.useState(run());
 
-  console.log(data);
-
   if (!hasSupport()) {
     return <NotSupported />;
   }

@@ -90,6 +90,7 @@ So far, it includes the following examples:
 1. 🌐 URL API
 1. 🗒️ Selection API
 1. 📃 Page Visibility API
+1. 📦 Storage API
 
 # 🤝 Open Source
 
