@@ -38,7 +38,7 @@ function initPaymentRequest() {
   let types = ['debit', 'credit', 'prepaid'];
   let supportedInstruments = [
     {
-      supportedMethods: 'basic-card',
+      supportedMethods: 'https://google.com/pay',
       data: { supportedNetworks: networks, supportedTypes: types },
     },
   ];
