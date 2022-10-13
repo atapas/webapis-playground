@@ -400,25 +400,6 @@ export const data: Array<Demo> = [
     },
   },
   {
-    id: 'fetch-api',
-    emoji: '〽️',
-    title: 'Fetch API',
-    description:
-      'The Fetch API provides an interface for fetching resources (including across the network). It will seem familiar to anyone who has used XMLHttpRequest, but the new API provides a more powerful and flexible feature set. Used JSONPlaceholder a free online REST API that you can use whenever you need some fake data for testing and prototyping.',
-    meta: {
-      author: {
-        name: 'Shyaka Tresor',
-        social: {
-          email: 'shyakadev@gmail.com',
-          github: 'shyakadev',
-          twitter: 'tshyaka',
-        },
-      },
-      apiDocURL: 'https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API',
-      canIUseURL: 'https://caniuse.com/fetch',
-    },
-  }, //replace item here
-  {
     id: 'selection-api',
     emoji: '🗒️',
     title: 'Selection API',
@@ -438,4 +419,43 @@ export const data: Array<Demo> = [
       canIUseURL: 'https://caniuse.com/selection-api',
     },
   },
+  {
+    id: 'eyedropper-api',
+    emoji: '👁️‍🗨',
+    title: 'EyeDropper API',
+    description:
+      'The EyeDropper API provides a mechanism for creating an eyedropper tool. Using this tool, users can sample colors from their screens, including outside of the browser window.',
+    meta: {
+      author: {
+        name: 'Williams Samuel',
+        social: {
+          email: 'samwill300@gmail.com',
+          github: 'williamssam',
+          twitter: 'williams_codes',
+        },
+      },
+      apiDocURL:
+        'https://developer.mozilla.org/en-US/docs/Web/API/EyeDropper_API',
+      canIUseURL: 'https://caniuse.com/mdn-api_eyedropper',
+    },
+  },
+  {
+    id: 'fetch-api',
+    emoji: '〽️',
+    title: 'Fetch API',
+    description:
+      'The Fetch API provides an interface for fetching resources (including across the network). It will seem familiar to anyone who has used XMLHttpRequest, but the new API provides a more powerful and flexible feature set. Used JSONPlaceholder a free online REST API that you can use whenever you need some fake data for testing and prototyping.',
+    meta: {
+      author: {
+        name: 'Shyaka Tresor',
+        social: {
+          email: 'shyakadev@gmail.com',
+          github: 'shyakadev',
+          twitter: 'tshyaka',
+        },
+      },
+      apiDocURL: 'https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API',
+      canIUseURL: 'https://caniuse.com/fetch',
+    },
+  }, //replace item here
 ];
