@@ -414,7 +414,7 @@ export const data: Array<Demo> = [
           twitter: 'tshyaka',
         },
       },
-      apiDocURL: '',
+      apiDocURL: 'https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API',
       canIUseURL: 'https://caniuse.com/fetch',
     },
   }, //replace item here
