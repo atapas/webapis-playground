@@ -1,4 +1,4 @@
-# 🔌 WEB APIS PLAYGROUND
+# <img src="https://blogs.sap.com/wp-content/uploads/2020/05/1330-rest-api-outline.gif" width="45px"> WEB APIS PLAYGROUND
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 
@@ -17,23 +17,23 @@ The `Web APIs Playground` is a project to showcase the JavaScript Web APIs with 
 
 Please [follow this link](https://developer.mozilla.org/en-US/docs/Web/API) to know about different Web APIs and their usages.
 
-# 🔥 The App
+# <img src="https://i.pinimg.com/originals/fb/bb/07/fbbb0760a584aef3ab63942a885579f5.gif" width="45px"> The App
 
 > [https://webapis-playground.vercel.app](https://webapis-playground.vercel.app)
 
-# 🎯 Vision and Mission of this Playground
+# <img src="http://virtuallyperfect.co.za/wp/wp-content/uploads/2017/08/animat-bullseye-color.gif" width="60px"> Vision and Mission of this Playground
 
 The primary mission is to provide working examples of the JavaScript web APIs with simple demonstration that can be accessed using browsers on different devices. It may help many beginners to this topic in understanding how to code and use the Web APIs.
 
-# 🏗️ How to ADD a new DEMO?
+# <img src="https://media2.giphy.com/media/fbrPsrUSRZMPvDsp2c/giphy.gif?cid=6c09b95249cfb71c464a64865743d48064dce6f2f0db746b&rid=giphy.gif&ct=s" width="45px"> How to ADD a new DEMO?
 
 [Here is a step-by-step guide](./HOW-TO-ADD-DEMO.md) to help you add a new demo.
 
-# ⚒️ It's developed using Next.js
+# <img src="https://thumbs.gfycat.com/GiftedWateryCony-max-1mb.gif" width="35px"> It's developed using Next.js
 
 This project is developed using the `Next.js`. If you have implemented a similar project using JavaScript or any other frameworks like React, Angular, Vue, please create an issue to include them in the README.
 
-# 🤲 Want to Motivate?
+# <img src="https://media.tenor.com/PeVTYLl4H0UAAAAi/cheering-encouraging.gif" width="45px"> Want to Motivate?
 
 Who doesn't need motivation? Please give the project a star(⭐) and/or share it in your dev circle.
 
@@ -41,7 +41,7 @@ Who doesn't need motivation? Please give the project a star(⭐) and/or share it
 
 [![Stargazers repo roster for @atapas/webapis-playground](https://reporoster.com/stars/atapas/webapis-playground)](https://github.com/atapas/webapis-playground/stargazers)
 
-# 🏃‍♀️ How to Run the project locally
+# <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/ddddcd88-a6b2-4fd8-8e4e-31af517c0ba2/d9buy99-0a38b2e2-8e04-4349-88a1-a2eeb73c39d3.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2RkZGRjZDg4LWE2YjItNGZkOC04ZTRlLTMxYWY1MTdjMGJhMlwvZDlidXk5OS0wYTM4YjJlMi04ZTA0LTQzNDktODhhMS1hMmVlYjczYzM5ZDMuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.6t8w-qT_FtwBfdwK3aYDPOZAMM6wd2vEEKIW7cUgT0Q" width="45px"> How to Run the project locally
 
 To run the project locally,
 
@@ -65,7 +65,7 @@ yarn dev
 
 - Open the browser and navigate to `http://localhost:3000`
 
-# 🚀 What's Included?
+# <img src="https://media.tenor.com/GocCvG7hs78AAAAi/rocket-joypixels.gif" width="45px"> What's Included?
 
 So far, it includes the following examples:
 
@@ -91,11 +91,11 @@ So far, it includes the following examples:
 1. 🗒️ Selection API
 1. 📃 Page Visibility API
 
-# 🤝 Open Source
+# <img src="https://github.com/sakshamgurbhele/sakshamgurbhele/blob/main/Images/Handshake.gif" width="45px"> Open Source
 
 This project is opensource and open for contributions. If you are looking for any examples and demonstrations that are missing, please [open a issue from here](https://github.com/atapas/webapis-playground/issues). You can also contrinute to the source code by adding an example, improving code, and providing suggestions.
 
-# 🤝 Contributing to `playground`
+# <img src="https://github.com/sakshamgurbhele/sakshamgurbhele/blob/main/Images/Handshake.gif" width="45px"> Contributing to `playground`
 
 Any kind of positive contribution is welcome! Please help us to grow by contributing to the project.
 
@@ -103,7 +103,7 @@ If you wish to contribute, you can work on any issues [listed here](https://gith
 
 > Please read [`CONTRIBUTING`](CONTRIBUTING.md) for details on our [`CODE OF CONDUCT`](CODE_OF_CONDUCT.md), and the process for submitting pull requests to us.
 
-# 🙏 Support
+# <img src="https://media0.giphy.com/media/Tm6nzYqLSjV1BuBIeV/giphy.gif?cid=6c09b952jr3e2c4gv5wscofgckqf7qngyd6u0r0e4m44ui1z&rid=giphy.gif&ct=s" width="45px"> Support
 
 We all need support and motivation. `WebAPIs Playground` is not an exception. Please give this project a ⭐️ to encourage and show that you liked it.
 
