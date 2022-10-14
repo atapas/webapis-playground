@@ -16,3 +16,11 @@ export interface Demo {
     canIUseURL: string;
   };
 }
+
+// Adds EyeDropper to the global window object
+declare global {
+  // eslint-disable-next-line no-unused-vars
+  interface Window {
+    EyeDropper: any; // 👈️ turn off type checking
+  }
+}
