@@ -398,7 +398,7 @@ export const data: Array<Demo> = [
       apiDocURL: '',
       canIUseURL: 'https://caniuse.com/pagevisibility',
     },
-  }, //replace item here
+  },
   {
     id: 'selection-api',
     emoji: '🗒️',
@@ -419,4 +419,24 @@ export const data: Array<Demo> = [
       canIUseURL: 'https://caniuse.com/selection-api',
     },
   },
+  {
+    id: 'eyedropper-api',
+    emoji: '👁️‍🗨',
+    title: 'EyeDropper API',
+    description:
+      'The EyeDropper API provides a mechanism for creating an eyedropper tool. Using this tool, users can sample colors from their screens, including outside of the browser window.',
+    meta: {
+      author: {
+        name: 'Williams Samuel',
+        social: {
+          email: 'samwill300@gmail.com',
+          github: 'williamssam',
+          twitter: 'williams_codes',
+        },
+      },
+      apiDocURL:
+        'https://developer.mozilla.org/en-US/docs/Web/API/EyeDropper_API',
+      canIUseURL: 'https://caniuse.com/mdn-api_eyedropper',
+    },
+  }, //replace item here
 ];
