@@ -398,6 +398,24 @@ export const data: Array<Demo> = [
       apiDocURL: '',
       canIUseURL: 'https://caniuse.com/pagevisibility',
     },
+  }, 
+  {
+    id: 'storage', 
+    emoji: '💽',
+    title: 'Storage API', 
+    description: 'The Storage interface of the Web Storage API provides access to a particular domain\'s session or local storage. It allows, for example, the addition, modification, or deletion of stored data items.', 
+    meta: {
+      author: { 
+        name: 'Ade Adedoja',
+        social: {
+          email: 'damdey@gmail.com', 
+          github: 'ade1705',
+          twitter: 'TrussDamola',
+        },
+      },
+      apiDocURL: '',
+      canIUseURL: 'https://caniuse.com/storage', 
+    },
   },
   {
     id: 'selection-api',
