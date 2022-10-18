@@ -25,21 +25,11 @@ function updateDetails(details, shippingOption, resolve, reject) {
 }
 
 function initPaymentRequest() {
-  let networks = [
-    'amex',
-    'diners',
-    'discover',
-    'jcb',
-    'mastercard',
-    'unionpay',
-    'visa',
-    'mir',
-  ];
-  let types = ['debit', 'credit', 'prepaid'];
+  // Implement any payment method you want here.
+  // For example: https://google.com/pay
   let supportedInstruments = [
     {
-      supportedMethods: 'https://google.com/pay',
-      data: { supportedNetworks: networks, supportedTypes: types },
+      supportedMethods: 'https://bobbucks.dev/pay',
     },
   ];
 
@@ -58,7 +48,6 @@ function initPaymentRequest() {
         amount: { currency: 'USD', value: '-10.00' },
       },
     ],
-
     shippingOptions: [
       {
         id: 'standard',
