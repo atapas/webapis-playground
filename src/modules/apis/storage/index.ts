@@ -1,19 +1,23 @@
+import {StorageType} from "@/modules/demos/storage";
+
 export const hasSupport = (): boolean => {
   return 'localStorage' in window && 'sessionStorage' in window;
 }
 
+type StorageCallback = (session: StorageType, isSuccessful: boolean) => void;
+
 const localStorageHandler =  {
-  set(callback: () => void): void {
+  set(callback: StorageCallback): void {
     const localStorageKeyElement = document.getElementById('js-input-local-storage--key') as HTMLInputElement;
     const localStorageValueElement = document.getElementById('js-input-local-storage--value') as HTMLInputElement;
     try {
       localStorage.setItem(localStorageKeyElement.value, localStorageValueElement.value);
-      alert('Key/Value pair saved successfully to Local Storage');
       localStorageKeyElement.value = "";
       localStorageValueElement.value = "";
-      callback();
+      callback(StorageType.LOCAL, true);
     } catch (e) {
-      alert('Error saving Key/Value pair');
+      callback(StorageType.LOCAL, false);
+      console.error(`Unable to set localStorage ${e}`);
     }
   },
   get(): Record<string, string> {
@@ -22,26 +26,25 @@ const localStorageHandler =  {
   clear(callback: () => void): void {
     try {
       localStorage.clear();
-      alert('Local Storage successfully cleared');
       callback();
     } catch (e) {
-      alert('Error clearing Local Storage');
+      console.error(`Unable to clear localStorage ${e}`);
     }
   },
 }
 
 const sessionStorageHandler =  {
-  set(callback: () => void): void {
+  set(callback: StorageCallback): void {
     const sessionStorageKeyElement = document.getElementById('js-input-session-storage--key') as HTMLInputElement;
     const sessionStorageValueElement = document.getElementById('js-input-session-storage--value') as HTMLInputElement;
     try {
       sessionStorage.setItem(sessionStorageKeyElement.value, sessionStorageValueElement.value);
-      alert('Key/Value pair saved successfully to Session Storage');
       sessionStorageKeyElement.value = "";
       sessionStorageValueElement.value = "";
-      callback();
+      callback(StorageType.SESSION, true);
     } catch (e) {
-      alert('Error saving Key/Value pair');
+      callback(StorageType.SESSION, false);
+      console.error(`Unable to set sessionStorage ${e}`);
     }
   },
   get(): Record<string, string> {
@@ -50,10 +53,9 @@ const sessionStorageHandler =  {
   clear(callback: () => void): void {
     try {
       sessionStorage.clear();
-      alert('Session Storage successfully cleared');
       callback();
     } catch (e) {
-      alert('Error clearing Session Storage');
+      console.error(`Unable to clear sessionStorage ${e}`);
     }
   },
 }

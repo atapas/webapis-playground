@@ -3,12 +3,29 @@ import React, {useEffect, useState} from "react";
 import {Input} from "@/components/Input";
 import {Button} from "@/components/Button";
 
+export enum StorageType {
+  LOCAL = 'Local Storage',
+  SESSION = 'Session Storage',
+}
+
 function Storage() {
   const [localStorageData, setLocalStorageData] = useState<Record<string, string>>({});
   const [sessionStorageData, setSessionStorageData] = useState<Record<string, string>>({});
+  const [storageType, setStorageType] = useState<StorageType|null>(null);
+  const [isSuccessful, setIsSuccessful] = useState<boolean|null>(null);
+  
+
   const initData = () => {
     setLocalStorageData(run.localStorageHandler.get());
     setSessionStorageData(run.sessionStorageHandler.get());
+    setStorageType(null);
+  }
+  
+  const callback = (storageType: StorageType, isSuccessful: boolean): void => {
+    initData();
+    setStorageType(storageType);
+    setIsSuccessful(isSuccessful);
+    setTimeout(() => setIsSuccessful(null), 2000);
   }
   
   useEffect(() => {
@@ -22,6 +39,16 @@ function Storage() {
   return (
     <>
       <>
+        {isSuccessful !== null && (
+          <div className="tw-p-4 tw-mb-4 tw-text-sm tw-text-blue-700 tw-bg-blue-100 tw-rounded-lg tw-dark:tw-bg-blue-200 tw-dark:text-blue-800"
+               role="alert">
+            <span className="tw-font-medium">{isSuccessful ? 'Success!' : 'Error'}</span>
+            {isSuccessful 
+              ? <span> Key/Value pair saved successfully to {storageType}.</span>
+              : <span> Error saving Key/Value pair</span>
+            }
+          </div>
+        )}
         <h2 className="tw-text-xl tw-font-bold tw-mb-3">
           Local Storage
           <small
@@ -49,7 +76,7 @@ function Storage() {
                 placeholder="Value"
               />
             </div>
-            <Button onClick={() => run.localStorageHandler.set(initData)}>Save</Button>
+            <Button onClick={() => run.localStorageHandler.set(callback)}>Save</Button>
           </div>
           <div
             className="
@@ -182,7 +209,7 @@ function Storage() {
                 placeholder="Value"
               />
             </div>
-            <Button onClick={() => run.sessionStorageHandler.set(initData)}>Save</Button>
+            <Button onClick={() => run.sessionStorageHandler.set(callback)}>Save</Button>
           </div>
           <div
             className="
