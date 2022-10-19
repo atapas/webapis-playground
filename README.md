@@ -93,7 +93,7 @@ So far, it includes the following examples:
 
 # 🤝 Open Source
 
-This project is opensource and open for contributions. If you are looking for any examples and demonstrations that are missing, please [open a issue from here](https://github.com/atapas/webapis-playground/issues). You can also contrinute to the source code by adding an example, improving code, and providing suggestions.
+This project is opensource and open for contributions. If you are looking for any examples and demonstrations that are missing, please [open an issue from here](https://github.com/atapas/webapis-playground/issues). You can also contribute to the source code by adding an example, improving code, and providing suggestions.
 
 # 🤝 Contributing to `playground`
 
