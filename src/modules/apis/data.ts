@@ -438,5 +438,25 @@ export const data: Array<Demo> = [
         'https://developer.mozilla.org/en-US/docs/Web/API/EyeDropper_API',
       canIUseURL: 'https://caniuse.com/mdn-api_eyedropper',
     },
+  },
+  {
+    id: 'background-fetch',
+    emoji: '🚇',
+    title: 'Background Fetch API',
+    description:
+      'The Background Fetch API provides a method for managing downloads that may take a significant amount of time such as movies, audio files, and software. The Background Fetch API will enable the fetch to happen if the user starts the process while offline. Once they are connected it will begin. If the user goes off line, the process pauses until the user is on again.',
+    meta: {
+      author: {
+        name: 'Shyaka Tresor',
+        social: {
+          email: 'shyakadev@gmail.com',
+          github: 'shyakadev',
+          twitter: 'tshyaka',
+        },
+      },
+      apiDocURL:
+        'https://developer.mozilla.org/en-US/docs/Web/API/Background_Fetch_API',
+      canIUseURL: 'https://caniuse.com/mdn-api_backgroundfetchmanager',
+    },
   }, //replace item here
 ];
