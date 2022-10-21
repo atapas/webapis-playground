@@ -438,5 +438,24 @@ export const data: Array<Demo> = [
         'https://developer.mozilla.org/en-US/docs/Web/API/EyeDropper_API',
       canIUseURL: 'https://caniuse.com/mdn-api_eyedropper',
     },
+  },
+  {
+    id: 'fetch-api',
+    emoji: '〽️',
+    title: 'Fetch API',
+    description:
+      'The Fetch API provides an interface for fetching resources (including across the network). It will seem familiar to anyone who has used XMLHttpRequest, but the new API provides a more powerful and flexible feature set. Used JSONPlaceholder a free online REST API that you can use whenever you need some fake data for testing and prototyping.',
+    meta: {
+      author: {
+        name: 'Shyaka Tresor',
+        social: {
+          email: 'shyakadev@gmail.com',
+          github: 'shyakadev',
+          twitter: 'tshyaka',
+        },
+      },
+      apiDocURL: 'https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API',
+      canIUseURL: 'https://caniuse.com/fetch',
+    },
   }, //replace item here
 ];
