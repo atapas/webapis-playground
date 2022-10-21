@@ -1,49 +1,25 @@
 export const hasSupport = (): boolean => {
-  // const sw = `addEventListener('backgroundfetchsuccess', event => {
-  //   console.log('[Service Worker]: Background Fetch Success', event.registration);
-  // });
-
-  // self.addEventListener('install', () => {
-  //   console.log('[Service Worker]: Installed');
-  // });
-
-  // self.addEventListener('activate', () => {
-  //   console.log('[Service Worker]: Active');
-  // });`;
   if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('./service-worker.js');
+    navigator.serviceWorker.register('/service-worker.js');
     return true;
   }
   return false;
 };
+export async function backgroundFetch(url: string) {
+  const registration = await navigator.serviceWorker.ready;
+  return await registration.backgroundFetch.fetch('my-fetch', [url], {
+    title: 'Blog build tools, JS blocks, and opener-policy',
+    downloadTotal: 22032728,
+  });
+}
 
 function download(url: string) {
   try {
-    const nav = navigator.serviceWorker.ready.then(async swReg => {
-      console.log({ url });
-      console.log({ swReg });
-      const d = await swReg.backgroundFetch.fetch('my-fetch', [url]);
-      return d;
-      // const bgFetch = await swReg.backgroundFetch.fetch('my-fetch', [url]);
-      // return bgFetch;
-    });
-    console.log(nav);
+    backgroundFetch(url);
   } catch (error) {
-    console.log({ error });
+    console.error(error);
   }
 }
-
-addEventListener('backgroundfetchsuccess', event => {
-  console.log('[Service Worker]: Background Fetch Success', event);
-});
-
-self.addEventListener('install', () => {
-  console.log('[Service Worker]: Installed');
-});
-
-self.addEventListener('activate', () => {
-  console.log('[Service Worker]: Active');
-});
 
 const run = {
   download,
