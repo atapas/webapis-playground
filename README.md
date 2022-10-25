@@ -90,6 +90,7 @@ So far, it includes the following examples:
 1. 🌐 URL API
 1. 🗒️ Selection API
 1. 📃 Page Visibility API
+1. 🎛️ Media Session API
 
 # 🤝 Open Source
 
@@ -156,6 +157,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
       <td align="center"><a href="https://kvarunkk.github.io/Portfolio_Official/"><img src="https://avatars.githubusercontent.com/u/98093422?v=4?s=100" width="100px;" alt="Varun"/><br /><sub><b>Varun</b></sub></a><br /><a href="https://github.com/atapas/webapis-playground/commits?author=kVarunkk" title="Code">💻</a></td>
       <td align="center"><a href="https://supminn-neog.netlify.app/"><img src="https://avatars.githubusercontent.com/u/30731236?v=4?s=100" width="100px;" alt="Supriya M"/><br /><sub><b>Supriya M</b></sub></a><br /><a href="https://github.com/atapas/webapis-playground/commits?author=supminn" title="Code">💻</a></td>
       <td align="center"><a href="https://williamssam.netlify.app/"><img src="https://avatars.githubusercontent.com/u/68322437?v=4?s=100" width="100px;" alt="Williams Samuel"/><br /><sub><b>Williams Samuel</b></sub></a><br /><a href="https://github.com/atapas/webapis-playground/commits?author=williamssam" title="Code">💻</a></td>
+      <td align="center"><a href="https://williamssam.netlify.app/"><img src="https://twitter.com/imThiyagarajan" width="100px;" alt="Thiyagarajan Ravichandran"/><br /><sub><b>Thiyagarajan Ravichandran</b></sub></a><br /><a href="https://github.com/atapas/webapis-playground/commits?author=williamssam" title="Code">💻</a></td>
     </tr>
   </tbody>
 </table>

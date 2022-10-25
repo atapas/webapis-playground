@@ -438,5 +438,25 @@ export const data: Array<Demo> = [
         'https://developer.mozilla.org/en-US/docs/Web/API/EyeDropper_API',
       canIUseURL: 'https://caniuse.com/mdn-api_eyedropper',
     },
+  },
+  {
+    id: 'media-session-api',
+    emoji: '🎛️',
+    title: 'Media Session API',
+    description:
+      'The Media Session API provides a way to customize media notifications. It does this by providing metadata for display by the user agent for the media your web app is playing.',
+    meta: {
+      author: {
+        name: 'Thiyagarajan Ravichandran',
+        social: {
+          email: 'thiyagarajanravi22@gmail.com',
+          github: 'imThiyagu',
+          twitter: 'imThiyagarajan',
+        },
+      },
+      apiDocURL:
+        'https://developer.mozilla.org/en-US/docs/Web/API/Media_Session_API',
+      canIUseURL: 'https://caniuse.com/mdn-api_mediaSession',
+    },
   }, //replace item here
 ];
