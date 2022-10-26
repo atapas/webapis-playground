@@ -438,5 +438,22 @@ export const data: Array<Demo> = [
         'https://developer.mozilla.org/en-US/docs/Web/API/EyeDropper_API',
       canIUseURL: 'https://caniuse.com/mdn-api_eyedropper',
     },
-  }, //replace item here
+  }, {
+  id: 'compression-streams', 
+  emoji: '🗜️',
+  title: 'Compression Streams API', 
+  description: 'The Compression Streams API provides a JavaScript API for compressing and decompressing streams of data using the gzip or deflate formats. Built in compression means that JavaScript applications will not need to include a compression library, which makes the download size of the application smaller.', 
+  meta: {
+    author: { 
+      name: 'Shyaka Tresor',
+      social: {
+        email: 'shyakadev@gmail.com', 
+        github: 'shyakadev',
+        twitter: 'tshyaka',
+      },
+    },
+    apiDocURL: '',
+    canIUseURL: 'https://caniuse.com/mdn-api_compressionstream', 
+  },
+}, //replace item here
 ];
