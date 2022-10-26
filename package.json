@@ -21,6 +21,7 @@
   },
   "dependencies": {
     "@bradgarropy/next-seo": "^1.0.0",
+    "browser-fs-access": "^0.31.1",
     "filter-react-props": "^0.0.4",
     "framer-motion": "^4.1.17",
     "next": "11.1.2",
