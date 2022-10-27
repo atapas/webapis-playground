@@ -267,6 +267,25 @@ export const data: Array<Demo> = [
     },
   },
   {
+    id: 'screen-orientation',
+    title: 'Screen Orientation Event',
+    emoji: '📳',
+    description:
+      'The Screen Orientation Event determines the orientation of the screen of a device',
+    meta: {
+      author: {
+        name: 'Annie Bhalla',
+        social: {
+          twitter: '',
+          email: 'anniebhalla16@gmail.com',
+        },
+      },
+      apiDocURL:
+        'https://developer.mozilla.org/en-US/docs/Web/API/Screen/orientation',
+      canIUseURL: 'https://caniuse.com/screen-orientation',
+    },
+  },
+  {
     id: 'screen-capture',
     title: 'Screen Capture',
     emoji: '💻',
