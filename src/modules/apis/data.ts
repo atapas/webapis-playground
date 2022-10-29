@@ -267,6 +267,25 @@ export const data: Array<Demo> = [
     },
   },
   {
+    id: 'device-orientation',
+    title: 'Device Orientation Events API',
+    emoji: '💻',
+    description:
+      'Device orientation events are events that allow you to detect physical orientation of a device, as well as allowing you to detect motion of the device.',
+    meta: {
+      author: {
+        name: 'Annie Bhalla',
+        social: {
+          twitter: '',
+          email: 'anniebhalla16@gmail.com',
+        },
+      },
+      apiDocURL:
+        'https://developer.mozilla.org/en-US/docs/Web/API/Device_orientation_events',
+      canIUseURL: 'https://caniuse.com/device-orientation',
+    },
+  },
+  {
     id: 'screen-capture',
     title: 'Screen Capture',
     emoji: '💻',
