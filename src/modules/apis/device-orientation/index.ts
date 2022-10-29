@@ -19,6 +19,8 @@ function run() {
       },
       false
     );
+  } else {
+    alert('Device Orientation Event not supported');
   }
 }
 
