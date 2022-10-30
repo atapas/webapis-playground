@@ -438,5 +438,22 @@ export const data: Array<Demo> = [
         'https://developer.mozilla.org/en-US/docs/Web/API/EyeDropper_API',
       canIUseURL: 'https://caniuse.com/mdn-api_eyedropper',
     },
-  }, //replace item here
+  }, {
+  id: 'channel-messaging-api', 
+  emoji: '📨',
+  title: 'Channel Messaging API', 
+  description: 'The Channel Messaging API allows two separate scripts running in different browsing contexts attached to the same document (e.g., two IFrames, or the main document and an IFrame, two documents via a SharedWorker, or two workers) to communicate directly, passing messages between one another through two-way channels (or pipes) with a port at each end.', 
+  meta: {
+    author: { 
+      name: 'Salil Bagga',
+      social: {
+        email: 'salilbagga2@gmail.com', 
+        github: 'SalilBagga',
+        twitter: 'baggasalil1997',
+      },
+    },
+    apiDocURL: '',
+    canIUseURL: 'https://caniuse.com/?search&amp;#x3D;Channel%20Messaging', 
+  },
+}, //replace item here
 ];
