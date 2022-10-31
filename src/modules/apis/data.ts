@@ -438,5 +438,22 @@ export const data: Array<Demo> = [
         'https://developer.mozilla.org/en-US/docs/Web/API/EyeDropper_API',
       canIUseURL: 'https://caniuse.com/mdn-api_eyedropper',
     },
-  }, //replace item here
+  }, {
+  id: 'text-encoding-api', 
+  emoji: '🔐',
+  title: 'Text Encoding API', 
+  description: 'The Encoding API provides a mechanism for handling text in various character encodings, including legacy non-UTF-8 encodings.', 
+  meta: {
+    author: { 
+      name: 'Salil Bagga',
+      social: {
+        email: 'salilbagga2@gmail.com', 
+        github: 'SalilBagga',
+        twitter: 'baggasalil1997',
+      },
+    },
+    apiDocURL: '',
+    canIUseURL: 'https://caniuse.com/?search&#x3D;TextEncoder%20%26%20TextDecoder', 
+  },
+}, //replace item here
 ];
