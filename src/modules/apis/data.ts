@@ -438,5 +438,25 @@ export const data: Array<Demo> = [
         'https://developer.mozilla.org/en-US/docs/Web/API/EyeDropper_API',
       canIUseURL: 'https://caniuse.com/mdn-api_eyedropper',
     },
+  },
+  {
+    id: 'barcode-detection',
+    emoji: ':)',
+    title: 'Barcode Detection API',
+    description:
+      'The BarcodeDetector interface of the Barcode Detection API allows detection of linear and two dimensional barcodes in images.',
+    meta: {
+      author: {
+        name: 'Annie Bhalla',
+        social: {
+          email: 'anniebhalla16@gmail.com',
+          github: 'Anniebhalla10',
+          twitter: '',
+        },
+      },
+      apiDocURL:
+        'https://developer.mozilla.org/en-US/docs/Web/API/Barcode_Detection_API',
+      canIUseURL: 'https://caniuse.com/barcode-detection',
+    },
   }, //replace item here
 ];
