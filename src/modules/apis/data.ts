@@ -438,5 +438,24 @@ export const data: Array<Demo> = [
         'https://developer.mozilla.org/en-US/docs/Web/API/EyeDropper_API',
       canIUseURL: 'https://caniuse.com/mdn-api_eyedropper',
     },
+  },
+  {
+    id: 'navigation-timing',
+    emoji: '⌛',
+    title: 'Navigation Timing API',
+    description:
+      'The Navigation Timing API provides data that can be used to measure the performance of a web site.',
+    meta: {
+      author: {
+        name: 'Annie Bhalla',
+        social: {
+          email: 'anniebhalla16@gmail.com',
+          github: 'Anniebhalla10',
+          twitter: 'anniebhalla10',
+        },
+      },
+      apiDocURL: '',
+      canIUseURL: 'https://caniuse.com/navigation-timing',
+    },
   }, //replace item here
 ];
