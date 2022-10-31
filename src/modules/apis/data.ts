@@ -286,6 +286,25 @@ export const data: Array<Demo> = [
     },
   },
   {
+    id: 'screen-orientation',
+    title: 'Screen Orientation',
+    emoji: '📳',
+    description:
+      'The Screen Orientation Event determines the orientation of the screen of a device',
+    meta: {
+      author: {
+        name: 'Annie Bhalla',
+        social: {
+          twitter: '',
+          email: 'anniebhalla16@gmail.com',
+        },
+      },
+      apiDocURL:
+        'https://developer.mozilla.org/en-US/docs/Web/API/Screen/orientation',
+      canIUseURL: 'https://caniuse.com/screen-orientation',
+    },
+  },
+  {
     id: 'screen-capture',
     title: 'Screen Capture',
     emoji: '💻',
@@ -456,6 +475,46 @@ export const data: Array<Demo> = [
       apiDocURL:
         'https://developer.mozilla.org/en-US/docs/Web/API/EyeDropper_API',
       canIUseURL: 'https://caniuse.com/mdn-api_eyedropper',
+    },
+  },
+  {
+    id: 'barcode-detection',
+    emoji: '🖨',
+    title: 'Barcode Detection API',
+    description:
+      'The BarcodeDetector interface of the Barcode Detection API allows detection of linear and two dimensional barcodes in images.',
+    meta: {
+      author: {
+        name: 'Annie Bhalla',
+        social: {
+          email: 'anniebhalla16@gmail.com',
+          github: 'Anniebhalla10',
+          twitter: '',
+        },
+      },
+      apiDocURL:
+        'https://developer.mozilla.org/en-US/docs/Web/API/Barcode_Detection_API',
+      canIUseURL: 'https://caniuse.com/barcode-detection',
+    },
+  },
+  {
+    id: 'text-encoding-api',
+    emoji: '🔐',
+    title: 'Text Encoding API',
+    description:
+      'The Encoding API provides a mechanism for handling text in various character encodings, including legacy non-UTF-8 encodings.',
+    meta: {
+      author: {
+        name: 'Salil Bagga',
+        social: {
+          email: 'salilbagga2@gmail.com',
+          github: 'SalilBagga',
+          twitter: 'baggasalil1997',
+        },
+      },
+      apiDocURL: '',
+      canIUseURL:
+        'https://caniuse.com/?search&#x3D;TextEncoder%20%26%20TextDecoder',
     },
   }, //replace item here
 ];
