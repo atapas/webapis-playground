@@ -454,7 +454,8 @@ export const data: Array<Demo> = [
           twitter: 'anniebhalla10',
         },
       },
-      apiDocURL: '',
+      apiDocURL:
+        'https://developer.mozilla.org/en-US/docs/Web/API/Navigation_timing_API',
       canIUseURL: 'https://caniuse.com/navigation-timing',
     },
   }, //replace item here
