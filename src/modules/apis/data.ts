@@ -476,11 +476,33 @@ export const data: Array<Demo> = [
         'https://developer.mozilla.org/en-US/docs/Web/API/EyeDropper_API',
       canIUseURL: 'https://caniuse.com/mdn-api_eyedropper',
     },
-  }, {
+  },
+  {
+    id: 'navigation-timing',
+    emoji: '⌛',
+    title: 'Navigation Timing API',
+    description:
+      'The Navigation Timing API provides data that can be used to measure the performance of a web site.',
+    meta: {
+      author: {
+        name: 'Annie Bhalla',
+        social: {
+          email: 'anniebhalla16@gmail.com',
+          github: 'Anniebhalla10',
+          twitter: 'anniebhalla10',
+        },
+      },
+      apiDocURL:
+        'https://developer.mozilla.org/en-US/docs/Web/API/Navigation_timing_API',
+      canIUseURL: 'https://caniuse.com/navigation-timing',
+    },
+  },
+  {
     id: 'indexeddb-api',
     emoji: '🗂️',
     title: 'IndexedDB API',
-    description: "IndexedDB is a low-level API for client-side storage of significant amounts of structured data, including files/blobs. This API uses indexes to enable high-performance searches of this data. While Web Storage is useful for storing smaller amounts of data, it is less useful for storing larger amounts of structured data. IndexedDB provides a solution. This is the main landing page for MDN's IndexedDB coverage — here we provide links to the full API reference and usage guides, browser support details, and some explanation of key concepts.",
+    description:
+      "IndexedDB is a low-level API for client-side storage of significant amounts of structured data, including files/blobs. This API uses indexes to enable high-performance searches of this data. While Web Storage is useful for storing smaller amounts of data, it is less useful for storing larger amounts of structured data. IndexedDB provides a solution. This is the main landing page for MDN's IndexedDB coverage — here we provide links to the full API reference and usage guides, browser support details, and some explanation of key concepts.",
     meta: {
       author: {
         name: 'Salil Bagga',
@@ -498,7 +520,8 @@ export const data: Array<Demo> = [
     id: 'channel-messaging-api',
     emoji: '📨',
     title: 'Channel Messaging API',
-    description: 'The Channel Messaging API allows two separate scripts running in different browsing contexts attached to the same document (e.g., two IFrames, or the main document and an IFrame, two documents via a SharedWorker, or two workers) to communicate directly, passing messages between one another through two-way channels (or pipes) with a port at each end.',
+    description:
+      'The Channel Messaging API allows two separate scripts running in different browsing contexts attached to the same document (e.g., two IFrames, or the main document and an IFrame, two documents via a SharedWorker, or two workers) to communicate directly, passing messages between one another through two-way channels (or pipes) with a port at each end.',
     meta: {
       author: {
         name: 'Salil Bagga',
@@ -517,7 +540,8 @@ export const data: Array<Demo> = [
     id: 'css-painting-api',
     emoji: '🖌️',
     title: 'CSS Painting API',
-    description: "The CSS Painting API — part of the CSS Houdini umbrella of APIs — allows developers to write JavaScript functions that can draw directly into an element's background, border, or content.",
+    description:
+      "The CSS Painting API — part of the CSS Houdini umbrella of APIs — allows developers to write JavaScript functions that can draw directly into an element's background, border, or content.",
     meta: {
       author: {
         name: 'Salil Bagga',
@@ -528,8 +552,7 @@ export const data: Array<Demo> = [
         },
       },
       apiDocURL: '',
-      canIUseURL:
-        'https://caniuse.com/css-paint-api',
+      canIUseURL: 'https://caniuse.com/css-paint-api',
     },
   },
   {
@@ -571,5 +594,5 @@ export const data: Array<Demo> = [
         'https://developer.mozilla.org/en-US/docs/Web/API/Barcode_Detection_API',
       canIUseURL: 'https://caniuse.com/barcode-detection',
     },
-  },//replace item here
+  }, //replace item here
 ];
