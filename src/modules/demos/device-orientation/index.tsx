@@ -1,3 +1,4 @@
+import { Button } from '@/components/Button';
 import run, { hasSupport } from '../../apis/device-orientation';
 
 function DeviceOrientation() {
@@ -7,17 +8,31 @@ function DeviceOrientation() {
 
   return (
     <div>
-      <button
-        onClick={run}
+      <div
         style={{
-          backgroundColor: 'orange',
-          borderRadius: '4px',
-          padding: '2px',
+          backgroundColor: '#ffdadafa',
+          borderRadius: '8px',
+          padding: '16px',
         }}
       >
+        <h1>About:</h1>
+        <ol>
+          <li>1. This API only works in mobile browsers</li>
+          <li>2. Only works in secure contexts</li>
+        </ol>
+      </div>
+      <Button onClick={run} className="tw-my-2">
         Run Demo
-      </button>
-      <div id="orientation"></div>
+      </Button>
+      <div
+        id="orientation"
+        style={{
+          paddingLeft: '8px',
+          paddingRight: '8px',
+          paddingBottom: '8px',
+          paddingTop: 0,
+        }}
+      ></div>
     </div>
   );
 }
