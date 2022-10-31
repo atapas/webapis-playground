@@ -438,5 +438,22 @@ export const data: Array<Demo> = [
         'https://developer.mozilla.org/en-US/docs/Web/API/EyeDropper_API',
       canIUseURL: 'https://caniuse.com/mdn-api_eyedropper',
     },
-  }, //replace item here
+  }, {
+  id: 'indexeddb-api', 
+  emoji: '🗂️',
+  title: 'IndexedDB API', 
+  description: "IndexedDB is a low-level API for client-side storage of significant amounts of structured data, including files/blobs. This API uses indexes to enable high-performance searches of this data. While Web Storage is useful for storing smaller amounts of data, it is less useful for storing larger amounts of structured data. IndexedDB provides a solution. This is the main landing page for MDN's IndexedDB coverage — here we provide links to the full API reference and usage guides, browser support details, and some explanation of key concepts.", 
+  meta: {
+    author: { 
+      name: 'Salil Bagga',
+      social: {
+        email: 'salilbagga2@gmail.com', 
+        github: 'SalilBagga',
+        twitter: 'baggasalil1997',
+      },
+    },
+    apiDocURL: '',
+    canIUseURL: 'https://caniuse.com/indexeddb', 
+  },
+}, //replace item here
 ];
