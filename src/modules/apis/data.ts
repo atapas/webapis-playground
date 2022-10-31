@@ -478,23 +478,22 @@ export const data: Array<Demo> = [
     },
   },
   {
-    id: 'barcode-detection',
-    emoji: '🖨',
-    title: 'Barcode Detection API',
-    description:
-      'The BarcodeDetector interface of the Barcode Detection API allows detection of linear and two dimensional barcodes in images.',
+    id: 'css-painting-api',
+    emoji: '🖌️',
+    title: 'CSS Painting API',
+    description: "The CSS Painting API — part of the CSS Houdini umbrella of APIs — allows developers to write JavaScript functions that can draw directly into an element's background, border, or content.",
     meta: {
       author: {
-        name: 'Annie Bhalla',
+        name: 'Salil Bagga',
         social: {
-          email: 'anniebhalla16@gmail.com',
-          github: 'Anniebhalla10',
-          twitter: '',
+          email: 'salilbagga2@gmail.com',
+          github: 'SalilBagga',
+          twitter: 'baggasalil1997',
         },
       },
-      apiDocURL:
-        'https://developer.mozilla.org/en-US/docs/Web/API/Barcode_Detection_API',
-      canIUseURL: 'https://caniuse.com/barcode-detection',
+      apiDocURL: '',
+      canIUseURL:
+        'https://caniuse.com/css-paint-api',
     },
   },
   {
@@ -516,5 +515,25 @@ export const data: Array<Demo> = [
       canIUseURL:
         'https://caniuse.com/?search&#x3D;TextEncoder%20%26%20TextDecoder',
     },
-  }, //replace item here
+  },
+  {
+    id: 'barcode-detection',
+    emoji: '🖨',
+    title: 'Barcode Detection API',
+    description:
+      'The BarcodeDetector interface of the Barcode Detection API allows detection of linear and two dimensional barcodes in images.',
+    meta: {
+      author: {
+        name: 'Annie Bhalla',
+        social: {
+          email: 'anniebhalla16@gmail.com',
+          github: 'Anniebhalla10',
+          twitter: '',
+        },
+      },
+      apiDocURL:
+        'https://developer.mozilla.org/en-US/docs/Web/API/Barcode_Detection_API',
+      canIUseURL: 'https://caniuse.com/barcode-detection',
+    },
+  },//replace item here
 ];
