@@ -267,6 +267,44 @@ export const data: Array<Demo> = [
     },
   },
   {
+    id: 'device-orientation',
+    title: 'Device Orientation Events API',
+    emoji: '💻',
+    description:
+      'Device orientation events are events that allow you to detect physical orientation of a device, as well as allowing you to detect motion of the device.',
+    meta: {
+      author: {
+        name: 'Annie Bhalla',
+        social: {
+          twitter: '',
+          email: 'anniebhalla16@gmail.com',
+        },
+      },
+      apiDocURL:
+        'https://developer.mozilla.org/en-US/docs/Web/API/Device_orientation_events',
+      canIUseURL: 'https://caniuse.com/device-orientation',
+    },
+  },
+  {
+    id: 'screen-orientation',
+    title: 'Screen Orientation',
+    emoji: '📳',
+    description:
+      'The Screen Orientation Event determines the orientation of the screen of a device',
+    meta: {
+      author: {
+        name: 'Annie Bhalla',
+        social: {
+          twitter: '',
+          email: 'anniebhalla16@gmail.com',
+        },
+      },
+      apiDocURL:
+        'https://developer.mozilla.org/en-US/docs/Web/API/Screen/orientation',
+      canIUseURL: 'https://caniuse.com/screen-orientation',
+    },
+  },
+  {
     id: 'screen-capture',
     title: 'Screen Capture',
     emoji: '💻',
@@ -439,21 +477,62 @@ export const data: Array<Demo> = [
       canIUseURL: 'https://caniuse.com/mdn-api_eyedropper',
     },
   }, {
-  id: 'indexeddb-api', 
-  emoji: '🗂️',
-  title: 'IndexedDB API', 
-  description: "IndexedDB is a low-level API for client-side storage of significant amounts of structured data, including files/blobs. This API uses indexes to enable high-performance searches of this data. While Web Storage is useful for storing smaller amounts of data, it is less useful for storing larger amounts of structured data. IndexedDB provides a solution. This is the main landing page for MDN's IndexedDB coverage — here we provide links to the full API reference and usage guides, browser support details, and some explanation of key concepts.", 
-  meta: {
-    author: { 
-      name: 'Salil Bagga',
-      social: {
-        email: 'salilbagga2@gmail.com', 
-        github: 'SalilBagga',
-        twitter: 'baggasalil1997',
+    id: 'indexeddb-api',
+    emoji: '🗂️',
+    title: 'IndexedDB API',
+    description: "IndexedDB is a low-level API for client-side storage of significant amounts of structured data, including files/blobs. This API uses indexes to enable high-performance searches of this data. While Web Storage is useful for storing smaller amounts of data, it is less useful for storing larger amounts of structured data. IndexedDB provides a solution. This is the main landing page for MDN's IndexedDB coverage — here we provide links to the full API reference and usage guides, browser support details, and some explanation of key concepts.",
+    meta: {
+      author: {
+        name: 'Salil Bagga',
+        social: {
+          email: 'salilbagga2@gmail.com',
+          github: 'SalilBagga',
+          twitter: 'baggasalil1997',
+        },
       },
+      apiDocURL: '',
+      canIUseURL: 'https://caniuse.com/indexeddb',
     },
-    apiDocURL: '',
-    canIUseURL: 'https://caniuse.com/indexeddb', 
+  }, //replace item here
+
+  {
+    id: 'barcode-detection',
+    emoji: '🖨',
+    title: 'Barcode Detection API',
+    description:
+      'The BarcodeDetector interface of the Barcode Detection API allows detection of linear and two dimensional barcodes in images.',
+    meta: {
+      author: {
+        name: 'Annie Bhalla',
+        social: {
+          email: 'anniebhalla16@gmail.com',
+          github: 'Anniebhalla10',
+          twitter: '',
+        },
+      },
+      apiDocURL:
+        'https://developer.mozilla.org/en-US/docs/Web/API/Barcode_Detection_API',
+      canIUseURL: 'https://caniuse.com/barcode-detection',
+    },
   },
-}, //replace item here
+  {
+    id: 'text-encoding-api',
+    emoji: '🔐',
+    title: 'Text Encoding API',
+    description:
+      'The Encoding API provides a mechanism for handling text in various character encodings, including legacy non-UTF-8 encodings.',
+    meta: {
+      author: {
+        name: 'Salil Bagga',
+        social: {
+          email: 'salilbagga2@gmail.com',
+          github: 'SalilBagga',
+          twitter: 'baggasalil1997',
+        },
+      },
+      apiDocURL: '',
+      canIUseURL:
+        'https://caniuse.com/?search&#x3D;TextEncoder%20%26%20TextDecoder',
+    },
+  }, //replace item here
 ];
