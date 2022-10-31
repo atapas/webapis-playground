@@ -11,10 +11,8 @@ function ScreenOrientation() {
       <Button onClick={run}>Run Demo</Button>
       <div
         style={{
-          backgroundColor: '#aadde9',
           padding: '8px',
           borderRadius: '4px',
-          width: 'fit-content',
         }}
         className="tw-mt-1"
       >
