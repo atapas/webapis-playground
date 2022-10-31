@@ -1,3 +1,4 @@
+import { Button } from '@/components/Button';
 import run, { hasSupport } from '../../apis/barcode-detection';
 
 function BarcodeDetection() {
@@ -15,9 +16,9 @@ function BarcodeDetection() {
         </ol>
       </div>
       <div className="tw-flex tw-flex-col tw-gap-2 tw-justify-between">
-        <button onClick={run} style={{ backgroundColor: 'orange' }}>
+        <Button onClick={run} style={{ backgroundColor: 'orange' }}>
           Run Demo
-        </button>
+        </Button>
         <video id="stream" style={{ width: '200px', height: '200px' }} />
       </div>
     </div>

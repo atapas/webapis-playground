@@ -20,7 +20,7 @@ function getVideo() {
       await videoEl.play();
     }
 
-    // @ts-ignore hsgs
+    // @ts-ignore not supported in window
     const barcodeDetector = new BarcodeDetector({
       formats: [
         'aztec',
