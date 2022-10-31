@@ -441,7 +441,7 @@ export const data: Array<Demo> = [
   },
   {
     id: 'barcode-detection',
-    emoji: '║▌║█║▌│║▌║▌█',
+    emoji: '🖨',
     title: 'Barcode Detection API',
     description:
       'The BarcodeDetector interface of the Barcode Detection API allows detection of linear and two dimensional barcodes in images.',
