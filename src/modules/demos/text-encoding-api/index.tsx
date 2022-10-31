@@ -6,21 +6,20 @@ function TextEncodingApi() {
   if (!hasSupport) {
     return <h1>Unsupported</h1>;
   }
-  const { encodeText, decodeText } = run()
+  const { encodeText, decodeText } = run();
 
   return (
     <div>
       <label htmlFor="tea--string">Enter text to encode:</label>
-      <Input
-        type="text"
-        id="tea--string"
-        placeholder="Enter a string"
-      />
+      <Input type="text" id="tea--string" placeholder="Enter a string" />
 
       <Button className="tw-mt-3 tw-mb-3" onClick={encodeText}>
         Encode
       </Button>
-      <div id="tea--encodedText" className='tw-text-sm tw-text-gray-900 tw-mb-3'></div>
+      <div
+        id="tea--encodedText"
+        className="tw-text-sm tw-text-gray-900 tw-mb-3"
+      ></div>
 
       <label htmlFor="tea--numberList">Enter encoded numbers:</label>
       <Input
@@ -32,7 +31,10 @@ function TextEncodingApi() {
       <Button className="tw-mt-3 tw-mb-3" onClick={decodeText}>
         Decode
       </Button>
-      <div id="tea--decodedText" className='tw-text-sm tw-text-gray-900 tw-mb-3'></div>
+      <div
+        id="tea--decodedText"
+        className="tw-text-sm tw-text-gray-900 tw-mb-3"
+      ></div>
     </div>
   );
 }
