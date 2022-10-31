@@ -8,15 +8,21 @@ function BarcodeDetection() {
 
   return (
     <div>
-      <div style={{ backgroundColor: 'lightgoldenrodyellow', padding: '16px' }}>
+      <div
+        style={{
+          backgroundColor: '#d5dafb',
+          padding: '16px',
+          borderRadius: '8px',
+        }}
+      >
         <h1>About:</h1>
         <ol>
           <li>1. The Barcode Detector only works on https connections</li>
           <li>2. It is an experimental API, only works in mobile browsers</li>
         </ol>
       </div>
-      <div className="tw-flex tw-flex-col tw-gap-2 tw-justify-between">
-        <Button onClick={run} style={{ backgroundColor: 'orange' }}>
+      <div>
+        <Button onClick={run} className="tw-my-2">
           Run Demo
         </Button>
         <video id="stream" style={{ width: '200px', height: '200px' }} />
