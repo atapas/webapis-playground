@@ -439,21 +439,21 @@ export const data: Array<Demo> = [
       canIUseURL: 'https://caniuse.com/mdn-api_eyedropper',
     },
   }, {
-  id: 'css-painting-api', 
-  emoji: '🖌️',
-  title: 'CSS Painting API', 
-  description: 'The CSS Painting API — part of the CSS Houdini umbrella of APIs — allows developers to write JavaScript functions that can draw directly into an element&#x27;s background, border, or content.', 
-  meta: {
-    author: { 
-      name: 'Salil Bagga',
-      social: {
-        email: 'salilbagga2@gmail.com', 
-        github: 'SalilBagga',
-        twitter: 'baggasalil1997',
+    id: 'css-painting-api',
+    emoji: '🖌️',
+    title: 'CSS Painting API',
+    description: "The CSS Painting API — part of the CSS Houdini umbrella of APIs — allows developers to write JavaScript functions that can draw directly into an element's background, border, or content.",
+    meta: {
+      author: {
+        name: 'Salil Bagga',
+        social: {
+          email: 'salilbagga2@gmail.com',
+          github: 'SalilBagga',
+          twitter: 'baggasalil1997',
+        },
       },
+      apiDocURL: '',
+      canIUseURL: 'https://caniuse.com/css-paint-api',
     },
-    apiDocURL: '',
-    canIUseURL: 'https://caniuse.com/css-paint-api', 
-  },
-}, //replace item here
+  }, //replace item here
 ];
