@@ -1,3 +1,4 @@
+import { Button } from '@/components/Button';
 import run, { hasSupport } from '../../apis/screen-orientation';
 
 function ScreenOrientation() {
@@ -7,20 +8,19 @@ function ScreenOrientation() {
 
   return (
     <div>
-      <button
-        onClick={run}
+      <Button onClick={run}>Run Demo</Button>
+      <div
         style={{
-          backgroundColor: 'blue',
-          color: 'white',
-          padding: '5px',
-          borderRadius: '3px',
+          backgroundColor: '#aadde9',
+          padding: '8px',
+          borderRadius: '4px',
+          width: 'fit-content',
         }}
+        className="tw-mt-1"
       >
-        Run Demo
-      </button>
-      <div>
-        <h1>Orientation: </h1>
-        <p id="orientation"></p>
+        <h1>
+          <b>Orientation:</b> <span id="orientation" />
+        </h1>
       </div>
     </div>
   );

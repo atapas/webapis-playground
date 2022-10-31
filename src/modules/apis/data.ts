@@ -268,7 +268,7 @@ export const data: Array<Demo> = [
   },
   {
     id: 'screen-orientation',
-    title: 'Screen Orientation Event',
+    title: 'Screen Orientation',
     emoji: '📳',
     description:
       'The Screen Orientation Event determines the orientation of the screen of a device',
