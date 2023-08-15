@@ -31,7 +31,7 @@ The primary mission is to provide working examples of the JavaScript web APIs wi
 
 # ⚒️ It's developed using Next.js
 
-This project is developed using the `Next.js`. If you have implemented a similar project using JavaScript or any other frameworks like React, Angular, Vue, please create an issue to include them in the README.
+This project is developed using `Next.js`. If you have implemented a similar project using JavaScript or any other frameworks like `React`, `Angular`, `Vue`, please create an issue to include them in the README.
 
 # 🤲 Want to Motivate?
 
@@ -48,6 +48,7 @@ To run the project locally,
 - Please clone it.
 - Browse to the project directory.
 - Install dependencies
+- Use Node **16.x.x** or [Node Version Switcher](https://github.com/jasongin/nvs)
 
 ```bash
 npm install
@@ -90,10 +91,11 @@ So far, it includes the following examples:
 1. 🌐 URL API
 1. 🗒️ Selection API
 1. 📃 Page Visibility API
+1. 💬 WebRTC
 
 # 🤝 Open Source
 
-This project is opensource and open for contributions. If you are looking for any examples and demonstrations that are missing, please [open a issue from here](https://github.com/atapas/webapis-playground/issues). You can also contrinute to the source code by adding an example, improving code, and providing suggestions.
+This project is open source and open for contributions. If you are looking for any examples and demonstrations that are missing, please [open an issue from here](https://github.com/atapas/webapis-playground/issues). You can also contribute to the source code by adding an example, improving the code and providing suggestions.
 
 # 🤝 Contributing to `playground`
 
