@@ -71,12 +71,12 @@ function handleRecorder(event: any) {
 }
 
 function downloadRecord() {
-  var blob = new Blob(recordedBlobs, { type: 'video/webm' });
+  var blob = new Blob(recordedBlobs, { type: 'video/mp4' });
   var url = window.URL.createObjectURL(blob);
   var a = document.createElement('a');
   a.style.display = 'none';
   a.href = url;
-  a.download = 'record.webm';
+  a.download = 'record.mp4';
   document.body.appendChild(a);
   a.click();
   setTimeout(function () {
