@@ -438,5 +438,24 @@ export const data: Array<Demo> = [
         'https://developer.mozilla.org/en-US/docs/Web/API/EyeDropper_API',
       canIUseURL: 'https://caniuse.com/mdn-api_eyedropper',
     },
+  },
+  {
+    id: 'webrtc',
+    emoji: '💬',
+    title: 'WebRTC',
+    description:
+      'WebRTC is a technology that offers real-time communication capabilities to your application allowing developers to build powerful voice and video communication solutions.',
+    meta: {
+      author: {
+        name: 'Geovana S. Ribeiro',
+        social: {
+          email: 'emaildaraveenita@gmail.com',
+          github: 'raveenita',
+          twitter: 'raveenita',
+        },
+      },
+      apiDocURL: '',
+      canIUseURL: 'https://caniuse.com/rtcpeerconnection',
+    },
   }, //replace item here
 ];

@@ -31,7 +31,7 @@ The primary mission is to provide working examples of the JavaScript web APIs wi
 
 # ⚒️ It's developed using Next.js
 
-This project is developed using the `Next.js`. If you have implemented a similar project using JavaScript or any other frameworks like React, Angular, Vue, please create an issue to include them in the README.
+This project is developed using `Next.js`. If you have implemented a similar project using JavaScript or any other frameworks like `React`, `Angular`, `Vue`, please create an issue to include them in the README.
 
 # 🤲 Want to Motivate?
 
@@ -48,6 +48,7 @@ To run the project locally,
 - Please clone it.
 - Browse to the project directory.
 - Install dependencies
+- Use Node **16.x.x** or [Node Version Switcher](https://github.com/jasongin/nvs)
 
 ```bash
 npm install
@@ -90,10 +91,11 @@ So far, it includes the following examples:
 1. 🌐 URL API
 1. 🗒️ Selection API
 1. 📃 Page Visibility API
+1. 💬 WebRTC
 
 # 🤝 Open Source
 
-This project is opensource and open for contributions. If you are looking for any examples and demonstrations that are missing, please [open a issue from here](https://github.com/atapas/webapis-playground/issues). You can also contrinute to the source code by adding an example, improving code, and providing suggestions.
+This project is open source and open for contributions. If you are looking for any examples and demonstrations that are missing, please [open an issue from here](https://github.com/atapas/webapis-playground/issues). You can also contribute to the source code by adding an example, improving the code and providing suggestions.
 
 # 🤝 Contributing to `playground`
 
@@ -156,6 +158,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
       <td align="center"><a href="https://kvarunkk.github.io/Portfolio_Official/"><img src="https://avatars.githubusercontent.com/u/98093422?v=4?s=100" width="100px;" alt="Varun"/><br /><sub><b>Varun</b></sub></a><br /><a href="https://github.com/atapas/webapis-playground/commits?author=kVarunkk" title="Code">💻</a></td>
       <td align="center"><a href="https://supminn-neog.netlify.app/"><img src="https://avatars.githubusercontent.com/u/30731236?v=4?s=100" width="100px;" alt="Supriya M"/><br /><sub><b>Supriya M</b></sub></a><br /><a href="https://github.com/atapas/webapis-playground/commits?author=supminn" title="Code">💻</a></td>
       <td align="center"><a href="https://williamssam.netlify.app/"><img src="https://avatars.githubusercontent.com/u/68322437?v=4?s=100" width="100px;" alt="Williams Samuel"/><br /><sub><b>Williams Samuel</b></sub></a><br /><a href="https://github.com/atapas/webapis-playground/commits?author=williamssam" title="Code">💻</a></td>
+      <td align="center"><a href="https://github.com/raveenita"><img src="https://avatars.githubusercontent.com/u/17017573?v=4" width="100px;" alt="Geovana S. Ribeiro (Raveenita)"/><br /><sub><b>Geovana S. Ribeiro</b></sub></a><br /><a href="https://github.com/atapas/webapis-playground/commits?author=raveenita" title="Code">💻</a></td>
     </tr>
   </tbody>
 </table>
