@@ -457,5 +457,25 @@ export const data: Array<Demo> = [
       apiDocURL: '',
       canIUseURL: 'https://caniuse.com/rtcpeerconnection',
     },
+  },
+  {
+    id: 'performance-api',
+    emoji: '🚀',
+    title: 'Performance API',
+    description:
+      'Performance API allows developers to measure and analyze performance metrics of their application.',
+    meta: {
+      author: {
+        name: 'Geovana Ribeiro',
+        social: {
+          email: 'emaildaraveenita@gmail.com',
+          github: 'raveenita',
+          twitter: 'raveenita',
+        },
+      },
+      apiDocURL:
+        'https://developer.mozilla.org/en-US/docs/Web/API/Performance_API',
+      canIUseURL: 'https://caniuse.com/mdn-api_performance',
+    },
   }, //replace item here
 ];
