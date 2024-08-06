@@ -31,27 +31,27 @@ function Header() {
           tw-justify-between
         "
       >
-        <Link href="/" passHref>
-          <a
-            className="
+        <Link
+          href="/"
+          className="
             tw-flex
             tw-items-center
             tw-text-lg
             tw-font-bold
             tw-text-gray-700
           "
-          >
-            <div className="tw-inline-flex tw-mr-2">
-              <Image
-                src="/assets/svg/logoDark.svg"
-                width={24}
-                height={24}
-                alt="Web APIs"
-                aria-hidden="true"
-              />
-            </div>
-            Web APIs
-          </a>
+          passHref
+        >
+          <div className="tw-inline-flex tw-mr-2">
+            <Image
+              src="/assets/svg/logoDark.svg"
+              width={24}
+              height={24}
+              alt="Web APIs"
+              aria-hidden="true"
+            />
+          </div>
+          Web APIs
         </Link>
 
         <div className=" tw-flex tw-items-center tw-space-x-2">
