@@ -24,9 +24,9 @@
     "@types/webrtc": "^0.0.36",
     "filter-react-props": "^0.0.4",
     "framer-motion": "^4.1.17",
-    "next": "11.1.2",
+    "next": "12.3.4",
     "next-pwa": "^5.3.1",
-    "nextjs-progressbar": "^0.0.11",
+    "nextjs-progressbar": "^0.0.16",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-icons": "^4.2.0"
