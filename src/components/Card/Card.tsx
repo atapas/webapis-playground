@@ -58,9 +58,7 @@ function Card({ data }: CardProps) {
       </p>
 
       <Link href={`/demo/${data.id}`} passHref>
-        <Button as="a" leftIcon={<FaBolt />}>
-          Try it
-        </Button>
+        <Button leftIcon={<FaBolt />}>Try it</Button>
       </Link>
     </article>
   );
