@@ -1,14 +1,22 @@
-export const hasSupport = (): boolean =>
-  Boolean('connection' in window.navigator);
+export interface NetworkInformation {
+  effectiveType: string;
+  rtt: number;
+  downlink: number;
+  downlinksMax?: number;
+  saveData: boolean;
+  type: string;
+}
+interface Navigator {
+  connection?: NetworkInformation;
+}
+
+export const hasSupport = (): boolean => 'connection' in window.navigator;
 
 function run() {
-  let conn = window.navigator.connection;
-
   if (hasSupport()) {
-    return conn;
+    return (window.navigator as Navigator).connection;
   }
-
-  return conn;
+  return null;
 }
 
 export default run;

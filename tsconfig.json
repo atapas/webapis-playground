@@ -23,7 +23,8 @@
       "@/types/*": ["types/*"],
       "@/utils/*": ["utils/*"]
     },
-    "typeRoots": ["node_modules/@types", "src/types"]
+    "typeRoots": ["node_modules/@types", "src/types"],
+    "incremental": true
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
