@@ -2,20 +2,15 @@ import React from 'react';
 
 import { NotSupported, Tag } from 'components';
 
-import run, { hasSupport } from '../../apis/network-information';
+import run, {
+  hasSupport,
+  NetworkInformation,
+} from '../../apis/network-information';
 
 const UNKNOWN_STRING = 'Unknown';
 
 function Network() {
-  const [data] = React.useState<
-    NetworkInformation & {
-      effectiveType?: 'readonly';
-      rtt?: 'readonly';
-      downlink?: 'readonly';
-      downlinksMax?: 'readonly';
-      saveData?: 'readonly';
-    }
-  >(run());
+  const [data] = React.useState<NetworkInformation | null | undefined>(run());
 
   if (!hasSupport()) {
     return <NotSupported />;
