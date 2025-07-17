@@ -457,5 +457,22 @@ export const data: Array<Demo> = [
       apiDocURL: '',
       canIUseURL: 'https://caniuse.com/rtcpeerconnection',
     },
-  }, //replace item here
+  }, {
+  id: 'beacon-api', 
+  emoji: '📡',
+  title: 'Beacon API', 
+  description: 'The Beacon API is used to send an asynchronous and non-blocking request to a web server. The request does not expect a response. This demo shows how it works using an example.', 
+  meta: {
+    author: { 
+      name: 'Raúl',
+      social: {
+        email: 'raulfrancobouso@gmail.com', 
+        github: 'raulfb',
+        twitter: 'raulfb28',
+      },
+    },
+    apiDocURL: '',
+    canIUseURL: 'https://caniuse.com/?search&#x3D;beacon%20api', 
+  },
+}, //replace item here
 ];
