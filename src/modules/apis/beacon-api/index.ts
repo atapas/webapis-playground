@@ -28,7 +28,7 @@ function run() {
     ) as HTMLElement;
     if (statusElement) {
       statusElement.innerText = 'Data sent successfully';
-      statusElement.className = 'tw-text-sm tw-text-green-600';
+      statusElement.className = 'tw-text-sm tw-text-green-600 tw-mb-4';
     }
   } else {
     console.log('Failed to send analytics data via Beacon API');
@@ -38,7 +38,7 @@ function run() {
     ) as HTMLElement;
     if (statusElement) {
       statusElement.innerText = 'Failed to send data';
-      statusElement.className = 'tw-text-sm tw-text-red-600';
+      statusElement.className = 'tw-text-sm tw-text-red-600 tw-mb-4';
     }
   }
 }

@@ -22,9 +22,7 @@ function BeaconApi() {
       <div
         id="js-beacon--status"
         className="tw-text-sm tw-text-gray-600 tw-mb-4"
-      >
-        Ready to send analytics data
-      </div>
+      ></div>
 
       <Button leftIcon={<FaBroadcastTower />} onClick={run}>
         Send Analytics Data
