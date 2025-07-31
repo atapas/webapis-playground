@@ -92,6 +92,7 @@ So far, it includes the following examples:
 1. 🗒️ Selection API
 1. 📃 Page Visibility API
 1. 💬 WebRTC
+1. 📡 Beacon API
 
 # 🤝 Open Source
 
